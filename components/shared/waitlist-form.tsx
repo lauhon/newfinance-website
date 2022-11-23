@@ -10,7 +10,10 @@ type PopupContent = {
 const WaitlistForm = () => {
   const { t } = useTranslation();
   const [email, setEmail] = useState("");
-  const [popupContent, setPopupContent] = useState<PopupContent>({ status: "hidden", message: "" });
+  const [popupContent, setPopupContent] = useState<PopupContent>({
+    status: "hidden",
+    message: "",
+  });
 
   const color = getBackColor(popupContent.status);
 
@@ -34,11 +37,14 @@ const WaitlistForm = () => {
       const content = await response.json();
 
       if (response.ok) {
-        setPopupContent({ status: "success", message: t("success") });
+        setPopupContent({ status: "success", message: t("waitlist.success") });
         return;
       }
 
-      setPopupContent({ status: "error", message: errorToMessage(content.status, t) });
+      setPopupContent({
+        status: "error",
+        message: errorToMessage(content.status, t),
+      });
     },
     [email, setPopupContent, t]
   );
@@ -64,12 +70,18 @@ const WaitlistForm = () => {
           type="email"
           onChange={changeValue}
         />
-        <button className="bg-white text-black px-12 fw py-4 font-bold rounded-full" type="submit">
+        <button
+          className="bg-white text-black px-12 fw py-4 font-bold rounded-full"
+          type="submit"
+        >
           <Trans i18nKey="waitlist.button"> Join the waitlist</Trans>
         </button>
       </form>
       {popupContent.status !== "hidden" && (
-        <div aria-live="polite" className={`bg-${color}-600 rounded absolute -bottom-8`}>
+        <div
+          aria-live="polite"
+          className={`bg-${color}-600 rounded absolute -bottom-10 p-2`}
+        >
           <span>{popupContent.message}</span>
           <button onClick={closePopup} className={`bg-${color}-700`}>
             OK
