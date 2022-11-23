@@ -1,0 +1,11 @@
+{
+  "waitlist": {
+    "button": "Join the waitlist",
+    "already-exists-error": "You already joined the Waitlist!",
+    "success": "Congrats! You are on the waitlist."
+  },
+  "splash": {
+    "headline": "LIKE A <1>bank</1><2></2>BUT BETTER IN<3></3><4>every</4> ASPECT"
+  },
+  "other": "Oops, something happened unexpectedly!"
+}

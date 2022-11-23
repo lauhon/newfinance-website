@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root{
+  --color-primary: #83DEA8;
+  --color-secondary: theme("colors.indigo.500");
+  --color-text: theme("colors.gray.900");
+  --color-text-offset: theme("colors.gray.600");
+  --color-text-contrast: theme("colors.gray.50");
+
+  --color-background: theme("colors.gray.900");
+  --color-background-offset: theme("colors.gray.100");
+  --color-border: theme("colors.gray.900" / 10%);
+
+  --color-background-footer:#000;
+
+}
