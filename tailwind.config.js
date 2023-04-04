@@ -6,13 +6,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Nunito", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
         serif: ["Source Serif 4", ...defaultTheme.fontFamily.serif],
       },
       colors: {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         contrast: "var(--color-background)",
+        black: "var(--color-black)",
       },
       textColor: {
         default: "var(--color-text)",
@@ -27,6 +28,16 @@ module.exports = {
       borderColor: {
         default: "var(--color-border)",
       },
+      boxShadow: {
+        innerPrimary : "0 0 0 2px var(--color-primary), inset 0 0 0 1px transparent, 0 0 0 0 transparent",
+        mdPrimary: " 0 0 0 0 var(--color-primary),inset 0 0 0 1px transparent, 0 0 0 0 transparent;",
+        innerBlack : "0 0 0 2px var(--color-black), inset 0 0 0 1px transparent, 0 0 0 0 transparent",
+        mdBlack: " 0 0 0 0 var(--color-black),inset 0 0 0 1px transparent, 0 0 0 0 transparent;"
+      },
+      borderWidth: {
+        DEFAULT: '0.8px',
+        '1': '1px'
+      } 
     },
   },
 

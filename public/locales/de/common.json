@@ -1,4 +1,10 @@
 {
+  "header": {
+    "one-liner": "Die Bank Alternative - made in Europe"
+  },
+  "general": {
+    "start": "Jetzt starten"
+  },
   "waitlist": {
     "button": "Warteliste beitreten",
     "already-exists-error": "Du bist bereits in der Warteliste!",

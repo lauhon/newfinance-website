@@ -1,4 +1,10 @@
 {
+  "header": {
+    "one-liner": "The banking alternative - made in Europe"
+  },
+  "general": {
+    "start": "Start now"
+  },
   "waitlist": {
     "button": "Join the waitlist",
     "already-exists-error": "You already joined the Waitlist!",
