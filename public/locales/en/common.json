@@ -1,6 +1,8 @@
 {
   "header": {
-    "one-liner": "The banking alternative - made in Europe"
+    "oneLiner": "The banking alternative - made in Europe",
+    "allFree": "All free",
+    "startButton": "Start now"
   },
   "general": {
     "start": "Start now"

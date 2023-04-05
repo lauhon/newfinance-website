@@ -1,6 +1,8 @@
 {
   "header": {
-    "one-liner": "Die Bank Alternative - made in Europe"
+    "oneLiner": "Die Bank Alternative - made in Europe",
+    "allFree": "Für lau",
+    "startButton": "Jetzt starten"
   },
   "general": {
     "start": "Jetzt starten"

@@ -1,6 +1,9 @@
+import { useTranslation } from "next-i18next";
 import LogoMark from "~/icons/logomark.svg";
 import ButtonPrimary from "../shared/buttons/button-primary";
 const Header = () => {
+  const { t } = useTranslation("common");
+
   return (
     <>
       <header
@@ -18,13 +21,16 @@ const Header = () => {
           <LogoMark className=" w-24 md:w-40" />
         </a>
         <span className="text-sm text-black hidden md:block">
-          The banking alternative — made in Europe
+          {t("header.oneLiner")}
         </span>
         <div className="">
           <span className="text-xs md:text-sm text-black mr-3 md:mr-4">
-            All free
+            {t("header.allFree")}
           </span>
-          <ButtonPrimary text="Start now" onClick={() => console.log("test")} />
+          <ButtonPrimary
+            text={t("header.startButton")}
+            onClick={() => console.log("test")}
+          />
         </div>
       </header>
     </>
