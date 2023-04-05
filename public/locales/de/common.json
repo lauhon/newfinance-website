@@ -13,5 +13,9 @@
   "splash": {
     "headline": "WIE EINE <1>bank</1><2></2>ABER BESSER IN<3></3><4>jedem</4> ASPEKT"
   },
-  "other": "Ein unerwarteter Fehler ist aufgetreten!"
+  "other": "Ein unerwarteter Fehler ist aufgetreten!",
+  "example": {
+    "useTranslation": "Von der useTranslation hook",
+    "transTag": "Das ist der Translation Tag"
+  }
 }

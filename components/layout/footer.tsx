@@ -1,6 +1,6 @@
+import Link from "next/link";
 import LogoSolo from "~/icons/logo-solo.svg";
 import LogoMark from "~/icons/logomark.svg";
-import Link from "../shared/link";
 import WaitlistButton from "../shared/waitlist-button";
 
 const Footer = () => {

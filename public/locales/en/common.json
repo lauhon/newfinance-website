@@ -13,5 +13,9 @@
   "splash": {
     "headline": "LIKE A <1>bank</1><2></2>BUT BETTER IN<3></3><4>every</4> ASPECT"
   },
-  "other": "Oops, something happened unexpectedly!"
+  "other": "Oops, something happened unexpectedly!",
+  "example": {
+    "useTranslation": "This is the useTranslation hook",
+    "transTag": "This is a translation tag"
+  }
 }
