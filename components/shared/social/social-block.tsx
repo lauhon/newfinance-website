@@ -18,11 +18,15 @@ const SocialBlock = ({}: SocialBlockProps) => {
   };
 
   return (
-    <div className=" align-center inline-block">
-      <ButtonBlack text={t("social.followUs")} onClick={openTwitter} />
-      <ButtonIcon iconName="Twitter" onClick={openTwitter} />
-      <ButtonIcon iconName="Instagram" onClick={openInstagram} />
-      <ButtonIcon iconName="Linkedin" onClick={openLinkedin} />
+    <div className="flex flex-col justify-items-end md:flex-row align-center">
+      <div>
+        <ButtonBlack text={t("social.followUs")} onClick={openTwitter} />
+      </div>
+      <div className="inline-block justify-center text-center">
+        <ButtonIcon iconName="Twitter" onClick={openTwitter} />
+        <ButtonIcon iconName="Instagram" onClick={openInstagram} />
+        <ButtonIcon iconName="Linkedin" onClick={openLinkedin} />
+      </div>
     </div>
   );
 };

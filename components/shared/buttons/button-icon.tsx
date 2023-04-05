@@ -12,7 +12,7 @@ const ButtonIcon = ({ iconName, onClick }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className="px-3 md:px-4 py-2 md:py-3 font-regular rounded-full transition-all text-black text-xs md:text-sm"
+      className="px-2 md:px-4 py-2 md:py-3 font-regular rounded-full transition-all text-black text-xs md:text-sm"
     >
       <IconTag size="16" />
     </button>
