@@ -4,8 +4,13 @@
     "allFree": "All free",
     "startButton": "Start now"
   },
-  "general": {
-    "start": "Start now"
+  "social": {
+    "followUs": "Follow us"
+  },
+  "links": {
+    "jobs": "Jobs",
+    "privacy": "Privacy Policy",
+    "contact": "Contact"
   },
   "waitlist": {
     "button": "Join the waitlist",

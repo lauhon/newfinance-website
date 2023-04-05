@@ -16,7 +16,8 @@ module.exports = {
         black: "var(--color-black)",
       },
       textColor: {
-        default: "var(--color-text)",
+        default: "var(--color-text-primary)",
+        secondary: "var(--color-text-secondary)",
         offset: "var(--color-text-offset)",
         contrast: "var(--color-text-contrast)",
       },

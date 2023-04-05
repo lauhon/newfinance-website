@@ -1,5 +1,5 @@
 interface ButtonProps {
-  text?: string;
+  text?: any;
   onClick?: () => void;
 }
 

@@ -4,8 +4,13 @@
     "allFree": "Für lau",
     "startButton": "Jetzt starten"
   },
-  "general": {
-    "start": "Jetzt starten"
+  "social": {
+    "followUs": "Folge uns"
+  },
+  "links": {
+    "jobs": "Jobs",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt"
   },
   "waitlist": {
     "button": "Warteliste beitreten",
