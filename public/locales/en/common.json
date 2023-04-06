@@ -12,13 +12,15 @@
     "privacy": "Privacy Policy",
     "contact": "Contact"
   },
+  "splash": {
+    "headline": "The ₿-Standard is<br>on the way",
+    "headlineAlternative": "Don't miss out on the<br>₿-Standard",
+    "tagline": "Your new private account made for hard times. Leave your bank behind and save your money. Your lightning enabled wallet."
+  },
   "waitlist": {
     "button": "Join the waitlist",
     "already-exists-error": "You already joined the Waitlist!",
     "success": "Congrats! You are on the waitlist."
-  },
-  "splash": {
-    "headline": "LIKE A <1>bank</1><2></2>BUT BETTER IN<3></3><4>every</4> ASPECT"
   },
   "other": "Oops, something happened unexpectedly!",
   "example": {

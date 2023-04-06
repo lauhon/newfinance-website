@@ -1,98 +1,49 @@
+import { Trans } from "next-i18next";
 import Image from "next/image";
-import ArrowLink from "~/icons/arrow-link.svg";
-import background from "~/public/images/home/background.jpg";
-import iPhone from "~/public/images/home/iPhone.png";
-import WaitlistForm from "../shared/waitlist-form";
+import SocialBlock from "../shared/social/social-block";
 
 const Splash = () => {
   return (
-    <section className="relative h-full bg-black text-white">
-      <div className="absolute inset-0 overflow-hidden h-screen w-full">
-        <Image src={background} alt="" className="w-full h-full" />
-        <div className="w-full bg-black h-64 -mt-32 blur-3xl"></div>
+    <section className="flex mx-3 md:mx-5 border-1 border-black rounded-large mt-1 flex-col">
+      <div className="w-full mt-16">
+        <h1 className="text-6xl text-center font-manrope font-medium leading-snug">
+          <Trans i18nKey="splash.headline" />
+        </h1>
       </div>
-      <div className="relative h-full flex flex-col items-center pt-52 flex-1 justify-start space-y-16 pb-32">
-        <h2 className="text-center mx-2.5 text-8xl">
-          {/* <Trans i18nKey="splash.headline">
-            WIE EINE <span className="text-pink-400 font-thin font-serif">bank</span>
-            <br></br>
-            ABER BESSER IN
-            <br></br>
-            <span className="text-primary font-thin font-serif">jedem</span> ASPEKT
-          </Trans> */}
-        </h2>
-        <div>
-          <WaitlistForm />
-        </div>
-        <div className="mx-16">
-          <Image src={iPhone} alt="iPhone 13 with Screenshot of the Superlight App" />
-        </div>
-      </div>
-      <div className="wrapper text-black bg-primary flex">
-        <a className="py-2 text-lg marquee flex" href="https://zmartup.com" target="_blank" rel="noreferrer">
-          <span className="sr-only">Go to crowd Investing Page in new Tab</span>
-          <p aria-hidden="true">
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            FINANZIERUNGSRUNDE IST AKTIV
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            SICHERE DIR DEINEN ANTEIL
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            INVESTIERE JETZT
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            FINANZIERUNGSRUNDE IST AKTIV
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            SICHERE DIR DEINEN ANTEIL
+      <div className="flex mt-12 gap-12">
+        <div className="flex flex-col flex-1 text-right items-end justify-end mb-12">
+          <SocialBlock />
+          <p className="leading-relaxed mt-6 w-3/4">
+            <Trans i18nKey="splash.tagline" />
           </p>
-          <p aria-hidden="true">
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            FINANZIERUNGSRUNDE IST AKTIV
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            SICHERE DIR DEINEN ANTEIL
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            INVESTIERE JETZT
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            FINANZIERUNGSRUNDE IST AKTIV
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            SICHERE DIR DEINEN ANTEIL
-          </p>
-        </a>
+        </div>
+        <div className="flex justify-center">
+          <Image
+            alt="Image of a phone"
+            src="/../public/images/Phone.png"
+            className=""
+            width="300"
+            height="500"
+          />
+        </div>
+        <div className="flex flex-1 flex-col text-right">
+          <h2 className="text-3xl font-manrope font-regular mt-12 mr-3">
+            Self custody
+          </h2>
+          <div className="border-b-1 border-black w-[calc(100%+100px)] ml-[-100px]" />
+          <h2 className="text-3xl font-manrope font-regular mt-20 mr-3">
+            Safety
+          </h2>
+          <div className="border-b-1 border-black w-[calc(100%+175px)] ml-[-175px]" />
+          <h2 className="text-3xl font-manrope font-regular mt-20 mr-3">
+            Banking compatible
+          </h2>
+          <div className="border-b-1 border-black w-[calc(100%+250px)] ml-[-250px]" />
+        </div>
       </div>
-      <style jsx>
-        {`
-          @media (prefers-reduced-motion) {
-            .marquee {
-              animation: none;
-            }
-          }
-
-          .wrapper {
-            max-width: 100%;
-            overflow: hidden;
-          }
-
-          .marquee {
-            white-space: nowrap;
-            animation: marquee 10s linear infinite;
-            display: flex;
-            flex-direction: row;
-          }
-
-          .marquee p {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-          }
-
-          @keyframes marquee {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-        `}
-      </style>
+      <div className="bg-black w-full rounded-b-large text-center py-12 cursor-pointer">
+        <span className="text-white text-2xl ">Get an invitation</span>
+      </div>
     </section>
   );
 };

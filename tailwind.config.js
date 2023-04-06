@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        manrope: ["Manrope"],
         serif: ["Source Serif 4", ...defaultTheme.fontFamily.serif],
       },
       colors: {
@@ -37,8 +38,12 @@ module.exports = {
       },
       borderWidth: {
         DEFAULT: '0.8px',
-        '1': '1px'
-      } 
+        '1': '1px',
+        
+      } ,
+      borderRadius: {
+        "large" : "46px"
+      }
     },
   },
 

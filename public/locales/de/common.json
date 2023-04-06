@@ -12,13 +12,15 @@
     "privacy": "Datenschutz",
     "contact": "Kontakt"
   },
+  "splash": {
+    "headline": "Der ₿-Standard ist<br>im Kommen",
+    "headlineAlternative": "Verpasse nicht den<br>₿-Standard",
+    "tagline": "Your new private account made for hard times. Leave your bank behind and save your money. Your lightning enabled wallet."
+  },
   "waitlist": {
     "button": "Warteliste beitreten",
     "already-exists-error": "Du bist bereits in der Warteliste!",
     "success": "Glückwunsch! Du bist in der Warteliste."
-  },
-  "splash": {
-    "headline": "WIE EINE <1>bank</1><2></2>ABER BESSER IN<3></3><4>jedem</4> ASPEKT"
   },
   "other": "Ein unerwarteter Fehler ist aufgetreten!",
   "example": {

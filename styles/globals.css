@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Manrope";
+  src: url("../public/fonts/Manrope-VariableFont_wght.ttf");
+}
 
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
 
 :root{
   --color-primary: #90F7F0;
@@ -14,4 +22,6 @@
 
   --color-black: #000000;
   --color-button-text-primary: #ffffff;
+
+  --color-border: #000000;
 }
