@@ -17,6 +17,11 @@
     "headlineAlternative": "Don't miss out on the<br>₿-Standard",
     "tagline": "Your new private account made for hard times. Leave your bank behind and save your money. Your lightning enabled wallet."
   },
+  "qualities": {
+    "first": "Unstable banking systems put everyone's money at risk — from individuals to businesses — but we're all dependent on it.",
+    "second": "With our private bitcoin account, you disconnect yourself from banks and keep only their benefits.",
+    "third": "That way, only you manage your money on your own terms, and stay ahead of the game."
+  },
   "waitlist": {
     "button": "Join the waitlist",
     "already-exists-error": "You already joined the Waitlist!",
