@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import FAQ from "~/components/home/faq";
 import Qualities from "~/components/home/qualities";
 import Splash from "~/components/home/splash";
 import Header from "~/components/layout/header";
@@ -13,6 +14,7 @@ const Home = () => {
       <Header />
       <Splash />
       <Qualities />
+      <FAQ />
     </Layout>
   );
 };

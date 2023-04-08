@@ -15,6 +15,7 @@ module.exports = {
         secondary: "var(--color-secondary)",
         contrast: "var(--color-background)",
         black: "var(--color-black)",
+        text: "var(--color-text-p)"
       },
       textColor: {
         default: "var(--color-text-primary)",

@@ -22,6 +22,9 @@
     "second": "With our private bitcoin account, you disconnect yourself from banks and keep only their benefits.",
     "third": "That way, only you manage your money on your own terms, and stay ahead of the game."
   },
+  "faq": {
+    "heading": "Da ist noch mehr dahinter"
+  },
   "waitlist": {
     "button": "Warteliste beitreten",
     "already-exists-error": "Du bist bereits in der Warteliste!",

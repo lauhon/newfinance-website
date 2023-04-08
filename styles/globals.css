@@ -15,8 +15,10 @@
 :root{
   --color-primary: #90F7F0;
 
-  --color-text-primary: #000000;
+  --color-text-primary: #0F172A;
   --color-text-secondary: #494A52;
+
+  --color-text-p: #334155;
 
   --color-background: #ffffff;
 

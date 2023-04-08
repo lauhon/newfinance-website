@@ -1,36 +1,84 @@
-import {useState} from 'react';
-import FAQItem from '../shared/faq/faq-item';
+import { Trans } from "next-i18next";
+import { useState } from "react";
+import ButtonBlack from "../shared/buttons/button-black";
+import FAQItem from "../shared/faq/faq-item";
 
 const faqItems = [
   {
-    id: 'wie-anlegen',
-    title: 'Wie kann ich ein neues Wallet anlegen',
-    children: <p>Wallet downloaden starten blabla</p>,
+    id: "on-bitcoin-and-banking",
+    title: "On bitcoin and banking...",
+    children: (
+      <div>
+        <p className="mt-3 mb-4">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <p className="mt-3 mb-4">
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+          amet.
+        </p>
+      </div>
+    ),
     isExpanded: false,
   },
   {
-    id: 'wo-zahlen',
-    title: 'Wo kann ich mit Superlight bezahlen?',
-    children: <p>überall blablabla</p>,
+    id: "removing-the-barriers-of-crypto",
+    title: "Removing the barries of crypto...",
+    children: (
+      <div>
+        <p className="mt-3 mb-4">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <p className="mt-3 mb-4">
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+          amet.
+        </p>
+      </div>
+    ),
     isExpanded: false,
   },
   {
-    id: 'wieso-billig',
-    title: 'Wieso sind die Gebühren niedriger als bei anderen Wallets?',
-    children: <p>Tech stuff super toll</p>,
+    id: "bitcoin-in-daily-life",
+    title: "Using bitcoin in daily life...",
+    children: (
+      <div>
+        <p className="mt-3 mb-4">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <p className="mt-3 mb-4">
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+          amet.
+        </p>
+      </div>
+    ),
     isExpanded: false,
   },
   {
-    id: 'seid-bank',
-    title: 'Seid ihr eine Bank?',
+    id: "what-to-expect-from-us",
+    title: "What to expect from us",
     isExpanded: false,
-    children: <p>na sicha ned. Lorem ipsum dolores abridge</p>,
-  },
-  {
-    id: 'kann-iban-senden',
-    title: 'Kann ich eine Kryptowährung auch an eine Iban senden?',
-    children: <p>na kloa blabla</p>,
-    isExpanded: false,
+    children: (
+      <div>
+        <p className="mt-3 mb-4">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <p className="mt-3 mb-4">
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+          amet.
+        </p>
+      </div>
+    ),
   },
 ];
 
@@ -39,14 +87,26 @@ const FAQ = () => {
   const [anyOpen, setAnyOpen] = useState(false);
 
   const clicked = (clickedIndex: number) => {
-    setItems(faqItems.map((item, index) => ({...item, isExpanded: index === clickedIndex})));
+    setItems(
+      faqItems.map((item, index) => ({
+        ...item,
+        isExpanded: index === clickedIndex,
+      }))
+    );
     setAnyOpen(clickedIndex !== -1);
   };
 
   const list = (
     <ul>
-      {items.map(({children, title, id, isExpanded}, index) => (
-        <FAQItem key={id + index} title={title} isExpanded={isExpanded} onClick={clicked} index={index} id={id}>
+      {items.map(({ children, title, id, isExpanded }, index) => (
+        <FAQItem
+          key={id + index}
+          title={title}
+          isExpanded={isExpanded}
+          onClick={clicked}
+          index={index}
+          id={id}
+        >
           {children}
         </FAQItem>
       ))}
@@ -54,9 +114,14 @@ const FAQ = () => {
   );
 
   return (
-    <section className=" px-2 md:px-44">
-      <h2 className=" text-3xl mb-12">Frequently asked Questions</h2>
+    <section className="text-center mt-32 mx-3 md:w-3/5 md:mt-72 md:m-auto">
+      <h2 className="text-manrope text-medium text-3xl mb-14">
+        <Trans i18nKey="faq.heading" />
+      </h2>
       {list}
+      <div className="mt-12">
+        <ButtonBlack text="Ask us directly" />
+      </div>
     </section>
   );
 };
