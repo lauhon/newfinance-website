@@ -2,7 +2,10 @@
   "header": {
     "oneLiner": "The banking alternative - made in Europe",
     "allFree": "All free",
-    "startButton": "Start now"
+    "startButton": "Start now",
+    "a1": "What We Aim For",
+    "a2": "Jobs",
+    "a3": "@operationsuperlight"
   },
   "social": {
     "followUs": "Follow us"

@@ -4,17 +4,18 @@ export type IconName = keyof typeof Icon;
 
 interface ButtonProps {
   iconName: IconName;
+  lg?: Boolean;
   onClick?: () => void;
 }
 
-const ButtonIcon = ({ iconName, onClick }: ButtonProps) => {
+const ButtonIcon = ({ iconName, lg, onClick }: ButtonProps) => {
   const IconTag = Icon[iconName];
   return (
     <button
       onClick={onClick}
-      className="font-regular rounded-full transition-all text-black text-xs md:text-sm"
+      className="font-regular rounded-full transition-all text-black"
     >
-      <IconTag size="16" />
+      <IconTag size={lg ? "28" : "16"} />
     </button>
   );
 };

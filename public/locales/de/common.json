@@ -2,7 +2,10 @@
   "header": {
     "oneLiner": "Die Bank Alternative - made in Europe",
     "allFree": "Für lau",
-    "startButton": "Jetzt starten"
+    "startButton": "Jetzt starten",
+    "a1": "Unser Ziel",
+    "a2": "Jobs",
+    "a3": "@operationsuperlight"
   },
   "social": {
     "followUs": "Folge uns"

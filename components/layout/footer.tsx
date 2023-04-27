@@ -5,7 +5,7 @@ import SocialBlock from "../shared/social/social-block";
 
 const Footer = () => {
   return (
-    <footer className="flex mx-3 md:mx-5 py-20 md:py-36 text-xs flex-row justify-between bg-footer">
+    <footer className="flex mx-3 md:mx-5 pt-20 md:pt-36 pb-16 text-xs flex-row justify-between bg-footer">
       <div className="flex flex-col md:flex-row gap-y-3">
         <div className="mt-3 md:mt-0">
           <LogoMark className=" w-24 md:w-40 mr-12 md:mr-20 mb-3" />

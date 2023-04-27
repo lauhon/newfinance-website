@@ -7,7 +7,7 @@ const ButtonPrimary = ({ text = "Text", onClick }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className="bg-primary px-3 md:px-4 py-2 md:py-3 font-regular rounded-full shadow-mdPrimary hover:shadow-innerPrimary transition-all text-black text-xs md:text-sm"
+      className="bg-gradient-to-r from-[#3A3C3A] to-[#040504] border-1 border-[#3A3C3A] px-4 md:px-5 py-3 md:py-3 font-regular rounded-full shadow-mdBlack hover:shadow-innerBlack transition-all text-white text-sm font-manrope font-medium"
     >
       {text}
     </button>
