@@ -7,6 +7,11 @@
     "a2": "Jobs",
     "a3": "@operationsuperlight"
   },
+  "subheader": {
+    "bitcoin": "Bitcoin",
+    "wallet": "Self-hosted lightning wallet",
+    "link": "getsuperlight.com"
+  },
   "social": {
     "followUs": "Follow us"
   },
