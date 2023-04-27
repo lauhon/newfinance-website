@@ -8,7 +8,7 @@ class MyDocument extends Document {
     return (
       <Html lang={currentLocale as string}>
         <Head />
-        <body>
+        <body className="bg-default">
           <Main />
           <NextScript />
         </body>

@@ -21,9 +21,10 @@
     "contact": "Contact"
   },
   "splash": {
-    "headline": "The ₿-Standard is<br>on the way",
-    "headlineAlternative": "Don't miss out on the<br>₿-Standard",
-    "tagline": "Your new private account made for hard times. Leave your bank behind and save your money. Your lightning enabled wallet."
+    "headline": "Better money with<br/>₿itcoin - for individuals",
+    "headlineSmall": "Better money<br/>with ₿itcoin<br/>- for individuals",
+    "tagline": "Use Bitcoin with your lightning wallet - confidently.<br/>Hard times require hard money.",
+    "taglineSmall": "Use Bitcoin with your lightning wallet.<br/>Hard times require hard money."
   },
   "qualities": {
     "first": "Unstable banking systems put everyone's money at risk — from individuals to businesses — but we're all dependent on it.",

@@ -1,8 +1,8 @@
 import { useTranslation } from "next-i18next";
 import { useState } from "react";
 import LogoMark from "~/icons/logomark.svg";
+import ButtonBlack from "../shared/buttons/button-black";
 import ButtonIcon from "../shared/buttons/button-icon";
-import ButtonPrimary from "../shared/buttons/button-primary";
 const Header = () => {
   const { t } = useTranslation("common");
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -18,14 +18,20 @@ const Header = () => {
             <LogoMark className="" />
           </a>
           <div className="hidden md:flex h-[64px] ml-6 items-center border-black border-l-1">
-            <a className="ml-8 text-lg font-manrope hover:opacity-50" href="#">
+            <a
+              className="ml-6 lg:ml-8 text-lg font-manrope hover:opacity-50"
+              href="#"
+            >
               {t("header.a1")}
             </a>
-            <a className="ml-8 text-lg font-manrope hover:opacity-50" href="#">
+            <a
+              className="ml-6 lg:ml-8 text-lg font-manrope hover:opacity-50"
+              href="#"
+            >
               {t("header.a2")}
             </a>
             <a
-              className="ml-8 text-lg font-manrope text-secondary hover:opacity-50"
+              className="ml-6 lg:ml-8 text-lg font-manrope text-secondary hover:opacity-50"
               href="#"
             >
               {t("header.a3")}
@@ -33,10 +39,10 @@ const Header = () => {
           </div>
         </div>
         <div className="flex items-center">
-          <span className="text-sm text-black mr-3 md:mr-4 font-manrope">
+          <span className="hidden lg:block text-sm text-black mr-3 md:mr-4 font-manrope">
             {t("header.allFree")}
           </span>
-          <ButtonPrimary
+          <ButtonBlack
             text={t("header.startButton")}
             onClick={() => console.log("test")}
           />
@@ -57,14 +63,14 @@ const Header = () => {
               : "hidden"
           }
         >
-          <a className="text-4xl pb-3 font-manrope hover:opacity-50" href="#">
+          <a className="text-3xl pb-3 font-manrope hover:opacity-50" href="#">
             {t("header.a1")}
           </a>
-          <a className="text-4xl pb-3 font-manrope hover:opacity-50" href="#">
+          <a className="text-3xl pb-3 font-manrope hover:opacity-50" href="#">
             {t("header.a2")}
           </a>
           <a
-            className="text-4xl pb-3 font-manrope text-secondary hover:opacity-50"
+            className="text-3xl pb-3 font-manrope text-secondary hover:opacity-50"
             href="#"
           >
             {t("header.a3")}

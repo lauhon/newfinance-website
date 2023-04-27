@@ -1,7 +1,7 @@
 {
   "header": {
     "oneLiner": "Die Bank Alternative - made in Europe",
-    "allFree": "Für lau",
+    "allFree": "Kostenlos",
     "startButton": "Jetzt starten",
     "a1": "Unser Ziel",
     "a2": "Jobs",
@@ -21,9 +21,9 @@
     "contact": "Kontakt"
   },
   "splash": {
-    "headline": "Der ₿-Standard ist<br>im Kommen",
+    "headline": "Besseres Geld mit<br/>₿itcoin - für Privatpersonen",
     "headlineAlternative": "Verpasse nicht den<br>₿-Standard",
-    "tagline": "Your new private account made for hard times. Leave your bank behind and save your money. Your lightning enabled wallet."
+    "tagline": "Nutze Bitcoin mit deinem Lightning Wallet - sicher.<br/>Harte Zeiten erfordern hartes Geld."
   },
   "qualities": {
     "first": "Unstable banking systems put everyone's money at risk — from individuals to businesses — but we're all dependent on it.",
