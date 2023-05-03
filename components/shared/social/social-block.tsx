@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
-import ButtonBlack from "../buttons/button-black";
 import ButtonIcon from "../buttons/button-icon";
+import ButtonBlack from "../buttons/link-black";
 
 interface SocialBlockProps {}
 

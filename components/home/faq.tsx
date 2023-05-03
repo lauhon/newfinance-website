@@ -1,6 +1,6 @@
 import { Trans } from "next-i18next";
 import { useState } from "react";
-import ButtonBlack from "../shared/buttons/button-black";
+import ButtonBlack from "../shared/buttons/link-black";
 import FAQItem from "../shared/faq/faq-item";
 
 const faqItems = [

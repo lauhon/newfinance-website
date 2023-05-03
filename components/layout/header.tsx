@@ -1,8 +1,8 @@
 import { useTranslation } from "next-i18next";
 import { useState } from "react";
 import LogoMark from "~/icons/logomark.svg";
-import ButtonBlack from "../shared/buttons/button-black";
 import ButtonIcon from "../shared/buttons/button-icon";
+import LinkBlack from "../shared/buttons/link-black";
 const Header = () => {
   const { t } = useTranslation("common");
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -42,10 +42,7 @@ const Header = () => {
           <span className="hidden lg:block text-sm text-black mr-3 md:mr-4 font-manrope">
             {t("header.allFree")}
           </span>
-          <ButtonBlack
-            text={t("header.startButton")}
-            onClick={() => console.log("test")}
-          />
+          <LinkBlack href="/login" text={t("header.startButton")} />
           <div className="flex md:hidden ml-3">
             <ButtonIcon
               lg
