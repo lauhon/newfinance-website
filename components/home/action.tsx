@@ -1,34 +1,36 @@
-import { useTranslation } from "next-i18next";
-import BitcoinTag from "../shared/bitcoin/bitcoin-tag";
-import ButtonBlack from "../shared/buttons/link-black";
+import { Trans, useTranslation } from "next-i18next";
+import * as Icon from "react-feather";
+import ButtonSecondary from "../shared/buttons/button-secondary";
 
 const Action = () => {
   const { t } = useTranslation("common");
 
   return (
-    <section className="flex flex-col md:flex-row mx-3 md:mx-5 mt-32 md:mt-48 border-b-1 border-black pb-1">
-      <div className="flex-1 flex border-1 border-black rounded-3xl md:rounded-large aspect-[1.25/1] md:aspect-[1.375/1] bg-[url('../public/images/bitcoin_pre.png')] bg-center">
-        <div className="bg-black mt-auto rounded-b-3xl md:rounded-b-large w-full">
-          <h3 className="text-white p-8 md:p-12 text-2xl md:text-4xl font-manrope font-medium">
-            Ready to dive in the ₿-rabithole?
-          </h3>
+    <section className="flex relative justify-center mt-20 pb-64 flex-col bg-gradient-to-b from-[#111112] to-[#09090B]">
+      <div className="h-px w-full bg-gradient-to-r from-[rgba(255,255,255,0)] via-[#CDD0D2] to-[rgba(255,255,255,0)] mb-56"></div>
+      <div className="flex z-0 justify-center absolute w-full h-full mx-auto top-1">
+        <div
+          className="w-5/6 h-full opacity-50"
+          style={{
+            marginTop: "-150px",
+            background:
+              "radial-gradient(rgba(209,232,242,0.3), rgba(216,235,243,0), rgba(216,235,243,0))",
+          }}
+        >
+          {" "}
         </div>
       </div>
-      <div className="flex flex-1 flex-col border-1 border-black rounded-3xl md:rounded-large aspect-[1.375/1] justify-between">
-        <div className="p-5 md:p-12">
-          <BitcoinTag />
-        </div>
-        <div className="p-8 md:p-12">
-          <h3 className="text-2xl md:text-4xl font-manrope font-medium mb-4 md:mb-8">
-            Experience your journey of independant money.
-          </h3>
-          <div>
-            <ButtonBlack text="Start now" />
-            <span className="text-xs md:text-sm text-black ml-3 md:ml-4">
-              {t("header.allFree")}
-            </span>
-          </div>
-        </div>
+      <h1 className="text-white z-10 font-semibold font-manrope text-[2rem] sm:text-[2.6rem] md:text-[3.2rem] lg:text-[4rem] leading-tight text-center">
+        Lets make your money
+        <br />
+        independant and free
+      </h1>
+      <div className="flex z-10  justify-center mt-6">
+        <ButtonSecondary text="Move to better money" />
+      </div>
+      <div className="flex z-10  justify-center flex-row items-center mt-6 text-secondary">
+        <Icon.Info size="16" color="white" className="mr-1" />
+        <Trans i18nKey="header.allFree" />
       </div>
     </section>
   );

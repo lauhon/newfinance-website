@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <header
         id="page-header"
-        className="z-20 h-[64px] sticky top-0 flex items-center justify-between bg-white px-5 md:px-6 border-b-1 border-black"
+        className="z-20 h-[64px] flex items-center justify-between bg-white px-5 md:px-6 border-b-1 border-black"
       >
         <div className="flex items-center">
           <a className="justify-start" href="#">
@@ -42,7 +42,7 @@ const Header = () => {
           <span className="hidden lg:block text-sm text-black mr-3 md:mr-4 font-manrope">
             {t("header.allFree")}
           </span>
-          <LinkBlack href="/login" text={t("header.startButton")} />
+          <LinkBlack href="login" text={t("header.startButton")} />
           <div className="flex md:hidden ml-3">
             <ButtonIcon
               lg

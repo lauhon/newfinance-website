@@ -6,7 +6,7 @@ const Subheader = () => {
     <>
       <div
         id="page-subheader"
-        className="sticky top-[63px] flex justify-end bg-transparent px-5 md:px-6 my-2"
+        className="sticky top-2 flex justify-end bg-transparent px-5 md:px-6 my-2"
       >
         <span className="font-manrope text-2xl font-bold mr-2">v1.1</span>
         <div className="hidden sm:flex items-center bg-white border-black border-1 border-r-0 pl-2 pr-4">
