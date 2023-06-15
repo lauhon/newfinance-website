@@ -7,19 +7,15 @@ const Splash = () => {
 
   return (
     <section className="flex items-center px-5 md:px-5 pt-8 flex-col">
-      <div className="flex flex-col items-center mt-8 md:mt-12">
+      <div className="flex flex-col items-center mt-8 md:mt-24">
+        <div className="py-1 px-3 rounded-full bg-[#7BFAEC] font-manrope text-sm mb-2">
+          <span>Together, lets replace the banks</span>
+        </div>
         <h1 className="text-[2rem] sm:text-[2.6rem] md:text-[3.2rem] lg:text-[4rem] text-center font-manrope font-bold tracking-tight leading-tight">
           <Trans i18nKey="splash.headline" />
         </h1>
-        <p className="text-center text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] text-secondary font-inter tracking-tight leading-relaxed mt-4 md:mt-6">
-          <span className="hidden sm:block">
-            <Trans i18nKey="splash.tagline" />
-          </span>
-          <span className="block sm:hidden">
-            <Trans i18nKey="splash.taglineSmall" />
-          </span>
-        </p>
-        <div className="mt-6 md:mt-12">
+
+        <div className="mt-6 md:mt-8">
           <ButtonPrimary text="Move to better money" />
         </div>
         <div className="flex flex-row items-center mt-3 text-secondary">

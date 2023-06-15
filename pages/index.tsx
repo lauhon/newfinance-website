@@ -1,12 +1,8 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import Action from "~/components/home/action";
-import FAQ from "~/components/home/faq";
-import Qualities from "~/components/home/qualities";
 import Splash from "~/components/home/splash";
 import Header from "~/components/layout/header";
 import Layout from "~/components/layout/layout";
-import Subheader from "~/components/layout/subheader";
 
 const Home = () => {
   const { t } = useTranslation("common");
@@ -14,11 +10,7 @@ const Home = () => {
   return (
     <Layout>
       <Header />
-      <Subheader />
       <Splash />
-      <Qualities />
-      <FAQ />
-      <Action />
     </Layout>
   );
 };
