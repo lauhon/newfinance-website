@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { ReactNode } from "react";
-import Footer from "./footer";
 
-const description = "Superlight. Send, recieve and pay with Cryptocurrency. Without transaction costs.";
+const description =
+  "Superlight. Send, recieve and pay with Cryptocurrency. Without transaction costs.";
 
 type Props = {
   children: ReactNode;
@@ -29,7 +29,10 @@ const Layout = ({ children }: Props) => {
         <meta property="og:description" content={description} />
         <meta name="twitter:card" content="summary_large_image" />
 
-        <meta property="og:image" content="https://example.com/images/social.png" />
+        <meta
+          property="og:image"
+          content="https://example.com/images/social.png"
+        />
         <meta property="og:url" content="https://example.com" />
 
         <link rel="alternate" href="http://example.com" hrefLang="x-default" />
@@ -37,7 +40,6 @@ const Layout = ({ children }: Props) => {
         <link rel="alternate" href="http://example.com/de" hrefLang="de" />
       </Head>
       {children}
-      <Footer />
     </>
   );
 };

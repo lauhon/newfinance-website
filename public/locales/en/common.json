@@ -1,7 +1,7 @@
 {
   "header": {
     "oneLiner": "The banking alternative - made in Europe",
-    "allFree": "All free",
+    "free": "Now for free",
     "startButton": "Join Private Beta",
     "a1": "What We Aim For",
     "a2": "Jobs",
@@ -21,7 +21,8 @@
     "contact": "Contact"
   },
   "splash": {
-    "headline": "Better money with<br/>₿itcoin - for individuals",
+    "headline_1": "Superlight gives you better money with ₿itcoin — ",
+    "headline_2": "with a wallet made to replace your bank. ‘Cause hard times require hard money.",
     "headlineSmall": "Better money<br/>with ₿itcoin<br/>- for individuals",
     "tagline": "Use Bitcoin with your lightning wallet - confidently.<br/>Hard times require hard money.",
     "taglineSmall": "Use Bitcoin with your lightning wallet.<br/>Hard times require hard money."
