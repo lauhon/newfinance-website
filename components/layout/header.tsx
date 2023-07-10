@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <header
         id="page-header"
-        className="z-20 h-[64px] fixed w-full flex items-center justify-between bg-transparent px-2 md:px-28"
+        className="z-20 h-[64px] fixed w-full flex items-center justify-between bg-transparent px-2 md:px-14 lg:px-28"
       >
         <div className="flex items-center">
           <a className="justify-start" href="#">
