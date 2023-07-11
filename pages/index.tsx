@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Qualities from "~/components/home/qualities/qualities";
 import Splash from "~/components/home/splash";
+import TechnologyArea from "~/components/home/technology";
 import VideoArea from "~/components/home/video";
 import Header from "~/components/layout/header";
 import Layout from "~/components/layout/layout";
@@ -15,6 +16,7 @@ const Home = () => {
       <Splash />
       <VideoArea />
       <Qualities />
+      <TechnologyArea />
     </Layout>
   );
 };
