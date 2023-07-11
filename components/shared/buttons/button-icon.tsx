@@ -15,7 +15,7 @@ const ButtonIcon = ({ iconName, lg, onClick }: ButtonProps) => {
       onClick={onClick}
       className="font-regular rounded-full transition-all text-black"
     >
-      <IconTag size={lg ? "28" : "16"} />
+      <IconTag className="text-gray-400" size={lg ? "28" : "16"} />
     </button>
   );
 };

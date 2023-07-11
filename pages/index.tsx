@@ -7,6 +7,7 @@ import RoadmapArea from "~/components/home/roadmap";
 import Splash from "~/components/home/splash";
 import TechnologyArea from "~/components/home/technology";
 import VideoArea from "~/components/home/video";
+import Footer from "~/components/layout/footer";
 import Header from "~/components/layout/header";
 import Layout from "~/components/layout/layout";
 
@@ -23,6 +24,7 @@ const Home = () => {
       <RoadmapArea />
       <FAQ />
       <CallToActionArea />
+      <Footer />
     </Layout>
   );
 };
