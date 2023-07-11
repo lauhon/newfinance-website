@@ -12,37 +12,31 @@ type Props = {
 
 function FAQItem({ id, title, children, onClick, isExpanded, index }: Props) {
   return (
-    <li className="border-b-1 border-[#E4E9ED] mt-4 border-black group">
+    <li className="mt-4 group">
       <h3 className="mb-4 flex">
         <button
-          className="text-left flex-1 flex items-center text-lg"
+          className="text-left flex-1 flex items-center text-lg text-white font-manrope font-regular group-hover:opacity-80 transition-all"
           id={`${id}-header`}
           onClick={() => onClick(isExpanded ? -1 : index)}
           aria-controls={`${id}-panel`}
           aria-expanded={isExpanded}
         >
-          {title}
-          <div
+          <Icon.Plus
+            size="24"
+            className="text-[#4C3EF7] mr-2"
             style={{
-              backgroundColor: isExpanded ? "black" : "",
+              transition: "transform 0.15s",
+              transform: `rotate(${isExpanded ? "90deg" : 0})`,
             }}
-            className="bg-white group-hover:bg-black ml-auto mr-3 rounded-full p-1 transition-all"
-          >
-            <Icon.ChevronRight
-              size="18"
-              className="text-[#B5BCC0] group-hover:text-[#ffffff] transition-all"
-              style={{
-                transition: "transform 0.15s",
-                transform: `rotate(${isExpanded ? "90deg" : 0})`,
-              }}
-            />
-          </div>
+          />
+          {title}
         </button>
       </h3>
+
       <article
         id={`${id}-panel`}
         aria-labelledby={`${id}-header`}
-        className="text-base text-text text-left leading-relaxed font-inter w-full lg:w-3/4 pr-4 transition-all"
+        className="text-base text-zinc-400 opacity-10 text-left leading-relaxed font-manrope font-regular w-full pr-4 transition-all"
         style={{
           transition: "all 0.2s ease",
           overflow: "hidden",
@@ -53,6 +47,7 @@ function FAQItem({ id, title, children, onClick, isExpanded, index }: Props) {
       >
         {children}
       </article>
+      <div className="w-full h-[1px] bg-gradient-to-r from-[#2C303A]"></div>
     </li>
   );
 }

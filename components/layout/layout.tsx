@@ -21,10 +21,10 @@ const Layout = ({ children }: Props) => {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         {/* <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> */}
 
-        <title>Superlight</title>
+        <title>NewFinance©</title>
         <meta name="description" content={description} />
 
-        <meta property="og:title" content="Superlight" />
+        <meta property="og:title" content="NewFinance©" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content={description} />
         <meta name="twitter:card" content="summary_large_image" />

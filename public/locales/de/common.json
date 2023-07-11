@@ -42,7 +42,11 @@
     "headline_2": "step by step"
   },
   "faq": {
-    "heading": "Da ist noch mehr dahinter"
+    "heading": "Frequently Asked Questions"
+  },
+  "cta": {
+    "headline_1": "Join the new European way to<br/> better money —",
+    "headline_2": "with a wallet made to."
   },
   "waitlist": {
     "button": "Warteliste beitreten",
