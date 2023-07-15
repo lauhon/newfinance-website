@@ -7,7 +7,7 @@ const Splash = () => {
   const { t } = useTranslation("common");
 
   return (
-    <section className="flex items-center px-5 md:px-5 pt-16 flex-col">
+    <section className="flex items-center px-5 md:px-0 pt-16 flex-col">
       <div className="flex flex-col items-center mt-28">
         <Link
           href="#"

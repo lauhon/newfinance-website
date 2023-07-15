@@ -1,14 +1,16 @@
 import { Trans } from "next-i18next";
+import Image from "next/image";
 import Link from "next/link";
-import LogoMarkWhite from "~/icons/logomark_white.svg";
 import SocialBlock from "../shared/social/social-block";
 
 const Footer = () => {
+  const logo = require("~/icons/LogoNewFinanceWhite.png");
+
   return (
     <footer className="flex justify-center content-center flex-col border-t-1 border-b-1 border-[#2C303A] transition-all px-6 md:px-14 lg:px-28 2xl:px-64  pt-32 pb-8 ">
       <div className="flex flex-col md:flex-row justify-between">
         <div className="mt-3 md:mt-0">
-          <LogoMarkWhite className=" w-40 md:w-40 mr-12 md:mr-20 mb-3" />
+          <Image className="h-[32px] w-auto" alt="NewFinance Logo" src={logo} />
         </div>
         <div className="flex flex-row space-x-20 mt-8 md:mt-2">
           <div className="flex flex-col space-y-3">
@@ -53,7 +55,7 @@ const Footer = () => {
         <div className="flex justify-start sm:justify-between items-center flex-col-reverse space-y-3 sm:space-y-0 sm:flex-row">
           <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-3 sm:space-y-0 mt-3 sm:mt-0">
             <span className="text-gray-500 text-xs font-manrope">
-              © 2023 Superlight GmbH, i.G.
+              © 2023 NewFinance GmbH, i.G.
             </span>
             <div className="flex flex-row justify-between sm:space-x-8">
               <Link

@@ -2,15 +2,7 @@
   "header": {
     "oneLiner": "Die Bank Alternative - made in Europe",
     "free": "Jetzt kostenlos",
-    "startButton": "Zur Privaten Beta",
-    "a1": "Unser Ziel",
-    "a2": "Jobs",
-    "a3": "@operationsuperlight"
-  },
-  "subheader": {
-    "bitcoin": "Bitcoin",
-    "wallet": "Self-hosted lightning wallet",
-    "link": "getsuperlight.com"
+    "startButton": "Zur Privaten Beta"
   },
   "social": {
     "followUs": "Folge uns"
@@ -19,10 +11,10 @@
     "jobs": "Jobs",
     "privacy": "Datenschutz",
     "contact": "Kontakt",
-    "tou": "Terms of User"
+    "tou": "Terms of Use"
   },
   "splash": {
-    "headline_1": "Superlight gives you better money with ₿itcoin — ",
+    "headline_1": "NewFinance gives you better money with ₿itcoin — ",
     "headline_2": "with a wallet made to replace your bank. ‘Cause hard times require hard money.",
     "headlineAlternative": "Verpasse nicht den<br>₿-Standard",
     "tagline": "Nutze Bitcoin mit deinem Lightning Wallet - sicher.<br/>Harte Zeiten erfordern hartes Geld."
