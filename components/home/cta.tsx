@@ -7,8 +7,8 @@ const CallToActionArea = () => {
   const { t } = useTranslation("common");
 
   return (
-    <section className="flex justify-center content-center bg-[#16181D] border-t-1 border-b-1 border-[#2C303A] transition-all px-2 md:px-14 lg:px-28 pt-32 pb-32 ">
-      <div className="w-[1000px] max-w-full space-y-4">
+    <section className="flex justify-center content-center bg-[#16181D] border-t-1 border-b-1 border-[#2C303A] transition-all px-6 md:px-14 lg:px-28 pt-32 pb-32 ">
+      <div className="w-[1000px] max-w-full space-y-2 sm:space-y-4">
         <div className="flex">
           <Link
             href="#"
@@ -23,18 +23,25 @@ const CallToActionArea = () => {
           </Link>
         </div>
 
-        <h1 className="w-full text-[2rem] md:text-[2.8rem] text-white font-manrope font-regular tracking-tight leading-tight">
+        <h1 className="hidden sm:block w-full text-[2rem] md:text-[2.8rem] text-white font-manrope font-regular tracking-tight leading-tight">
           <Trans i18nKey="cta.headline_1" />
           <span className="text-[#757679]">
             <Trans i18nKey="cta.headline_2" />
           </span>
         </h1>
 
-        <div className="flex flex-col sm:flex-row space-x-6">
-          <div className="mt-3.5">
+        <h1 className="sm:hidden w-full text-[2rem] md:text-[2.8rem] text-white font-manrope font-regular tracking-tight leading-tight">
+          <Trans i18nKey="cta.headline_1_xs" />
+          <span className="text-[#757679]">
+            <Trans i18nKey="cta.headline_2_xs" />
+          </span>
+        </h1>
+
+        <div className="flex flex-col items-starts sm:flex-row space-x-6">
+          <div className="flex mt-3.5">
             <ButtonArrowTall href="#" text="Move to better money" />
           </div>
-          <div className="flex flex-row items-center justify-center mt-4 text-secondary text-xs text-[#7D7E81] font-manrope font-regular">
+          <div className="flex flex-row items-center sm:justify-center justify-start mt-4 text-secondary text-xs text-[#7D7E81] font-manrope font-regular">
             <div className="flex w-3 h-3 bg-[#7D7E81] rounded-full items-center justify-center mr-1.5">
               <Icon.Check size={8} color="white" />
             </div>

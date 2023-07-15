@@ -94,7 +94,7 @@ const FAQ = () => {
   );
 
   return (
-    <section className="flex justify-center content-center transition-all items-center px-2 md:px-14 lg:px-28 pt-32 pb-32">
+    <section className="flex justify-center content-center transition-all items-center px-6 md:px-14 lg:px-28 pb-32 pt-32">
       <div className="flex w-[1000px] max-w-full flex-col md:flex-row space-x-2">
         <div className="md:w-1/2">
           <h2 className="text-manrope text-regular text-4xl mb-14 text-white mr-6">

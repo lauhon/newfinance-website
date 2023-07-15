@@ -5,7 +5,7 @@ const RoadmapArea = () => {
   const { t } = useTranslation("common");
 
   return (
-    <section className="flex transition-all items-center px-2 md:px-14 lg:px-28 pt-32 pb-32 flex-col space-y-16">
+    <section className="flex transition-all items-center px-6 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 flex-col space-y-8 md:space-y-16">
       <div className="text-center">
         <BabyText text="ROADMAP" />
         <h2 className="text-[1.6rem] md:text-[2.2rem] text-center font-manrope font-regular leading-tight mt-2 text-white">

@@ -69,7 +69,7 @@ const TechnologyArea = () => {
   return (
     <section
       ref={colorRef}
-      className="flex transition-all items-center px-2 md:px-14 lg:px-28 pt-32 pb-32 flex-col space-y-16"
+      className="flex transition-all items-center px-6 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 flex-col space-y-8 md:space-y-16"
     >
       <div className="text-center">
         <BabyText text="PRODUCT" />
@@ -81,9 +81,9 @@ const TechnologyArea = () => {
           </span>
         </h2>
       </div>
-      <div className="flex justify-center items-center  w-[1000px] max-w-full min-h-[500px] space-x-4">
-        <div className="w-[54%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px]"></div>
-        <div className="w-[46%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px]"></div>
+      <div className="flex justify-center items-center flex-col md:flex-row w-[1000px] max-w-full min-h-[500px] space-y-6 md:space-y-0 md:space-x-6">
+        <div className="w-full md:w-[54%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px]"></div>
+        <div className="w-full md:w-[46%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px]"></div>
       </div>
     </section>
   );
