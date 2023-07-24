@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
         manrope: ["Manrope"],
+        ibm: ["IBM Plex Serif"],
         serif: ["Source Serif 4", ...defaultTheme.fontFamily.serif],
       },
       colors: {
