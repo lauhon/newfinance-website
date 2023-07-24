@@ -1,13 +1,18 @@
+import Image from "next/image";
 import ButtonStandard from "~/components/shared/buttons/button-standard";
 import StandardInput from "~/components/shared/inputs/standard-input";
-import LogoMark from "~/icons/logomark.svg";
+const logo_dark = require("~/icons/LogoNewFinance.png");
 
 //bg-gradient-to-t from-[#FAFAFA] via-[#FFFFFF] to-[#FFFFFF]
 
 const Login = () => {
   return (
     <section className="flex items-center px-5 md:px-5 mt-48 flex-col ">
-      <LogoMark className="mb-6" />
+      <Image
+        className="h-[32px] w-auto mb-6"
+        alt="NewFinance Logo"
+        src={logo_dark}
+      />
 
       <StandardInput placeholder="Enter your email address..." />
       <div className="pt-3.5" />
