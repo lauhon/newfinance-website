@@ -1,10 +1,14 @@
 interface InputProps {
   text: string;
+  color?: string;
 }
 
-const BabyText = ({ text }: InputProps) => {
+const BabyText = ({ text, color = "#4C3EF7" }: InputProps) => {
   return (
-    <span className=" font-manrope text-xs text-[#4C3EF7] tracking-wider">
+    <span
+      style={{ color: color }}
+      className=" font-manrope text-xs tracking-wider"
+    >
       {" "}
       {text}{" "}
     </span>

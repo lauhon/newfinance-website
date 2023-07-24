@@ -1,5 +1,9 @@
 import { Trans, useTranslation } from "next-i18next";
 import { useEffect, useRef, useState } from "react";
+import bgBitcoin from "../../public/images/home/bg-bitcoin.png";
+import bgLightning from "../../public/images/home/bg-lightning.png";
+
+import Image from "next/image";
 import BabyText from "../shared/text/baby-text";
 
 const TechnologyArea = () => {
@@ -7,6 +11,8 @@ const TechnologyArea = () => {
 
   const [backgroundColor, setBackgroundColor] = useState("#FAFAFA");
   const colorRef = useRef(null);
+
+  const bitcoinImage = require("~/public/images/home/bitcoin.png");
 
   useEffect(() => {
     const handleIntersect = (entries: any[]) => {
@@ -82,8 +88,61 @@ const TechnologyArea = () => {
         </h2>
       </div>
       <div className="flex justify-center items-center flex-col md:flex-row w-[1000px] max-w-full min-h-[500px] space-y-6 md:space-y-0 md:space-x-6">
-        <div className="w-full md:w-[54%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px]"></div>
-        <div className="w-full md:w-[46%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px]"></div>
+        <div className="flex flex-col justify-end w-full md:w-[54%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px] p-6 gap-4">
+          <div
+            className="flex flex-col min-h-[320px] w-full"
+            style={{
+              backgroundImage: `url(${bgLightning.src})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundPositionY: "center",
+            }}
+          ></div>
+          <div>
+            <BabyText text="LIGHTNING NETWORK" />
+            <h2 className="font-manrope font-regular text-white text-xl mt-1">
+              Saving on every transaction
+            </h2>
+            <p className="font-manrope font-regular text-[#818287] text-xl mt-1">
+              Compared to other networks - by using lightning - you safe up to
+              99% payment fees.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-end w-full md:w-[46%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px] p-6 gap-4">
+          <div
+            className="flex flex-col min-h-[320px] w-full justify-center items-center"
+            style={{
+              backgroundImage: `url(${bgBitcoin.src})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundPositionY: "bottom",
+            }}
+          >
+            <Image src={bitcoinImage} alt="Dark Bitcoin" className="w-28" />
+            <div className="flex flex-row items-center gap-1">
+              <div className="rounded-full w-1 h-1 bg-[#82EA99]"></div>
+              <span className="text-white font-medium font-manrope text-4xl">
+                27.1k
+              </span>
+            </div>
+            <span className="text-[#82EA99] font-medium font-manrope text-xs">
+              +0.8k
+            </span>
+          </div>
+          <div>
+            <BabyText text="BITCOIN" color="#EC5D2A" />
+            <h2 className="font-manrope font-regular text-white text-xl mt-1">
+              We don't bet, we stack
+            </h2>
+            <p className="font-manrope font-regular text-[#818287] text-xl mt-1">
+              No high risk chasing for the next memecoin. Just. Bitcoin.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
