@@ -12,7 +12,7 @@ const Qualities = () => {
     <section className="flex items-center px-6 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 flex-col space-y-8 md:space-y-16">
       <div className="text-center">
         <BabyText text="WALLET" />
-        <h2 className="text-[1.6rem] md:text-[2.2rem] text-center font-manrope font-regular leading-tight mt-2">
+        <h2 className="text-[1.6rem] sm:text-[2.2rem] text-center font-manrope font-regular leading-tight mt-2">
           <Trans i18nKey="qualities.headline_1" />
           <br />
           <span className="text-[#757679]">
