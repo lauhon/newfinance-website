@@ -11,7 +11,8 @@ const CallToActionArea = () => {
       <div className="w-[1000px] max-w-full space-y-2 sm:space-y-4">
         <div className="flex">
           <Link
-            href="#"
+            href="https://barackobama.medium.com/"
+            target="_blank"
             className="flex flex-row text-white py-1.5 px-3 rounded-full font-manrope text-xs mb-3 border-1 border-[#2C303A] hover:border-[#464A55] transition-all duration-500"
           >
             <span>Why Non-Custodian matters</span>

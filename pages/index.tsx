@@ -19,12 +19,14 @@ const Home = () => {
       <Header />
       <Splash />
       <VideoArea />
-      <Qualities />
-      <TechnologyArea />
-      <RoadmapArea />
-      <FAQ />
-      <CallToActionArea />
-      <Footer />
+      <div id="darkBackground" className="bg-default">
+        <Qualities />
+        <TechnologyArea />
+        <RoadmapArea />
+        <FAQ />
+        <CallToActionArea />
+        <Footer />
+      </div>
     </Layout>
   );
 };

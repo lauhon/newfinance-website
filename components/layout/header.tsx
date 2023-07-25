@@ -13,7 +13,10 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (document.body.style.backgroundColor == "rgb(250, 250, 250)") {
+      if (
+        document.getElementById("darkBackground")?.style.backgroundColor ==
+        "rgb(250, 250, 250)"
+      ) {
         setDark(true);
       } else {
         setDark(false);
