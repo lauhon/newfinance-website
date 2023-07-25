@@ -6,7 +6,7 @@ class MyDocument extends Document {
     const currentLocale =
       this.props.__NEXT_DATA__.locale ?? i18nextConfig.i18n.defaultLocale;
     return (
-      <Html lang={currentLocale as string}>
+      <Html className="scroll-smooth" lang={currentLocale as string}>
         <Head />
         <body className="bg-default">
           <Main />

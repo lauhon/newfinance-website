@@ -12,20 +12,22 @@ const Header = () => {
   var logo;
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (
-        document.getElementById("darkBackground")?.style.backgroundColor ==
-        "rgb(250, 250, 250)"
-      ) {
-        setDark(true);
-      } else {
-        setDark(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if (document.getElementById("darkBackground") != null) {
+      const handleScroll = () => {
+        if (
+          document.getElementById("darkBackground")?.style.backgroundColor !==
+          "rgb(250, 250, 250)"
+        ) {
+          setDark(false);
+        } else {
+          setDark(true);
+        }
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   });
 
   return (
