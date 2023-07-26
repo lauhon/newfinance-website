@@ -15,38 +15,36 @@ const Footer = () => {
         <div className="flex flex-row space-x-20 mt-8 md:mt-2">
           <div className="flex flex-col space-y-3">
             <h3 className="text-xs text-gray-600">COMPANY</h3>
-            <Link
-              className="text-xs text-gray-400 font-manrope"
-              href="/imprint"
-            >
-              <Trans i18nKey="links.contact" />
+            <Link className="text-xs text-gray-400 font-manrope" href="/about">
+              <Trans i18nKey="links.about" />
             </Link>
             <Link
               className="text-xs text-gray-400 font-manrope"
-              href="/privacy"
+              href="/contact"
             >
+              <Trans i18nKey="links.contact" />
+            </Link>
+            <Link className="text-xs text-gray-400 font-manrope" href="/jobs">
               <Trans i18nKey="links.jobs" />
             </Link>
             <Link
               className="text-xs text-gray-400 font-manrope"
-              href="/privacy"
+              href="https://barackobama.medium.com/"
+              target="_blank"
             >
-              <Trans i18nKey="links.privacy" />
+              Blog
             </Link>
           </div>
           <div className="flex flex-col space-y-3">
             <h3 className="text-xs text-gray-600">RESOURCES</h3>
-            <Link
-              className="text-xs text-gray-400 font-manrope"
-              href="/privacy"
-            >
-              <Trans i18nKey="links.jobs" />
+            <Link className="text-xs text-gray-400 font-manrope" href="/faq">
+              <Trans i18nKey="links.faqs" />
             </Link>
             <Link
               className="text-xs text-gray-400 font-manrope"
-              href="/privacy"
+              href="/changelog"
             >
-              <Trans i18nKey="links.privacy" />
+              <Trans i18nKey="links.changelog" />
             </Link>
           </div>
         </div>
@@ -66,9 +64,9 @@ const Footer = () => {
               </Link>
               <Link
                 className="text-gray-500 text-xs font-manrope"
-                href="/privacy"
+                href="/imprint"
               >
-                <Trans i18nKey="links.tou" />
+                <Trans i18nKey="links.imprint" />
               </Link>
             </div>
           </div>

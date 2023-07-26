@@ -31,7 +31,7 @@ const TechnologyArea = () => {
                 const opacity = Math.min(scrollDiff / maxScroll, 1); // Interpolieren zwischen 0 und 1
 
                 const startColor = [250, 250, 250]; // Startfarbe in RGB-Werten (hier: #FAFAFA)
-                const endColor = [17, 19, 24]; // Endfarbe in RGB-Werten (hier: #111318)
+                const endColor = [12, 13, 17]; // Endfarbe in RGB-Werten (hier: #0C0D11)
 
                 const interpolatedColor = startColor.map(
                   (startValue, index) => {
@@ -145,7 +145,7 @@ const TechnologyArea = () => {
           <div>
             <BabyText text="BITCOIN" color="#EC5D2A" />
             <h2 className="font-manrope font-regular text-white text-xl mt-1">
-              We don't bet, we stack
+              We don´t bet, we stack
             </h2>
             <p className="font-manrope font-regular text-[#818287] text-xl mt-1">
               No high risk chasing for the next memecoin. Just. Bitcoin.

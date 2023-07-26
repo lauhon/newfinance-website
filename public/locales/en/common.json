@@ -8,10 +8,14 @@
     "followUs": "Follow us"
   },
   "links": {
-    "jobs": "Jobs",
+    "jobs": "Careers",
     "privacy": "Privacy Policy",
     "contact": "Contact",
-    "tou": "Terms of Use"
+    "tou": "Terms of Use",
+    "imprint": "Imprint",
+    "faqs": "FAQs",
+    "about": "About",
+    "changelog": "Changelog"
   },
   "splash": {
     "headline_1": "NewFinance gives you better money with ₿itcoin — ",

@@ -40,7 +40,7 @@ const Header = () => {
         <div className="flex items-center">
           <Link
             className="justify-start hover:opacity-80 transition-all"
-            href="/index"
+            href="/"
           >
             {isDark ? (
               <Image
