@@ -11,7 +11,6 @@ import BabyText from "../shared/text/baby-text";
 const TechnologyArea = () => {
   const { t } = useTranslation("common");
 
-  const [backgroundColor, setBackgroundColor] = useState("#FAFAFA");
   const colorRef = useRef(null);
 
   const bitcoinImage = require("~/public/images/home/bitcoin.png");
@@ -67,12 +66,6 @@ const TechnologyArea = () => {
     } catch (error) {
       console.error("Error occurred:", error);
     }
-  };
-
-  const getEurRateChangeColor = (value: number) => {
-    const res = value > 0 ? "#82EA99" : "#FF6363"; // Setze die Farbe basierend auf dem Wert
-    console.log("res: ", res);
-    return res;
   };
 
   const formatNumberWithK = (num: number) => {

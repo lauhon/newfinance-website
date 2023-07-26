@@ -1,4 +1,5 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import FooterLight from "~/components/layout/footer-light";
 import Header from "~/components/layout/header";
 import Layout from "~/components/layout/layout";
 //flex flex-col gap-4 w-1/4 text-xs font-inter text-[#464647] sticky top-0
@@ -19,6 +20,7 @@ const Contact = () => {
           </h1>
         </div>
       </section>
+      <FooterLight />
     </Layout>
   );
 };
