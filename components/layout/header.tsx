@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import ButtonArrow from "../shared/buttons/button-arrow";
 const Header = () => {
@@ -37,7 +38,10 @@ const Header = () => {
         className="z-20 h-[64px] fixed w-full flex items-center justify-between bg-transparent px-2 md:px-14 lg:px-28"
       >
         <div className="flex items-center">
-          <a className="justify-start hover:opacity-80 transition-all" href="#">
+          <Link
+            className="justify-start hover:opacity-80 transition-all"
+            href="/index"
+          >
             {isDark ? (
               <Image
                 className="h-[32px] w-auto"
@@ -51,7 +55,7 @@ const Header = () => {
                 src={logo_white}
               />
             )}
-          </a>
+          </Link>
         </div>
         <div className="flex items-center">
           <ButtonArrow href="login" text={t("header.startButton")} />
