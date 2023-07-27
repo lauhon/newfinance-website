@@ -3,7 +3,7 @@ import FooterLight from "~/components/layout/footer-light";
 import Header from "~/components/layout/header";
 import Layout from "~/components/layout/layout";
 //flex flex-col gap-4 w-1/4 text-xs font-inter text-[#464647] sticky top-0
-const Jobs = () => {
+const Billing = () => {
   return (
     <Layout>
       <Header />
@@ -16,7 +16,7 @@ const Jobs = () => {
             id="first-section"
             className="text-[2.2rem] sm:text-[3rem] font-manrope font-regular leading-tight mt-2"
           >
-            Careers
+            Billing
           </h1>
         </div>
       </section>
@@ -33,4 +33,4 @@ export async function getStaticProps({ locale }: { locale: string }) {
   };
 }
 
-export default Jobs;
+export default Billing;
