@@ -2,8 +2,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import FooterLight from "~/components/layout/footer-light";
 import Header from "~/components/layout/header";
 import Layout from "~/components/layout/layout";
-//flex flex-col gap-4 w-1/4 text-xs font-inter text-[#464647] sticky top-0
-const Billing = () => {
+
+const Pricing = () => {
   return (
     <Layout>
       <Header />
@@ -16,7 +16,7 @@ const Billing = () => {
             id="first-section"
             className="text-[2.2rem] sm:text-[3rem] font-manrope font-regular leading-tight mt-2"
           >
-            Billing
+            Pricing
           </h1>
         </div>
       </section>
@@ -33,4 +33,4 @@ export async function getStaticProps({ locale }: { locale: string }) {
   };
 }
 
-export default Billing;
+export default Pricing;
