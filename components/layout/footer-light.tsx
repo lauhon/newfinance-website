@@ -42,6 +42,12 @@ const FooterLight = () => {
             </Link>
             <Link
               className="text-xs text-gray-600 font-manrope"
+              href="/pricing"
+            >
+              <Trans i18nKey="links.pricing" />
+            </Link>
+            <Link
+              className="text-xs text-gray-600 font-manrope"
               href="/changelog"
             >
               <Trans i18nKey="links.changelog" />
