@@ -13,67 +13,94 @@ const FooterLight = () => {
           <Image className="h-[32px] w-auto" alt="NewFinance Logo" src={logo} />
         </div>
         <div className="flex flex-row space-x-20 mt-8 md:mt-2">
-          <div className="flex flex-col space-y-3">
-            <h3 className="text-xs text-gray-400">COMPANY</h3>
-            <Link className="text-xs text-gray-600 font-manrope" href="/about">
-              <Trans i18nKey="links.about" />
-            </Link>
-            <Link
-              className="text-xs text-gray-600 font-manrope"
-              href="/contact"
-            >
-              <Trans i18nKey="links.contact" />
-            </Link>
-            <Link className="text-xs text-gray-600 font-manrope" href="/jobs">
-              <Trans i18nKey="links.jobs" />
-            </Link>
-            <Link
-              className="text-xs text-gray-600 font-manrope"
-              href="https://barackobama.medium.com/"
-              target="_blank"
-            >
-              Blog
-            </Link>
+          <div className="flex flex-col space-y-1">
+            <h3 className="text-xs text-gray-400 py-1">COMPANY</h3>
+            <div>
+              <Link
+                className="text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                href="/about"
+              >
+                <Trans i18nKey="links.about" />
+              </Link>
+            </div>
+            <div>
+              <Link
+                className="text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                href="/contact"
+              >
+                <Trans i18nKey="links.contact" />
+              </Link>
+            </div>
+            <div>
+              <Link
+                className="text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                href="/jobs"
+              >
+                <Trans i18nKey="links.jobs" />
+              </Link>
+            </div>
+            <div>
+              <Link
+                className="text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                href="https://barackobama.medium.com/"
+                target="_blank"
+              >
+                Blog
+              </Link>
+            </div>
           </div>
-          <div className="flex flex-col space-y-3">
-            <h3 className="text-xs text-gray-400">RESOURCES</h3>
-            <Link className="text-xs text-gray-600 font-manrope" href="/faq">
-              <Trans i18nKey="links.faqs" />
-            </Link>
-            <Link
-              className="text-xs text-gray-600 font-manrope"
-              href="/pricing"
-            >
-              <Trans i18nKey="links.pricing" />
-            </Link>
-            <Link
-              className="text-xs text-gray-600 font-manrope"
-              href="/changelog"
-            >
-              <Trans i18nKey="links.changelog" />
-            </Link>
+          <div className="flex flex-col space-y-1">
+            <h3 className="text-xs text-gray-400 py-1">RESOURCES</h3>
+            <div>
+              <Link
+                className="text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                href="/faq"
+              >
+                <Trans i18nKey="links.faqs" />
+              </Link>
+            </div>
+            <div>
+              <Link
+                className="text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                href="/pricing"
+              >
+                <Trans i18nKey="links.pricing" />
+              </Link>
+            </div>
+            <div>
+              <Link
+                className="text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                href="/changelog"
+              >
+                <Trans i18nKey="links.changelog" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
       <div className="mt-20 sm:mt-36 border-t-1 pt-3 border-gray-200">
         <div className="flex justify-start sm:justify-between items-center flex-col-reverse space-y-3 sm:space-y-0 sm:flex-row">
-          <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-3 sm:space-y-0 mt-3 sm:mt-0">
-            <span className="text-gray-600 text-xs font-manrope">
+          <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-2 sm:space-y-0 mt-3 sm:mt-0">
+            <span className="text-gray-600 text-xs font-manrope py-1">
               © 2023 NewFinance GmbH, i.G.
             </span>
             <div className="flex flex-row justify-between sm:space-x-8">
-              <Link
-                className="text-gray-600 text-xs font-manrope"
-                href="/privacy"
-              >
-                <Trans i18nKey="links.privacy" />
-              </Link>
-              <Link
-                className="text-gray-600 text-xs font-manrope"
-                href="/imprint"
-              >
-                <Trans i18nKey="links.imprint" />
-              </Link>
+              <div>
+                <Link
+                  className="text-gray-600 text-xs font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                  href="/privacy"
+                >
+                  <Trans i18nKey="links.privacy" />
+                </Link>
+              </div>
+              <div>
+                <Link
+                  className="text-gray-600 text-xs font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                  href="/imprint"
+                >
+                  <Trans i18nKey="links.imprint" />
+                </Link>
+              </div>
             </div>
           </div>
           <SocialBlock />
