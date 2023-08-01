@@ -162,7 +162,7 @@ const FAQ = () => {
 
   return (
     <Layout>
-      <Header />
+      <Header line={true} />
       <section className="flex flex-col bg-default">
         <div className="mt-28">
           <div className=" px-4 md:px-14 lg:px-28 xl:px-44 pt-16 pb-28">

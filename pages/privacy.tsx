@@ -74,7 +74,7 @@ const Privacy = () => {
 
   return (
     <Layout>
-      <Header />
+      <Header line={true} />
       <section className="flex px-4 md:px-14 lg:px-28 xl:px-44 pt-16 flex-col">
         <div className="mt-28">
           <span className="font-inter text-xs text-[#4e4e50]">

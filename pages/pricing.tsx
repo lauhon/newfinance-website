@@ -12,7 +12,7 @@ import iconStars from "~/public/images/stars-mica.png";
 const Pricing = () => {
   return (
     <Layout>
-      <Header />
+      <Header line={true} />
       <section className="flex px-4 md:px-14 lg:px-28 xl:px-44  pt-16 flex-col">
         <div className="mt-16 mb-32 flex flex-col items-center overflow-hidden">
           <h1
