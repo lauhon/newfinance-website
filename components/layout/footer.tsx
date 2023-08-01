@@ -7,7 +7,7 @@ const Footer = () => {
   const logo = require("~/icons/LogoNewFinanceWhite.png");
 
   return (
-    <footer className="flex justify-center content-center flex-col border-t-1 border-b-1 border-[#2C303A] transition-all px-6 md:px-14 lg:px-28 2xl:px-64  pt-32 pb-8 bg-[#060606]">
+    <footer className="flex justify-center content-center flex-col border-t-1 border-b-1 border-[#2C303A] transition-all px-6 md:px-14 lg:px-28 2xl:px-64  pt-32 pb-8 bg-[#0C0D11]">
       <div className="flex flex-col md:flex-row justify-between">
         <div className="mt-3 md:mt-0">
           <Image className="h-[32px] w-auto" alt="NewFinance Logo" src={logo} />
