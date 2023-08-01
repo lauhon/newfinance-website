@@ -3,10 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ButtonArrow from "../shared/buttons/button-arrow";
-const Header = () => {
+
+interface props {
+  dark?: boolean;
+}
+
+const Header = ({ dark }: props) => {
   const { t } = useTranslation("common");
 
-  const [isDark, setDark] = useState(true);
+  const [isDark, setDark] = useState(dark);
 
   const logo_dark = require("~/icons/LogoNewFinance.png");
   const logo_white = require("~/icons/LogoNewFinanceWhite.png");

@@ -7,7 +7,7 @@ const CallToActionArea = () => {
   const { t } = useTranslation("common");
 
   return (
-    <section className="flex justify-center content-center bg-[#16181D] border-t-1 border-b-1 border-[#2C303A] transition-all px-6 md:px-14 lg:px-28 pt-32 pb-32 ">
+    <section className="flex justify-center content-center bg-[#0C0D11] border-t-1 border-b-1 border-[#2C303A] transition-all px-6 md:px-14 lg:px-28 pt-32 pb-32 ">
       <div className="w-[1000px] max-w-full space-y-2 sm:space-y-4">
         <div className="flex">
           <Link

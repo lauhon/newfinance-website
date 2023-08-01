@@ -96,7 +96,7 @@ const TechnologyArea = () => {
                 const opacity = Math.min(scrollDiff / maxScroll, 1); // Interpolieren zwischen 0 und 1
 
                 const startColor = [250, 250, 250]; // Startfarbe in RGB-Werten (hier: #FAFAFA)
-                const endColor = [12, 13, 17]; // Endfarbe in RGB-Werten (hier: #0C0D11)
+                const endColor = [6, 6, 6]; // Endfarbe in RGB-Werten (hier: #060606)
 
                 const interpolatedColor = startColor.map(
                   (startValue, index) => {
