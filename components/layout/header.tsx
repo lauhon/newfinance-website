@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -72,6 +72,23 @@ const Header = ({ dark = true, line = false }: props) => {
             </Link>
           </div>
           <div className="flex items-center">
+            <div className="mr-8">
+              {isDark ? (
+                <Link
+                  className="text-sm text-black font-manrope tracking-tight hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                  href="/pricing"
+                >
+                  <Trans i18nKey="links.pricing" />
+                </Link>
+              ) : (
+                <Link
+                  className="text-sm text-white font-manrope tracking-tight hover:bg-[#1e1f20] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                  href="/pricing"
+                >
+                  <Trans i18nKey="links.pricing" />
+                </Link>
+              )}
+            </div>
             <ButtonArrow href="login" text={t("header.startButton")} />
           </div>
         </div>

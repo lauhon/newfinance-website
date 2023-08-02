@@ -67,14 +67,6 @@ const FooterLight = () => {
                 <Trans i18nKey="links.pricing" />
               </Link>
             </div>
-            <div>
-              <Link
-                className="text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
-                href="/changelog"
-              >
-                <Trans i18nKey="links.changelog" />
-              </Link>
-            </div>
           </div>
         </div>
       </div>
