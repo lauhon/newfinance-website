@@ -72,7 +72,7 @@ const Header = ({ dark = true, line = false }: props) => {
             </Link>
           </div>
           <div className="flex items-center">
-            <div className="mr-8">
+            <div className="hidden sm:flex mr-8">
               {isDark ? (
                 <Link
                   className="text-sm text-black font-manrope tracking-tight hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
