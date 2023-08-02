@@ -1,6 +1,7 @@
 import { Trans } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
+import * as Icon from "react-feather";
 import SocialBlock from "../shared/social/social-block";
 
 const FooterLight = () => {
@@ -31,21 +32,18 @@ const FooterLight = () => {
                 <Trans i18nKey="links.contact" />
               </Link>
             </div>
-            <div>
+            <div className="flex">
               <Link
-                className="text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
-                href="/jobs"
-              >
-                <Trans i18nKey="links.jobs" />
-              </Link>
-            </div>
-            <div>
-              <Link
-                className="text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                className="flex items-center text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
                 href="https://barackobama.medium.com/"
                 target="_blank"
               >
                 Blog
+                <Icon.ArrowUpRight
+                  size="14"
+                  color="#8a8f98"
+                  className="ml-0.5"
+                />
               </Link>
             </div>
           </div>
@@ -65,6 +63,20 @@ const FooterLight = () => {
                 href="/pricing"
               >
                 <Trans i18nKey="links.pricing" />
+              </Link>
+            </div>
+            <div className="flex">
+              <Link
+                className="flex items-center text-xs text-gray-600 font-manrope hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                href="https://github.com/Superlight-Labs"
+                target="_blank"
+              >
+                Github
+                <Icon.ArrowUpRight
+                  size="14"
+                  color="#8a8f98"
+                  className="ml-0.5"
+                />
               </Link>
             </div>
           </div>
