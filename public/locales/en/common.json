@@ -27,6 +27,20 @@
   "video": {
     "tryButton": "Try out now"
   },
+  "inflation": {
+    "headline_1": "Why Bitcoin?",
+    "headline_2": "Because the inflation eats up your savings - everyday.",
+    "headline_text": "You must have noticed how the purchase of bread, milk, and eggs pushes up the bill at the cash register.<br/>In comparison: If you bought bitcoin five years ago, saving 50 $ every week has turned $13,050 into $27,563.",
+    "subheadline": "You are losing cash<br/>with money in your bank",
+    "text": "Endless money printing has taken away a lot of money from you. This has also led to the economy crumbling.<br/><br/>With NewFinance and Bitcoin you get:",
+    "notifier": "Graphic for demonstration purposes only.",
+    "benefit1_1": "Inflation-free new money ",
+    "benefit1_2": "as it is limited to 21M coins",
+    "benefit2_1": "Independant and free money",
+    "benefit2_2": "for harder and volatile times",
+    "benefit3_1": "Money that is accessible worldwide",
+    "benefit3_2": "and can’t be blocked"
+  },
   "qualities": {
     "headline_1": "Let's get rid of rich folks",
     "headline_2": "sitting on the pile of money",

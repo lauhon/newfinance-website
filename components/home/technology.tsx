@@ -95,7 +95,7 @@ const TechnologyArea = () => {
                 const scrollDiff = scrollPosition - threshold;
                 const opacity = Math.min(scrollDiff / maxScroll, 1); // Interpolieren zwischen 0 und 1
 
-                const startColor = [250, 250, 250]; // Startfarbe in RGB-Werten (hier: #FAFAFA)
+                const startColor = [255, 255, 255]; // Startfarbe in RGB-Werten (hier: #FFFFFF)
                 const endColor = [12, 13, 17]; // Endfarbe in RGB-Werten (hier: #0C0D11)
 
                 const interpolatedColor = startColor.map(
@@ -113,7 +113,7 @@ const TechnologyArea = () => {
                 //document.body.style.backgroundColor = newColor;
                 //setBackgroundColor(newColor);
               } else {
-                darkBackground.style.backgroundColor = "#FAFAFA";
+                darkBackground.style.backgroundColor = "#FFFFFF";
                 //document.body.style.backgroundColor = "#FAFAFA";
               }
             };
@@ -141,7 +141,7 @@ const TechnologyArea = () => {
         if (colorRef.current) {
           observer.unobserve(colorRef.current);
         }
-        darkBackground.style.backgroundColor = "#FAFAFA";
+        darkBackground.style.backgroundColor = "#FFFFFF";
       };
     }
   }, []);

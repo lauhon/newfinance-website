@@ -16,6 +16,7 @@
     "@types/react-dom": "18.0.9",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.4",
+    "lucide-react": "^0.285.0",
     "next": "^13.2.4",
     "next-i18next": "^13.2.2",
     "react": "18.2.0",
