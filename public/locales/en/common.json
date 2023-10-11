@@ -17,12 +17,15 @@
     "pricing": "Pricing"
   },
   "splash": {
-    "headline": "It's finally here...<br/>Bitcoin + everything<br/>your bank can do",
-    "tagline": "Why not gaining wealth when everybody else does? Use bitcoin with NewFinance.<br/>It is saver, simpler and compatible with traditional banks.",
+    "headline": "Invest and secure your future<br/>with Bitcoin.",
+    "tagline": "The current state of the economy makes it necessary.<br/>Why not gain wealth when everybody else does it?",
     "startButton": "Secure your spot now",
     "rarificationTeaser": "Regularly 4.99€/month",
     "rarification": "Free for life if register before December",
     "alphaNotifier": "* All  banking-like features for your Bitcoin are added incrementely<br />and are not fully available in alpha version."
+  },
+  "video": {
+    "tryButton": "Try out now"
   },
   "qualities": {
     "headline_1": "Let's get rid of rich folks",
