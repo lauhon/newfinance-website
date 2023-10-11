@@ -1,14 +1,24 @@
 import { Trans, useTranslation } from "next-i18next";
 import Link from "next/link";
 import * as Icon from "react-feather";
-import ButtonArrowTall from "../shared/buttons/button-arrow-tall";
+import bg from "../../public/images/home/BackgroundSplash.png";
+import ButtonArrow from "../shared/buttons/button-arrow";
 
 const Splash = () => {
   const { t } = useTranslation("common");
 
   return (
-    <section className="flex items-center px-5 md:px-0 pt-16 flex-col">
-      <div className="flex flex-col items-center mt-28">
+    <section
+      className="flex px-5 md:px-14 lg:px-28 pt-24 flex-col"
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundPositionY: "top",
+      }}
+    >
+      <div className="flex flex-col items-center mt-14 md:mt-24">
         <Link
           href="https://barackobama.medium.com/"
           target="_blank"
@@ -22,22 +32,28 @@ const Splash = () => {
           </div>
         </Link>
 
-        <h1 className="w-full sm:w-4/5 md:w-2/3 lg:w-1/2 text-[2rem] md:text-[2.8rem] text-center font-manrope font-regular tracking-tight leading-tight">
-          <Trans i18nKey="splash.headline_1" />
-          <span className="text-[#757679]">
-            <Trans i18nKey="splash.headline_2" />
-          </span>
+        <h1 className="w-full text-[2.2rem] md:text-[3.2rem] text-center font-manrope font-semibold tracking-tight leading-tight">
+          <Trans i18nKey="splash.headline" />
         </h1>
 
-        <div className="mt-3.5">
-          <ButtonArrowTall href="#" text="Move to better money" />
+        <p className="text-base font-manrope font-medium text-[#8E8D95] text-center mt-3 tracking-tighty">
+          <Trans i18nKey="splash.tagline" />
+        </p>
+
+        <div className="mt-6">
+          <ButtonArrow href="login" text={t("splash.startButton")} />
         </div>
-        <div className="flex flex-row items-center justify-center mt-4 text-secondary text-xs text-[#7D7E81] font-manrope font-regular">
-          <div className="flex w-3 h-3 bg-[#7D7E81] rounded-full items-center justify-center mr-1.5">
-            <Icon.Check size={8} color="white" />
+        <div className="flex flex-col items-center justify-center mt-3 text-secondary text-[0.65rem] text-[#8E8D95] font-manrope font-semibold tracking-tight">
+          <div className="opacity-80 line-through">
+            <Trans i18nKey="splash.rarificationTeaser" />
           </div>
-          <Trans i18nKey="header.free" />
+          <div>
+            <Trans i18nKey="splash.rarification" />
+          </div>
         </div>
+      </div>
+      <div className=" mt-12 text-center md:text-right text-[0.65rem] text-[#8E8D95] font-manrope font-semibold tracking-tight">
+        <Trans i18nKey="splash.alphaNotifier" />
       </div>
     </section>
   );

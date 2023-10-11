@@ -19,8 +19,7 @@
     "pricing": "Preise"
   },
   "splash": {
-    "headline_1": "NewFinance gives you better money with ₿itcoin — ",
-    "headline_2": "with a wallet made to replace your bank. ‘Cause hard times require hard money.",
+    "headline": "NewFinance gives you better money with ₿itcoin — ",
     "headlineAlternative": "Verpasse nicht den<br>₿-Standard",
     "tagline": "Nutze Bitcoin mit deinem Lightning Wallet - sicher.<br/>Harte Zeiten erfordern hartes Geld."
   },

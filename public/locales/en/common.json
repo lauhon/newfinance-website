@@ -1,7 +1,5 @@
 {
   "header": {
-    "oneLiner": "The banking alternative - made in Europe",
-    "free": "Now for free",
     "startButton": "Register"
   },
   "social": {
@@ -19,11 +17,12 @@
     "pricing": "Pricing"
   },
   "splash": {
-    "headline_1": "NewFinance gives you better money with ₿itcoin — ",
-    "headline_2": "with a wallet made to replace your bank. ‘Cause hard times require hard money.",
-    "headlineSmall": "Better money<br/>with ₿itcoin<br/>- for individuals",
-    "tagline": "Use Bitcoin with your lightning wallet - confidently.<br/>Hard times require hard money.",
-    "taglineSmall": "Use Bitcoin with your lightning wallet.<br/>Hard times require hard money."
+    "headline": "It's finally here...<br/>Bitcoin + everything<br/>your bank can do",
+    "tagline": "Why not gaining wealth when everybody else does? Use bitcoin with NewFinance.<br/>It is saver, simpler and compatible with traditional banks.",
+    "startButton": "Secure your spot now",
+    "rarificationTeaser": "Regularly 4.99€/month",
+    "rarification": "Free for life if register before December",
+    "alphaNotifier": "* All  banking-like features for your Bitcoin are added incrementely<br />and are not fully available in alpha version."
   },
   "qualities": {
     "headline_1": "Let's get rid of rich folks",

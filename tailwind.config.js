@@ -45,7 +45,10 @@ module.exports = {
       } ,
       borderRadius: {
         "large" : "46px"
-      }
+      },
+      letterSpacing:{
+        "tighty" : "-0.0125em"
+      },
     },
   },
 
