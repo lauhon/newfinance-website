@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -42,10 +42,10 @@ const Header = ({ dark = true, line = false }: props) => {
     <>
       <header
         id="page-header"
-        className="z-20 h-[56px] backdrop-blur fixed w-full bg-transparent px-4 md:px-14 lg:px-28 "
+        className="z-20 h-[74px] backdrop-blur fixed w-full bg-transparent px-4 md:px-14 lg:px-28 "
       >
         <div
-          className="flex h-[56px] items-center justify-between border-b-1"
+          className="flex h-[74px] items-center justify-between border-b-1"
           style={{
             borderColor: isDark ? "#e5e7ebBB" : "#2C303ABB",
             borderBottomWidth: showLine ? "1px" : "0px",
@@ -71,26 +71,8 @@ const Header = ({ dark = true, line = false }: props) => {
               )}
             </Link>
           </div>
-          <div className="flex items-center">
-            <div className="hidden sm:flex mr-8">
-              {isDark ? (
-                <Link
-                  className="text-sm text-black font-manrope tracking-tight hover:bg-[#EAEDF1] transition py-1 px-2 ml-[-0.5rem] rounded-md"
-                  href="/pricing"
-                >
-                  <Trans i18nKey="links.pricing" />
-                </Link>
-              ) : (
-                <Link
-                  className="text-sm text-white font-manrope tracking-tight hover:bg-[#1e1f20] transition py-1 px-2 ml-[-0.5rem] rounded-md"
-                  href="/pricing"
-                >
-                  <Trans i18nKey="links.pricing" />
-                </Link>
-              )}
-            </div>
-            <ButtonArrow href="login" text={t("header.startButton")} />
-          </div>
+
+          <ButtonArrow href="login" text={t("header.startButton")} />
         </div>
       </header>
     </>
