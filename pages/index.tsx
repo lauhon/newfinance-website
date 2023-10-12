@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import CallToActionArea from "~/components/home/cta";
 import FAQ from "~/components/home/faq";
+import Future from "~/components/home/problems/future";
 import Inflation from "~/components/home/problems/inflation";
 import RoadmapArea from "~/components/home/roadmap";
 import Splash from "~/components/home/splash";
@@ -21,6 +22,7 @@ const Home = () => {
       <VideoArea />
       <div id="darkBackground" className="bg-white">
         <Inflation />
+        <Future />
         <TechnologyArea />
         <RoadmapArea />
         <FAQ />

@@ -5,13 +5,15 @@ interface ButtonProps {
   text?: any;
   onClick?: () => void;
   href?: any;
+  color?: any;
 }
 
-const ButtonArrow = ({ text = "Text", onClick, href }: ButtonProps) => {
+const ButtonArrow = ({ text = "Text", onClick, href, color }: ButtonProps) => {
   return (
     <Link
       href={`/${href}`}
       className="flex space-x-6 align-middle bg-[#060606] py-3 pl-3 md:pl-3.5 pr-2.5 md:pr-3 hover:opacity-80 rounded-[5px] items-center transition-all duration-200   shadow-xl"
+      style={{ backgroundColor: color }}
     >
       <span className="md:min-w-[100px] font-manrope font-semibold text-white text-base">
         {text}
