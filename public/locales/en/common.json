@@ -60,6 +60,14 @@
     "second": "With our private bitcoin account, you disconnect yourself from banks and keep only their benefits.",
     "third": "That way, only you manage your money on your own terms, and stay ahead of the game."
   },
+  "qualitiesEasy": {
+    "headline": "Own Bitcoin in<br/>under 5 minutes",
+    "text": "Buy, sell and send bitcoin nearly instantly.<br/>Up to 250 € without registration.",
+    "benefit1": "Beginning with 1 €",
+    "benefit2": "Card or bank transfer",
+    "benefit3": "Low fees",
+    "benefit4": "Non-custodian"
+  },
   "technology": {
     "headline_1": "The new european way",
     "headline_2": "forerunner in financials"

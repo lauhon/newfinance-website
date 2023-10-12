@@ -4,6 +4,7 @@ import CallToActionArea from "~/components/home/cta";
 import FAQ from "~/components/home/faq";
 import Future from "~/components/home/problems/future";
 import Inflation from "~/components/home/problems/inflation";
+import Qualities from "~/components/home/qualities/qualities";
 import RoadmapArea from "~/components/home/roadmap";
 import Splash from "~/components/home/splash";
 import TechnologyArea from "~/components/home/technology";
@@ -23,6 +24,7 @@ const Home = () => {
       <div id="darkBackground" className="bg-white">
         <Inflation />
         <Future />
+        <Qualities />
         <TechnologyArea />
         <RoadmapArea />
         <FAQ />

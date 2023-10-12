@@ -1,39 +1,78 @@
-import { useTranslation } from "next-i18next";
-import * as Icon from "react-feather";
+import { Check } from "lucide-react";
+import { Trans, useTranslation } from "next-i18next";
+import Image from "next/image";
 
 const QualitiesEasy = () => {
   const { t } = useTranslation("common");
+  const BitcoinPhone = require("~/public/images/BitcoinPhone.png");
 
   return (
-    <div className="flex flex-col md:flex-row py-16 px-8 md:px-12 lg:px-16 items-center bg-[#EDEEF0] rounded-2xl w-[1000px] max-w-full min-h-[500px]">
+    <div className="flex flex-col py-16 md:py-0 md:flex-row px-8 md:px-0 md:pl-12 lg:pl-16 items-center border-1 border-[#DADADA] rounded-2xl w-[1000px] max-w-full min-h-[500px]">
       <div className="flex-1 justify-center">
-        <h2 className="text-[1.5rem] sm:text-[2.1rem] text-center md:text-left font-manrope font-regular leading-tight">
-          Take the easiest way to financial control
+        <h2 className="text-[2rem] sm:text-[2.4rem] text-center md:text-left font-manrope font-semibold leading-tight">
+          <Trans i18nKey="qualitiesEasy.headline" />
         </h2>
-        <p className="text-[0.8rem] sm:text-[1.1rem] text-center md:text-left font-manrope font-regular text-[#7D7E82] mt-4">
-          Our goal for you, new money that feels simple, without terms that you
-          don’t know.
+        <p className="text-base text-center md:text-left font-manrope font-medium text-[#7D7E82] mt-4">
+          <Trans i18nKey="qualitiesEasy.text" />
         </p>
-        <div className="grid grid-cols-2 grid-rows-2 gap-2 md:gap-4 mt-4">
-          <span className="flex flex-row items-center text-[0.8rem] sm:text-[1.1rem] font-manrope font-regular text-[#3A84F4]">
-            <Icon.Check size="18" className="text-[#3A84F4] mr-2" />
-            Bank-like usability
-          </span>
-          <span className="flex flex-row items-center text-[0.8rem] sm:text-[1.1rem] font-manrope font-regular text-[#3A84F4]">
-            <Icon.Check size="18" className="text-[#3A84F4] mr-2" />
-            No crypto words
-          </span>
-          <span className="flex flex-row items-center text-[0.8rem] sm:text-[1.1rem] font-manrope font-regular text-[#3A84F4]">
-            <Icon.Check size="18" className="text-[#3A84F4] mr-2" />
-            Iban compatible
-          </span>
-          <span className="flex flex-row items-center text-[0.8rem] sm:text-[1.1rem] font-manrope font-regular text-[#3A84F4]">
-            <Icon.Check size="18" className="text-[#3A84F4] mr-2" />
-            Pay everywhere
-          </span>
+        <div className="flex flex-col xl:grid xl:grid-cols-2 xl:grid-rows-2 items-center md:items-start  mt-4">
+          <div className="mt-2">
+            <span className="flex flex-row items-center text-base font-manrope font-medium text-black">
+              <div className="flex w-4 h-4 bg-black rounded-full items-center justify-center mr-2">
+                {" "}
+                <Check size={8} color="white" />
+              </div>
+              <span>
+                <Trans i18nKey="qualitiesEasy.benefit1" />
+              </span>
+            </span>
+          </div>
+
+          <div className="mt-2">
+            <span className="flex flex-row items-center text-base font-manrope font-medium text-black">
+              <div className="flex w-4 h-4 bg-black rounded-full items-center justify-center mr-2">
+                {" "}
+                <Check size={8} color="white" />
+              </div>
+              <span>
+                <Trans i18nKey="qualitiesEasy.benefit2" />
+              </span>
+            </span>
+          </div>
+
+          <div className="mt-2">
+            <span className="flex flex-row items-center text-base font-manrope font-medium text-black">
+              <div className="flex w-4 h-4 bg-black rounded-full items-center justify-center mr-2">
+                {" "}
+                <Check size={8} color="white" />
+              </div>
+              <span>
+                <Trans i18nKey="qualitiesEasy.benefit3" />
+              </span>
+            </span>
+          </div>
+
+          <div className="mt-2">
+            <span className="flex flex-row items-center text-base font-manrope font-medium text-black">
+              <div className="flex w-4 h-4 bg-black rounded-full items-center justify-center mr-2">
+                {" "}
+                <Check size={8} color="white" />
+              </div>
+              <span>
+                <Trans i18nKey="qualitiesEasy.benefit4" />
+              </span>
+            </span>
+          </div>
         </div>
       </div>
-      <div className="flex-1"></div>
+      <div className="flex-1 mt-8 md:mt-0">
+        <Image
+          src={BitcoinPhone}
+          alt="Bitcoin Screen"
+          className=""
+          style={{ marginLeft: "60px" }}
+        />
+      </div>
     </div>
   );
 };
