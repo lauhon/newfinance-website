@@ -7,7 +7,7 @@ const QualitiesTransfer = () => {
   const BitcoinPhone = require("~/public/images/SendPhone.png");
 
   return (
-    <div className="flex flex-col py-16 md:py-8 md:flex-row px-8 md:px-12 lg:px-16 items-center border-1 border-[#DADADA] bg-[#DADADA] rounded-2xl w-[1000px] max-w-full min-h-[500px]">
+    <div className="flex flex-col pb-0 md:pb-0 lg:pb-0 py-16 md:py-8 md:flex-row px-8 md:px-12 lg:px-16 items-center  bg-[#DADADA] rounded-2xl w-[1000px] max-w-full min-h-[500px] overflow-hidden">
       <div className="flex-1 justify-center">
         <h2 className="text-[2rem] sm:text-[2.4rem] text-center md:text-left font-manrope font-semibold leading-tight">
           <Trans i18nKey="qualitiesTransfer.headline" />
@@ -65,10 +65,10 @@ const QualitiesTransfer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-1 mt-12 md:mt-0 justify-center">
+      <div className="flex flex-1 mt-12 md:mt-2 justify-center">
         <Image
           src={BitcoinPhone}
-          alt="Bitcoin Screen"
+          alt="Transfer Screen"
           className=""
           style={{ height: "460px", width: "auto" }}
         />

@@ -7,7 +7,7 @@ const QualitiesEasy = () => {
   const BitcoinPhone = require("~/public/images/BitcoinPhone.png");
 
   return (
-    <div className="flex flex-col py-16 md:py-0 md:flex-row px-8 md:px-0 md:pl-12 lg:pl-16 items-center border-1 border-[#DADADA] rounded-2xl w-[1000px] max-w-full min-h-[500px]">
+    <div className="flex flex-col pb-0 md:pb-0 lg:pb-0 py-16 md:py-8 md:flex-row px-8 md:px-12 lg:px-16 items-center  border-1 border-[#DADADA] rounded-2xl w-[1000px] max-w-full min-h-[500px] overflow-hidden">
       <div className="flex-1 justify-center">
         <h2 className="text-[2rem] sm:text-[2.4rem] text-center md:text-left font-manrope font-semibold leading-tight">
           <Trans i18nKey="qualitiesEasy.headline" />
@@ -65,12 +65,12 @@ const QualitiesEasy = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-1 mt-8 md:mt-0 justify-center">
+      <div className="flex flex-1 mt-12 md:mt-2 justify-center">
         <Image
           src={BitcoinPhone}
           alt="Bitcoin Screen"
           className=""
-          style={{ marginLeft: "80px" }}
+          style={{ height: "460px", width: "auto" }}
         />
       </div>
     </div>

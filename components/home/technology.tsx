@@ -88,7 +88,7 @@ const TechnologyArea = () => {
           if (entry.isIntersecting) {
             const handleScroll = () => {
               const scrollPosition = window.scrollY;
-              const threshold = entry.target.offsetTop - 700; // Schwellenwert basierend auf der Position des div-Elements
+              const threshold = entry.target.offsetTop - 500; // Schwellenwert basierend auf der Position des div-Elements
               const maxScroll = 100; // Bereich, über den der Farbwechsel stattfindet
 
               if (scrollPosition > threshold) {

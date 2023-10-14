@@ -37,9 +37,9 @@
     "benefit1_1": "Inflation-free new money ",
     "benefit1_2": "as it is limited to 21M coins",
     "benefit2_1": "Independant and free money",
-    "benefit2_2": "for harder and volatile times",
+    "benefit2_2": " for harder and volatile times",
     "benefit3_1": "Money that is accessible worldwide",
-    "benefit3_2": "and can’t be blocked"
+    "benefit3_2": " and can’t be blocked"
   },
   "future": {
     "headline_1": "Invest and secure your future with Bitcoin.",
@@ -58,7 +58,8 @@
     "headline_2": "sitting on the pile of money",
     "first": "Unstable banking systems put everyone's money at risk — from individuals to businesses — but we're all dependent on it.",
     "second": "With our private bitcoin account, you disconnect yourself from banks and keep only their benefits.",
-    "third": "That way, only you manage your money on your own terms, and stay ahead of the game."
+    "third": "That way, only you manage your money on your own terms, and stay ahead of the game.",
+    "buttonInfo": "Completely free"
   },
   "qualitiesEasy": {
     "headline": "Own Bitcoin in<br/>under 5 minutes",
@@ -75,6 +76,14 @@
     "benefit2": "IBAN compatible",
     "benefit3": "Bitcoin/Lightning",
     "benefit4": "24/7 available"
+  },
+  "qualitiesPockets": {
+    "headline": "Easy money overview<br/>with unlimited pockets",
+    "text": "With traditional banks, you have to pay extra for sub-accounts. We save you money an give them for free.",
+    "benefit1": "Bitcoin pockets",
+    "benefit2": "Money pockets",
+    "benefit3": "Savings control",
+    "benefit4": "Anonym"
   },
   "technology": {
     "headline_1": "The new european way",
