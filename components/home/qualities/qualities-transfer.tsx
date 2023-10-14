@@ -2,18 +2,18 @@ import { Check } from "lucide-react";
 import { Trans, useTranslation } from "next-i18next";
 import Image from "next/image";
 
-const QualitiesEasy = () => {
+const QualitiesTransfer = () => {
   const { t } = useTranslation("common");
-  const BitcoinPhone = require("~/public/images/BitcoinPhone.png");
+  const BitcoinPhone = require("~/public/images/SendPhone.png");
 
   return (
-    <div className="flex flex-col py-16 md:py-0 md:flex-row px-8 md:px-0 md:pl-12 lg:pl-16 items-center border-1 border-[#DADADA] rounded-2xl w-[1000px] max-w-full min-h-[500px]">
+    <div className="flex flex-col py-16 md:py-8 md:flex-row px-8 md:px-12 lg:px-16 items-center border-1 border-[#DADADA] bg-[#DADADA] rounded-2xl w-[1000px] max-w-full min-h-[500px]">
       <div className="flex-1 justify-center">
         <h2 className="text-[2rem] sm:text-[2.4rem] text-center md:text-left font-manrope font-semibold leading-tight">
-          <Trans i18nKey="qualitiesEasy.headline" />
+          <Trans i18nKey="qualitiesTransfer.headline" />
         </h2>
         <p className="text-base text-center md:text-left font-manrope font-medium text-[#7D7E82] mt-4">
-          <Trans i18nKey="qualitiesEasy.text" />
+          <Trans i18nKey="qualitiesTransfer.text" />
         </p>
         <div className="flex flex-col xl:grid xl:grid-cols-2 xl:grid-rows-2 items-center md:items-start  mt-4">
           <div className="mt-2">
@@ -23,7 +23,7 @@ const QualitiesEasy = () => {
                 <Check size={8} color="white" />
               </div>
               <span>
-                <Trans i18nKey="qualitiesEasy.benefit1" />
+                <Trans i18nKey="qualitiesTransfer.benefit1" />
               </span>
             </span>
           </div>
@@ -35,7 +35,7 @@ const QualitiesEasy = () => {
                 <Check size={8} color="white" />
               </div>
               <span>
-                <Trans i18nKey="qualitiesEasy.benefit2" />
+                <Trans i18nKey="qualitiesTransfer.benefit2" />
               </span>
             </span>
           </div>
@@ -47,7 +47,7 @@ const QualitiesEasy = () => {
                 <Check size={8} color="white" />
               </div>
               <span>
-                <Trans i18nKey="qualitiesEasy.benefit3" />
+                <Trans i18nKey="qualitiesTransfer.benefit4" />
               </span>
             </span>
           </div>
@@ -59,22 +59,22 @@ const QualitiesEasy = () => {
                 <Check size={8} color="white" />
               </div>
               <span>
-                <Trans i18nKey="qualitiesEasy.benefit4" />
+                <Trans i18nKey="qualitiesTransfer.benefit3" />
               </span>
             </span>
           </div>
         </div>
       </div>
-      <div className="flex flex-1 mt-8 md:mt-0 justify-center">
+      <div className="flex flex-1 mt-12 md:mt-0 justify-center">
         <Image
           src={BitcoinPhone}
           alt="Bitcoin Screen"
           className=""
-          style={{ marginLeft: "80px" }}
+          style={{ height: "460px", width: "auto" }}
         />
       </div>
     </div>
   );
 };
 
-export default QualitiesEasy;
+export default QualitiesTransfer;

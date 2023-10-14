@@ -68,6 +68,14 @@
     "benefit3": "Low fees",
     "benefit4": "Non-custodian"
   },
+  "qualitiesTransfer": {
+    "headline": "Worldwide transfers<br/>with no extra fees",
+    "text": "Send money to your loved ones abroad or<br/>use your money internationally.",
+    "benefit1": "No extra fees",
+    "benefit2": "IBAN compatible",
+    "benefit3": "Bitcoin/Lightning",
+    "benefit4": "24/7 available"
+  },
   "technology": {
     "headline_1": "The new european way",
     "headline_2": "forerunner in financials"
