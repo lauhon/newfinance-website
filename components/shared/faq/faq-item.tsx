@@ -12,31 +12,31 @@ type Props = {
 
 function FAQItem({ id, title, children, onClick, isExpanded, index }: Props) {
   return (
-    <li className="mt-4 group">
-      <h3 className="mb-4 flex">
+    <li className="group ml-[-1rem] mt-1">
+      <h3 className="flex">
         <button
-          className="text-left flex-1 flex items-center text-lg text-white font-manrope font-regular group-hover:opacity-80 transition-all"
+          className="text-left flex-1 flex items-center justify-between text-lg text-black font-manrope font-semibold group-hover:bg-slate-50 transition-all px-4 py-3 rounded-sm"
           id={`${id}-header`}
           onClick={() => onClick(isExpanded ? -1 : index)}
           aria-controls={`${id}-panel`}
           aria-expanded={isExpanded}
         >
+          {title}
           <Icon.Plus
             size="24"
-            className="text-[#4C3EF7] mr-2"
+            className="text-black"
             style={{
               transition: "transform 0.15s",
               transform: `rotate(${isExpanded ? "90deg" : 0})`,
             }}
           />
-          {title}
         </button>
       </h3>
 
       <article
         id={`${id}-panel`}
         aria-labelledby={`${id}-header`}
-        className="text-base text-zinc-400 opacity-10 text-left leading-relaxed font-manrope font-regular w-full pr-4 transition-all"
+        className="text-base text-zinc-400 opacity-10 text-left leading-relaxed font-manrope font-regular w-full pr-4 transition-all px-4"
         style={{
           transition: "all 0.2s ease",
           overflow: "hidden",
@@ -47,7 +47,6 @@ function FAQItem({ id, title, children, onClick, isExpanded, index }: Props) {
       >
         {children}
       </article>
-      <div className="w-full h-[1px] bg-gradient-to-r from-[#2C303A]"></div>
     </li>
   );
 }
