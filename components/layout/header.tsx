@@ -24,7 +24,7 @@ const Header = ({ dark = true, line = false }: props) => {
       const handleScroll = () => {
         if (
           document.getElementById("darkBackground")?.style.backgroundColor !==
-          "rgb(250, 250, 250)"
+          "rgb(255, 255, 255)"
         ) {
           setDark(false);
         } else {
@@ -72,7 +72,11 @@ const Header = ({ dark = true, line = false }: props) => {
             </Link>
           </div>
 
-          <ButtonArrow href="login" text={t("header.startButton")} />
+          <ButtonArrow
+            href="login"
+            text={t("header.startButton")}
+            inverted={isDark ? false : true}
+          />
         </div>
       </header>
     </>

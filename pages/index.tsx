@@ -30,9 +30,12 @@ const Home = () => {
         <Qualities />
         <Safety />
         <TechnologyArea />
-        <FAQ />
-        <CallToActionArea />
-        <Footer />
+
+        <div className="bg-white">
+          <FAQ />
+          <CallToActionArea />
+          <Footer />
+        </div>
       </div>
     </Layout>
   );
