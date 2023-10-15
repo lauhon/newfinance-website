@@ -53,6 +53,11 @@
     "benefit4": "Bitcoin to Euro instantly",
     "buttonInfo": "Take the first step in under 2 minutes"
   },
+  "features": {
+    "headline_1": "The power of bitcoin +",
+    "headline_2": "the integration of banks.",
+    "headline_text": "Sometimes it’s hard to use Bitcoin as independant money, when you get your paycheck per SEPA transfer and not bitcoin.<br/>That’s why we integrate banking features for bitcoin. So it’s easier for you."
+  },
   "qualities": {
     "headline_1": "Let's get rid of rich folks",
     "headline_2": "sitting on the pile of money",

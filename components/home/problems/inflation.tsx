@@ -9,7 +9,7 @@ const Inflation = () => {
 
   return (
     <section className="flex flex-col items-center px-4 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 space-y-8 md:space-y-16">
-      <div className="text-left">
+      <div className="text-left  w-[1000px] max-w-full">
         <h2 className="text-[2rem] sm:text-[2.4rem] font-manrope font-semibold leading-tight mt-2">
           <Trans i18nKey="inflation.headline_1" />
           <br />
