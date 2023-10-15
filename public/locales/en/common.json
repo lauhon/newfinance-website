@@ -90,6 +90,19 @@
     "benefit3": "Savings control",
     "benefit4": "Anonym"
   },
+  "safety": {
+    "headline_1": "Move your money to safety.",
+    "headline_2": "Make it accessible everytime and everywhere.",
+    "headline_text": "“Not your keys, not your coins” has resulted in over $100 billion lost or stolen since the early 2010s. NewFinance prevents this by using the leading security technology - called MPC.",
+    "subheadline": "We’ve invested heavily<br/>in high-end encryption",
+    "text": "You get the safest security technology. Until now,<br/>this was only used by institutions to secure billions of dollars.",
+    "benefit1_1": "Secured by MPC technology, ",
+    "benefit1_2": "a technology never been hacked",
+    "benefit2_1": "Recovery protection ",
+    "benefit2_2": "to never loose the access to your money",
+    "benefit3_1": "No seed phrase vulnerability, ",
+    "benefit3_2": "by creating two secret shares"
+  },
   "technology": {
     "headline_1": "The new european way",
     "headline_2": "forerunner in financials"

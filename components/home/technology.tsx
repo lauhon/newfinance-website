@@ -11,8 +11,6 @@ import BabyText from "../shared/text/baby-text";
 const TechnologyArea = () => {
   const { t } = useTranslation("common");
 
-  const colorRef = useRef(null);
-
   const bitcoinImage = require("~/public/images/home/bitcoin.png");
 
   const [eurRate, setEurRate] = useState(0);
@@ -79,82 +77,12 @@ const TechnologyArea = () => {
     }
   };
 
-  useEffect(() => {
-    const darkBackground = document.getElementById("darkBackground");
-    if (darkBackground === null) {
-    } else {
-      const handleIntersect = (entries: any[]) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const handleScroll = () => {
-              const scrollPosition = window.scrollY;
-              const threshold = entry.target.offsetTop - 500; // Schwellenwert basierend auf der Position des div-Elements
-              const maxScroll = 100; // Bereich, über den der Farbwechsel stattfindet
-
-              if (scrollPosition > threshold) {
-                const scrollDiff = scrollPosition - threshold;
-                const opacity = Math.min(scrollDiff / maxScroll, 1); // Interpolieren zwischen 0 und 1
-
-                const startColor = [255, 255, 255]; // Startfarbe in RGB-Werten (hier: #FFFFFF)
-                const endColor = [12, 13, 17]; // Endfarbe in RGB-Werten (hier: #0C0D11)
-
-                const interpolatedColor = startColor.map(
-                  (startValue, index) => {
-                    const endValue = endColor[index];
-                    const interpolatedValue = Math.round(
-                      startValue - (startValue - endValue) * opacity
-                    );
-                    return interpolatedValue;
-                  }
-                );
-
-                const newColor = `rgb(${interpolatedColor[0]}, ${interpolatedColor[1]}, ${interpolatedColor[2]})`;
-                darkBackground.style.backgroundColor = newColor;
-                //document.body.style.backgroundColor = newColor;
-                //setBackgroundColor(newColor);
-              } else {
-                darkBackground.style.backgroundColor = "#FFFFFF";
-                //document.body.style.backgroundColor = "#FAFAFA";
-              }
-            };
-
-            window.addEventListener("scroll", handleScroll);
-
-            return () => {
-              window.removeEventListener("scroll", handleScroll);
-            };
-          }
-        });
-      };
-
-      const observer = new IntersectionObserver(handleIntersect, {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0,
-      });
-
-      if (colorRef.current) {
-        observer.observe(colorRef.current);
-      }
-
-      return () => {
-        if (colorRef.current) {
-          observer.unobserve(colorRef.current);
-        }
-        darkBackground.style.backgroundColor = "#FFFFFF";
-      };
-    }
-  }, []);
-
   const flashingStyle = {
     animation: `flashing 1s linear`, // Füge den State key als Animation hinzu
   };
 
   return (
-    <section
-      ref={colorRef}
-      className="flex transition-all items-center px-6 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 flex-col space-y-8 md:space-y-16"
-    >
+    <section className="flex transition-all items-center px-6 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 flex-col space-y-8 md:space-y-16">
       <div className="text-center">
         <BabyText text="PRODUCT" />
         <h2 className="text-[1.6rem] md:text-[2.2rem] text-center font-manrope font-regular leading-tight mt-2 text-white">

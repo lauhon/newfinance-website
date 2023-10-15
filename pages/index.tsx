@@ -6,7 +6,7 @@ import Features from "~/components/home/features";
 import Future from "~/components/home/problems/future";
 import Inflation from "~/components/home/problems/inflation";
 import Qualities from "~/components/home/qualities/qualities";
-import RoadmapArea from "~/components/home/roadmap";
+import Safety from "~/components/home/safety";
 import Splash from "~/components/home/splash";
 import TechnologyArea from "~/components/home/technology";
 import VideoArea from "~/components/home/video";
@@ -28,8 +28,8 @@ const Home = () => {
         <Features />
 
         <Qualities />
+        <Safety />
         <TechnologyArea />
-        <RoadmapArea />
         <FAQ />
         <CallToActionArea />
         <Footer />
