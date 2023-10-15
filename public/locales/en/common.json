@@ -104,8 +104,13 @@
     "benefit3_2": "by creating two secret shares"
   },
   "technology": {
-    "headline_1": "The new european way",
-    "headline_2": "forerunner in financials"
+    "headline_1": "You can rely on future-proof technology.",
+    "headline_2": "It saves you time and money.",
+    "lightning": "Lightning network",
+    "subheadline_1": "Save up to 100 € booking fees<br/>your bank normally charges",
+    "subtext_1": "Compared to other networks - by using lightning - you safe up to 99% payment fees.",
+    "subheadline_2": "Do not speculate<br/>but invest wisely",
+    "subtext_2": "With bitcoin, you invest in the largest and oldest cryptocurrency, used by millions as a store of value."
   },
   "roadmap": {
     "headline_1": "Building a better future",

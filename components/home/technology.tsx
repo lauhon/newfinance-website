@@ -83,20 +83,19 @@ const TechnologyArea = () => {
 
   return (
     <section className="flex transition-all items-center px-6 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 flex-col space-y-8 md:space-y-16">
-      <div className="text-center">
-        <BabyText text="PRODUCT" />
-        <h2 className="text-[1.6rem] md:text-[2.2rem] text-center font-manrope font-regular leading-tight mt-2 text-white">
+      <div className="text-left  w-[1000px] max-w-full">
+        <h2 className="text-[2rem] sm:text-[2.4rem] font-ibm font-semibold leading-tight mt-2 text-white">
           <Trans i18nKey="technology.headline_1" />
           <br />
-          <span className="text-[#757679]">
+          <span className="text-[#7D7E81]">
             <Trans i18nKey="technology.headline_2" />
           </span>
         </h2>
       </div>
-      <div className="flex justify-center items-center flex-col md:flex-row w-[1000px] max-w-full min-h-[500px] space-y-6 md:space-y-0 md:space-x-6">
-        <div className="flex flex-col justify-end w-full md:w-[54%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px] p-6 gap-4">
+      <div className="flex justify-center items-center flex-col md:flex-row w-[1000px] max-w-full min-h-[470px] space-y-6 md:space-y-0 md:space-x-6">
+        <div className="flex flex-col justify-end w-full md:w-[54%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px] p-6 pb-10 gap-4">
           <div
-            className="flex flex-col min-h-[320px] w-full"
+            className="flex flex-col min-h-[300px] w-full"
             style={{
               backgroundImage: `url(${bgLightning.src})`,
               backgroundSize: "contain",
@@ -106,20 +105,19 @@ const TechnologyArea = () => {
             }}
           ></div>
           <div>
-            <BabyText text="LIGHTNING NETWORK" />
-            <h2 className="font-manrope font-regular text-white text-xl mt-1">
-              Saving on every transaction
+            <BabyText text="LIGHTNING" />
+            <h2 className="font-manrope font-semibold text-white text-lg mt-1">
+              <Trans i18nKey="technology.subheadline_1" />
             </h2>
-            <p className="font-manrope font-regular text-[#818287] text-xl mt-1">
-              Compared to other networks - by using lightning - you safe up to
-              99% payment fees.
+            <p className="font-manrope font-medium text-[#7D7E81] text-base mt-1">
+              <Trans i18nKey="technology.subtext_2" />
             </p>
           </div>
         </div>
 
-        <div className="flex flex-col justify-end w-full md:w-[46%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px] p-6 gap-4">
+        <div className="flex flex-col justify-end w-full md:w-[46%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px] p-6 pb-10 gap-4">
           <div
-            className="flex flex-col min-h-[320px] w-full justify-center items-center"
+            className="flex flex-col min-h-[300px] w-full justify-center items-center"
             style={{
               backgroundImage: `url(${bgBitcoin.src})`,
               backgroundSize: "cover",
@@ -135,7 +133,7 @@ const TechnologyArea = () => {
                 style={{ backgroundColor: change >= 0 ? "#83EA99" : "#FF6A6A" }}
               ></div>
               {eurRate ? (
-                <span className="text-white font-medium font-manrope text-4xl">
+                <span className="text-white font-semibold font-manrope text-4xl">
                   {formatNumberWithK(eurRate)}
                 </span>
               ) : (
@@ -154,11 +152,11 @@ const TechnologyArea = () => {
           </div>
           <div>
             <BabyText text="BITCOIN" color="#EC5D2A" />
-            <h2 className="font-manrope font-regular text-white text-xl mt-1">
-              We don´t bet, we stack
+            <h2 className="font-manrope font-semibold text-white text-lg mt-1">
+              <Trans i18nKey="technology.subheadline_2" />
             </h2>
-            <p className="font-manrope font-regular text-[#818287] text-xl mt-1">
-              No high risk chasing for the next memecoin. Just. Bitcoin.
+            <p className="font-manrope font-medium text-[#7D7E81] text-base mt-1">
+              <Trans i18nKey="technology.subtext_2" />
             </p>
           </div>
         </div>

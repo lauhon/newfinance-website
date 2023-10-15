@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,6 +14,15 @@
   src: url("../public/fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 
+@font-face {
+  font-family: "Manrope";
+  src: url("../public/fonts/Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "ibm";
+  src: url("../public/fonts/IBMPlexSerif-SemiBold.ttf");
+}
 
 
 

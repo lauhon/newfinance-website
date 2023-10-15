@@ -83,7 +83,7 @@ const Safety = () => {
       className="flex flex-col items-center px-4 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 space-y-8 md:space-y-16"
     >
       <div className="text-left  w-[1000px] max-w-full">
-        <h2 className="text-[2rem] sm:text-[2.4rem] font-manrope font-semibold leading-tight mt-2 text-white">
+        <h2 className="text-[2rem] sm:text-[2.4rem] font-ibm font-semibold leading-tight mt-2 text-white">
           <Trans i18nKey="safety.headline_1" />
           <br />
           <span className="text-[#7D7E81]">
@@ -105,7 +105,7 @@ const Safety = () => {
         }}
       >
         <div className="flex-2">
-          <h2 className="text-[1.9rem] sm:text-[2.3rem] font-manrope font-semibold leading-tight text-white">
+          <h2 className="text-[1.9rem] sm:text-[2.3rem] font-ibm font-semibold leading-tight tracking-wide text-white">
             <Trans i18nKey="safety.subheadline" />
           </h2>
           <p className=" text-base font-manrope font-medium text-[#7D7E82] mt-4">
