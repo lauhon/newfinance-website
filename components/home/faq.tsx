@@ -1,114 +1,80 @@
 import { ChevronRight } from "lucide-react";
-import { Trans } from "next-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import Link from "next/link";
 import { useState } from "react";
 import FAQItem from "../shared/faq/faq-item";
 
 const faqItems = [
   {
-    id: "expecting",
-    title: "What to expect from us...",
-    children: (
-      <div>
-        <p className="mt-3 mb-4">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <p className="mt-3 mb-4">
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet.
-        </p>
-      </div>
-    ),
+    id: "products",
+    title: "Wann Lightning?",
+    icon: "Zap",
+    text: "Nach dem Start unserer Private-Beta wird es unser Hauptziel sein, dir vollen Lightning-Zugang zu bieten. (Für alle, die nicht wissen, was Lightning ist: Du brauchst nicht wissen was das ist, um NewFinance zu nutzen).",
+    linkText: "",
+    link: "",
+    isExpanded: false,
+  },
+];
+
+const faqItemsDE = [
+  {
+    id: "products",
+    title: "Welche Produkte bietet ihr an?",
+    icon: "Zap",
+    text: "Mit NewFinance kannst du in Bitcoin investieren und deine finanzielle Zukunft absichern. Die derzeitige Wirtschaftslage macht das leider notwendig. Bitcoin wird von Millionen von Menschen als Wertanlage verwendet. Mit NewFinance sollst du Bitcoin genauso einfach verwenden können, wie du Geld jetzt verwendest. Jedoch ohne einer zentralen Bank.",
+    linkText: "",
+    link: "",
     isExpanded: false,
   },
   {
-    id: "fees",
-    title: "What fees do I have to pay?",
-    children: (
-      <div>
-        <p className="mt-3 mb-4">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <p className="mt-3 mb-4">
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet.
-        </p>
-      </div>
-    ),
+    id: "who",
+    title: "Wer kann NewFinance verwenden?",
+    icon: "Zap",
+    text: "Jeder. Das ist die Vision von NewFinance und Bitcoin. Niemand wird ausgeschlossen und jeder hat die gleichen Vorraussetzungen.",
+    linkText: "",
+    link: "",
     isExpanded: false,
   },
   {
-    id: "switch",
-    title: "Can I switch from another wallet / exchange or bank?",
-    children: (
-      <div>
-        <p className="mt-3 mb-4">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <p className="mt-3 mb-4">
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet.
-        </p>
-      </div>
-    ),
+    id: "bank",
+    title: "Seid ihr eine Bank?",
+    icon: "Zap",
+    text: "Nein. Wir möchten nur alle nützlichen Funktionen einer Bank anbieten, aber nicht wie eine Bank sein.",
+    linkText: "",
+    link: "",
     isExpanded: false,
   },
   {
-    id: "switch2",
-    title: "Can I switch from another wallet / exchange or bank?",
-    children: (
-      <div>
-        <p className="mt-3 mb-4">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <p className="mt-3 mb-4">
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet.
-        </p>
-      </div>
-    ),
+    id: "safety",
+    title: "Wie ist mein Geld gesichert?",
+    icon: "Zap",
+    text: "Dein Geld ist sicher verwahrt auf der Bitcoin Blockchain. Den Zugang dazu besitzt ausschließlich du lokal verschlüsselt auf deinem Smartphone. Unsere MPC Verschlüsselungstechnologie schützt dabei deinen Zugang. Bei Verlust deines Smartphones ist dein Zugang durch ein Backup abgesichert.",
+    linkText: "",
+    link: "",
     isExpanded: false,
   },
   {
-    id: "switch3",
-    title: "Can I switch from another wallet / exchange or bank?",
-    children: (
-      <div>
-        <p className="mt-3 mb-4">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <p className="mt-3 mb-4">
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet.
-        </p>
-      </div>
-    ),
+    id: "pricing",
+    title: "Was kostet mich NewFinance?",
+    icon: "Zap",
+    text: "Für dich ist NewFinance während der Beta absolut kostenlos. Nach Ablauf der Beta bleibt NewFinance für alle Beta Nutzer weiter kostenlos. Es fallen lediglich die Blockchain Gebühren von Bitcoin an, welche nicht an NewFinance gehen. Diese Gebühren möchten wir jedoch mit Einführung des Lightning Netzwerks abschaffen.",
+    linkText: "",
+    link: "",
     isExpanded: false,
   },
 ];
 
 const FAQ = () => {
-  const [items, setItems] = useState(faqItems);
+  const { i18n } = useTranslation("home");
+
+  const [items, setItems] = useState(
+    i18n.language == "en" ? faqItems : faqItemsDE
+  );
   const [anyOpen, setAnyOpen] = useState(false);
 
   const clicked = (clickedIndex: number) => {
     setItems(
-      faqItems.map((item, index) => ({
+      items.map((item, index) => ({
         ...item,
         isExpanded: index === clickedIndex,
       }))
@@ -118,7 +84,7 @@ const FAQ = () => {
 
   const list = (
     <ul>
-      {items.map(({ children, title, id, isExpanded }, index) => (
+      {items.map(({ text, title, id, isExpanded }, index) => (
         <FAQItem
           key={id + index}
           title={title}
@@ -127,7 +93,7 @@ const FAQ = () => {
           index={index}
           id={id}
         >
-          {children}
+          {text}
         </FAQItem>
       ))}
     </ul>
@@ -147,7 +113,8 @@ const FAQ = () => {
             href="faq"
             className="flex align-text-bottom text-lg text-black font-manrope font-semibold hover:bg-slate-50 transition-all px-4 py-3 rounded-sm mt-8"
           >
-            Support
+            <Trans i18nKey="faq.button_more" />
+
             <ChevronRight size="20" className="text-black mt-1" />
           </Link>
         </div>

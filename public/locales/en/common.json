@@ -118,7 +118,12 @@
     "headline_2": "step by step"
   },
   "faq": {
-    "headline": "Frequently Asked Questions"
+    "headline": "Frequently Asked Questions",
+    "subheadline_1": "General",
+    "subheadline_2": "Moving to NewFinance",
+    "subheadline_3": "Safety",
+    "subheadline_4": "Questions for enthusiasts",
+    "button_more": "More"
   },
   "cta": {
     "headline": "Secure your future with<br/>Bitcoin + everything<br/>your bank can do",
