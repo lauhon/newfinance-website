@@ -158,6 +158,28 @@
     "link_x": "Follow on X",
     "link_medium": "Read on Medium"
   },
+  "pricing": {
+    "headline": "Pricing",
+    "headline_plan_1": "Early Access plan",
+    "lifetime": "for lifetime",
+    "text": "Your strong plan, with all beta features included.",
+    "button_text": "Get started today",
+    "features": "Features",
+    "feature_1": "Full access to your bank-like bitcoin account",
+    "feature_2": "100% MPC security protection",
+    "feature_3": "Unstoppable worldwide transfers",
+    "feature_4": "Priority support",
+    "soon": "Soon",
+    "soon_feature_1": "Lightning network access",
+    "soon_feature_2": "Money pockets - $ or €",
+    "extra_1_1": "Iban and bank interoperability. ",
+    "extra_1_2": "Live with the ending of beta phase.",
+    "extra_2_1": "Sending worldwide. ",
+    "extra_2_2": "Nearly instant and with no extra fees.",
+    "extra_3_1": "Trully your money. ",
+    "extra_3_2": "That can't be controlled or be blocked by others.",
+    "mica": "All this - 100% compliant with the new MiCa regulation"
+  },
   "waitlist": {
     "button": "Join the waitlist",
     "already-exists-error": "You already joined the Waitlist!",

@@ -1,3 +1,4 @@
+import { Trans } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,82 +18,86 @@ const Pricing = () => {
         <div className="mt-16 mb-32 flex flex-col items-center overflow-hidden">
           <h1
             id="first-section"
-            className="text-[3rem] sm:text-[3.6rem] font-manrope font-normal leading-tight mt-2"
+            className="text-[3rem] font-manrope font-semibold leading-tight mt-2"
           >
-            Pricing
+            <Trans i18nKey="pricing.headline" />
           </h1>
 
-          <div
-            className="flex flex-col-reverse sm:flex-row justify-center xl:w-4/5 max-w-[800px] mt-16 gap-6"
-            style={{ perspective: "3000px" }}
-          >
-            <Cardy />
+          <div className="flex flex-col-reverse sm:flex-row justify-center xl:w-4/5 max-w-[400px] mt-16 gap-6">
             <div className="bg-white border-1 rounded-xl flex-1 py-12 px-8 overflow-hidden relative">
               <div className="banner">
-                <p className="font-inter font-normal text-white">
+                <p className="font-manrope font-medium text-white">
                   Limited Time
                 </p>
               </div>
               <h3 className="text-black font-manrope font-semibold tracking-tight text-[1.3rem] leading-tight">
-                Early Access Plan
+                <Trans i18nKey="pricing.headline_plan_1" />
               </h3>
-              <div className="flex flex-row gap-2 items-baseline font-inter font-semibold mt-4">
+              <div className="flex flex-row gap-2 items-baseline font-manrope font-semibold mt-4">
                 <span className="text-[3rem]">$0</span>
                 <span className="text-[#757679] text-sm">for lifetime</span>
               </div>
-              <p className="font-inter text-[#757679] text-sm mt-4">
-                Our strong plan, with all Beta features included.
+              <p className="font-manrope font-medium text-[#757679] text-sm mt-4">
+                <Trans i18nKey="pricing.text" />
               </p>
               <Link
                 href={`/login`}
-                className="flex p-3 text-center bg-[#111726] hover:opacity-80 font-inter font-normal rounded justify-center transition-all duration-200 cursor-default text-white text-sm tracking-tight mt-7"
+                className="flex p-3 text-center bg-[#111726] hover:opacity-80 font-manrope font-semibold rounded justify-center transition-all duration-200 cursor-default text-white text-sm tracking-tight mt-7"
               >
-                Get started
+                <Trans i18nKey="pricing.button_text" />
               </Link>
+              <div className="flex flex-col items-center justify-center mt-3 text-secondary text-[0.65rem] text-[#8E8D95] font-manrope font-semibold tracking-tight">
+                <div className="opacity-80 line-through">
+                  <Trans i18nKey="splash.rarificationTeaser" />
+                </div>
+                <div>
+                  <Trans i18nKey="splash.rarification" />
+                </div>
+              </div>
               <div className="w-full h-[1px] bg-gradient-to-r from-white via-[#53545B] mt-7 mb-7 opacity-20"></div>
               <div>
-                <h3 className="font-manrope font-medium text-black text-sm tracking-tight">
-                  Features
+                <h3 className="font-manrope font-semibold text-black text-sm tracking-tight">
+                  <Trans i18nKey="pricing.features" />
                 </h3>
                 <div className="flex flex-row gap-1 items-center mt-2">
                   <Icon.Check color="#4C3EF7" size="12" />
-                  <span className="font-inter font-normal text-[#444A5F] text-sm">
-                    Access to your bank-like Bitcoin account
+                  <span className="font-manrope font-medium text-[#444A5F] text-sm">
+                    <Trans i18nKey="pricing.feature_1" />
                   </span>
                 </div>
                 <div className="flex flex-row gap-1 items-center mt-2">
                   <Icon.Check color="#4C3EF7" size="12" />
-                  <span className="font-inter font-normal text-[#444A5F] text-sm">
-                    Full MPC security protection
+                  <span className="font-manrope font-medium text-[#444A5F] text-sm">
+                    <Trans i18nKey="pricing.feature_2" />
                   </span>
                 </div>
                 <div className="flex flex-row gap-1 items-center mt-2">
                   <Icon.Check color="#4C3EF7" size="12" />
-                  <span className="font-inter font-normal text-[#444A5F] text-sm">
-                    Unlimited free transactions
+                  <span className="font-manrope font-medium text-[#444A5F] text-sm">
+                    <Trans i18nKey="pricing.feature_3" />
                   </span>
                 </div>
                 <div className="flex flex-row gap-1 items-center mt-2">
                   <Icon.Check color="#4C3EF7" size="12" />
-                  <span className="font-inter font-normal text-[#444A5F] text-sm">
-                    Priority support
+                  <span className="font-manrope font-medium text-[#444A5F] text-sm">
+                    <Trans i18nKey="pricing.feature_4" />
                   </span>
                 </div>
               </div>
               <div className="mt-6">
                 <h3 className="font-manrope font-medium text-[#858694] text-sm tracking-tight">
-                  Soon
+                  <Trans i18nKey="pricing.soon" />
                 </h3>
                 <div className="flex flex-row gap-1 items-center mt-2">
                   <Icon.Check color="#858694" size="12" />
-                  <span className="font-inter font-normal text-[#444A5F] text-sm">
-                    Lightning Network access
+                  <span className="font-manrope font-medium text-[#444A5F] text-sm">
+                    <Trans i18nKey="pricing.soon_feature_1" />
                   </span>
                 </div>
                 <div className="flex flex-row gap-1 items-center mt-2">
                   <Icon.Check color="#858694" size="12" />
-                  <span className="font-inter font-normal text-[#444A5F] text-sm">
-                    Up to 3 additional subwallets
+                  <span className="font-manrope font-medium text-[#444A5F] text-sm">
+                    <Trans i18nKey="pricing.soon_feature_2" />
                   </span>
                 </div>
               </div>
@@ -102,31 +107,31 @@ const Pricing = () => {
           <div className="flex flex-col mt-28 max-w-[350px]">
             <div className="flex flex-row gap-3 items-center">
               <Icon.Check color="#4C3EF7" size="28" />
-              <span className="font-manrope font-normal text-[#757679] text-base">
+              <span className="font-manrope font-medium text-[#757679] text-base">
                 <span className="font-manrope font-medium text-black">
-                  Ibans and bank interoperability.{" "}
+                  <Trans i18nKey="pricing.extra_1_1" />
                 </span>
-                Live with the ending of beta phase.
+                <Trans i18nKey="pricing.extra_1_2" />
               </span>
             </div>
             <div className="w-full h-[1px] bg-gradient-to-r from-white via-[#53545B] mt-7 mb-7 opacity-20"></div>
             <div className="flex flex-row gap-3 items-center">
               <Icon.Check color="#4C3EF7" size="28" />
-              <span className="font-manrope font-normal text-[#757679] text-base">
+              <span className="font-manrope font-medium text-[#757679] text-base">
                 <span className="font-manrope font-medium text-black">
-                  Sending worldwide.{" "}
+                  <Trans i18nKey="pricing.extra_2_1" />
                 </span>
-                Nearly instant and with no extra costs.
+                <Trans i18nKey="pricing.extra_2_2" />
               </span>
             </div>
             <div className="w-full h-[1px] bg-gradient-to-r from-white via-[#53545B] mt-7 mb-7 opacity-20"></div>
             <div className="flex flex-row gap-3 items-center">
               <Icon.Check color="#4C3EF7" size="28" />
-              <span className="font-manrope font-normal text-[#757679] text-base">
+              <span className="font-manrope font-medium text-[#757679] text-base">
                 <span className="font-manrope font-medium text-black">
-                  Trully your money.{" "}
+                  <Trans i18nKey="pricing.extra_3_1" />
                 </span>
-                That can't be controlled or be blocked by others.
+                <Trans i18nKey="pricing.extra_3_2" />
               </span>
             </div>
           </div>
@@ -134,9 +139,9 @@ const Pricing = () => {
           <Link
             href="https://barackobama.medium.com/"
             target="_blank"
-            className="flex flex-row-reverse sm:flex-row items-center py-1.5 px-4 rounded-full font-manrope text-base mb-3 border-1 border-[#D5DAE4] hover:border-[#a5a7b3] transition-all duration-500 mt-16"
+            className="flex flex-row-reverse sm:flex-row items-center py-1.5 px-4 rounded-full font-manrope font-medium text-base mb-3 border-1 border-[#D5DAE4] hover:border-[#a5a7b3] transition-all duration-500 mt-16"
           >
-            <span>All this - 100% compliant with the new MiCA regulation</span>
+            <Trans i18nKey="pricing.mica" />
             <Image
               className="h-[14px] w-auto mr-2 sm:ml-2 rounded-full"
               alt="Climate Change Icon"
@@ -216,17 +221,17 @@ const Cardy = () => {
       }}
     >
       <div ref={glowRef} className="glow" />
-      <h2 className="text-white font-manrope font-normal tracking-tight text-[1.8rem] sm:text-[2.1rem] leading-tight">
+      <h2 className="text-white font-manrope font-medium tracking-tight text-[1.8rem] sm:text-[2.1rem] leading-tight">
         Regain Control
         <br />
         <span className="font-bold">With NewFinance.</span>
       </h2>
-      <p className="font-inter text-white text-sm mt-5">
+      <p className="font-manrope text-white text-sm mt-5">
         Choose NewFinance as your bank alternative and gain back money that you
         control, not others.
       </p>
       <Icon.ArrowRight color="white" size="28" className="mt-5" />
-      <p className="font-inter italic text-white text-sm mt-5 text-center mt-56 relative">
+      <p className="font-manrope italic text-white text-sm mt-5 text-center mt-56 relative">
         “With Bitcoin, we fight against fully control- and traceable money that
         is devalued through Inflation every day.”
       </p>
@@ -238,8 +243,8 @@ const Cardy = () => {
         .banner{
           position: absolute;
           transform: rotate(40deg);
-          top: 34px;
-          right: -40px;
+          top: 0px;
+          right: 0px;
           padding: 5px 50px; 
           background-color: #6528F7;
         }
