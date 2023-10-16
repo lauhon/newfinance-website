@@ -166,33 +166,33 @@ const FAQ = () => {
       <section className="flex flex-col bg-default">
         <div className="mt-28">
           <div className=" px-4 md:px-14 lg:px-28 xl:px-44 pt-16 pb-28">
-            <span className="font-inter text-xs text-[#4e4e50]">FAQ</span>
+            <span className="font-manrope text-xs text-[#4e4e50]">FAQ</span>
             <h1
               id="first-section"
-              className="text-[2.2rem] sm:text-[3rem] font-manrope font-regular leading-tight mt-2"
+              className="text-[2.2rem] sm:text-[3rem] font-manrope font-semibold leading-tight mt-2"
             >
               Frequently Asked Questions
             </h1>
             <div className=" mt-28 pb-14 border-b-1">
-              <h2 className="text-[1.8rem] sm:text-[2.4rem] font-manrope font-regular leading-tight  mb-14">
+              <h2 className="text-[1.8rem] sm:text-[2.4rem] font-manrope font-medium leading-tight  mb-14">
                 General
               </h2>
               {list(faqItemsGeneral)}
             </div>
             <div className=" mt-16 pb-14 border-b-1">
-              <h2 className="text-[1.8rem] sm:text-[2.4rem] font-manrope font-regular leading-tight  mb-14">
+              <h2 className="text-[1.8rem] sm:text-[2.4rem] font-manrope font-medium leading-tight  mb-14">
                 Moving to NewFinance
               </h2>
               {list(faqItemsMoving)}
             </div>
             <div className=" mt-16 pb-14 border-b-1">
-              <h2 className="text-[1.8rem] sm:text-[2.4rem] font-manrope font-regular leading-tight  mb-14">
+              <h2 className="text-[1.8rem] sm:text-[2.4rem] font-manrope font-medium leading-tight  mb-14">
                 Safety
               </h2>
               {list(faqItemsSafety)}
             </div>
             <div className=" mt-16 pb-14">
-              <h2 className="text-[1.8rem] sm:text-[2.4rem] font-manrope font-regular leading-tight  mb-14">
+              <h2 className="text-[1.8rem] sm:text-[2.4rem] font-manrope font-medium leading-tight  mb-14">
                 Questions for enthusiasts
               </h2>
               {list(faqItemsEnthusiasts)}
@@ -239,7 +239,7 @@ function FAQItem({ id, title, text, icon, link, linkText, external }: Props) {
         <h5 className="font-manrope font-bold text-base leading-6 lg:w-5/6 mb-1">
           {title}
         </h5>
-        <p className="font-inter text-regular text-sm leading-6 lg:w-5/6 text-[#4e4e50] transition-all mb-3">
+        <p className="font-manrope text-medium text-sm leading-6 lg:w-5/6 text-[#4e4e50] transition-all mb-3">
           {text}{" "}
           {link != "" && (
             <Link
