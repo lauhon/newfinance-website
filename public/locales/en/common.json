@@ -19,13 +19,13 @@
   "splash": {
     "headline": "Invest and secure your future<br/>with Bitcoin.",
     "tagline": "The current state of the economy makes it necessary.<br/>Why not gain wealth when everybody else does it?",
-    "startButton": "Secure your spot now",
+    "startButton": "Secure your spot today",
     "rarificationTeaser": "Regularly 4.99€/month",
     "rarification": "Free for life if register before December",
     "alphaNotifier": "* All  banking-like features for your Bitcoin are added incrementely<br />and are not fully available in alpha version."
   },
   "video": {
-    "tryButton": "Try out now"
+    "tryButton": "Try out today"
   },
   "inflation": {
     "headline_1": "Why Bitcoin?",
@@ -124,6 +124,20 @@
     "headline_2": "with a wallet made to.",
     "headline_1_xs": "Join the new European way to better money — ",
     "headline_2_xs": "with a wallet made to."
+  },
+  "about": {
+    "headline_addition": "Our vision",
+    "headline": "Simplify the way we use modern money.",
+    "headline_text_1": "Money used to be independant and simple. You got cash in your pocket, you paid with it. Simple. But apps for the digital equivalent of cash - Bitcoin - are complex and confusing.",
+    "headline_text_2": "Frustrated with complicated apps to protect our money in volatile times, we created NewFinance to build an simple but absolut secure place for our money.",
+    "headline_text_3": "Three years researching and testing for the most secure and easy way brought us to this - NewFinance.",
+    "citation": "“We were shocked. After building and testing NewFinance, we found out that it's not only save, but also saves a lot of fees in contrast to traditional finance.”",
+    "citation_subline": "Laurenz, Founder NewFinance",
+    "subheadline": "Why NewFinance matters",
+    "subheadline_text": "Maximize your budget by using a technology that is independant and thus only costs a fraction of traditional finance.",
+    "fact_1": "crypto owners worldwide",
+    "fact_2": "market share of bitcoin",
+    "fact_3": "total bitcoin market cap"
   },
   "waitlist": {
     "button": "Join the waitlist",
