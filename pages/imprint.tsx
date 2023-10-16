@@ -76,12 +76,12 @@ const Imprint = () => {
       <Header line={true} />
       <section className="flex px-4 md:px-14 lg:px-28 xl:px-44 pt-16 flex-col">
         <div className="mt-28">
-          <span className="font-inter text-xs text-[#4e4e50]">
+          <span className="font-manrope font-semibold text-xs text-[#4e4e50]">
             UPDATED JUL 23, 2023
           </span>
           <h1
             id="first-section"
-            className="text-[2.2rem] sm:text-[3rem] font-manrope font-regular leading-tight mt-2"
+            className="text-[2.2rem] sm:text-[3rem] font-manrope font-medium leading-tight mt-2"
           >
             Imprint
           </h1>
@@ -89,7 +89,7 @@ const Imprint = () => {
             <div id="textArea" className="col-span-4 sm:ml-6 lg:ml-0">
               <h4
                 id="intro"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mb-8"
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mb-8"
               >
                 1. Information nach § 5 E-Commerce-Gesetz
               </h4>
