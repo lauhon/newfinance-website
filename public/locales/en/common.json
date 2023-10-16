@@ -139,6 +139,25 @@
     "fact_2": "market share of bitcoin",
     "fact_3": "total bitcoin market cap"
   },
+  "contact": {
+    "headline": "How can we help you?",
+    "headline_addition": "Contact",
+    "subheadline_founders": "Chat with founders",
+    "text_founders": "Let's talk directly with the founders and ask them questions.",
+    "subheadline_help": "Help & Support",
+    "text_help": "Ask product questions, report problems, or leave feedback.",
+    "button_chat": "Chat on WhatsApp",
+    "button_help": "Contact support",
+    "heading_github": "Github",
+    "heading_x": "Join the community",
+    "heading_medium": "Blog on Medium",
+    "text_github": "We are building community based and full Open-Source.",
+    "text_x": "Stay up to date with our newest features.",
+    "text_medium": "Check our insights on finance and better money.",
+    "link_github": "See on Github",
+    "link_x": "Follow on X",
+    "link_medium": "Read on Medium"
+  },
   "waitlist": {
     "button": "Join the waitlist",
     "already-exists-error": "You already joined the Waitlist!",
