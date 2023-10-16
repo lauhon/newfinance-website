@@ -11,6 +11,7 @@ const Safety = () => {
   const colorRef = useRef(null);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
     const darkBackground = document.getElementById("darkBackground");
     if (darkBackground === null) {
     } else {

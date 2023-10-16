@@ -49,6 +49,7 @@ const Imprint = () => {
   };
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
     window.addEventListener("scroll", handleArticleScroll);
     return () => {
       window.removeEventListener("scroll", handleArticleScroll);
@@ -56,6 +57,7 @@ const Imprint = () => {
   }, []);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
     const article = document.getElementById("article");
     const handleManualScroll = () => {
       handleArticleScroll();

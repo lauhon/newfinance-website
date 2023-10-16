@@ -25,7 +25,8 @@
     "alphaNotifier": "* All  banking-like features for your Bitcoin are added incrementely<br />and are not fully available in alpha version."
   },
   "video": {
-    "tryButton": "Try out today"
+    "tryButton": "Try out today",
+    "text": "Save smarter, Send faster, Protect better.<br />And additionally, you save on unnecessary banking fees."
   },
   "inflation": {
     "headline_1": "Why Bitcoin?",

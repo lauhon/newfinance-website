@@ -90,13 +90,18 @@ const Footer = () => {
       <div className="mt-20 sm:mt-36 border-t-1 pt-3 border-[#EDEEF0]">
         <div className="flex justify-start sm:justify-between items-center flex-col-reverse space-y-3 sm:space-y-0 sm:flex-row">
           <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-3 sm:space-y-0 mt-3 sm:mt-0">
-            <span className="text-black text-xs font-manrope font-semibold py-1">
-              © 2023 NewFinance GmbH, i.G.
-            </span>
             <div className="flex flex-row justify-between sm:space-x-8">
               <div>
                 <Link
-                  className="text-[#8E8D95] text-xs font-manrope font-semibold hover:bg-slate-100 transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                  className="text-black text-xs font-manrope font-semibold hover:bg-slate-100 transition py-1 px-2 rounded-md ml-[-0.5rem]"
+                  href="/contact"
+                >
+                  © 2023 NewFinance GmbH, i.G.
+                </Link>
+              </div>
+              <div>
+                <Link
+                  className="text-[#8E8D95] text-xs font-manrope font-semibold hover:bg-slate-100 transition py-1 px-2 rounded-md"
                   href="/privacy"
                 >
                   <Trans i18nKey="links.privacy" />
@@ -104,7 +109,7 @@ const Footer = () => {
               </div>
               <div>
                 <Link
-                  className="text-[#8E8D95] text-xs font-manrope font-semibold hover:bg-slate-100 transition py-1 px-2 ml-[-0.5rem] rounded-md"
+                  className="text-[#8E8D95] text-xs font-manrope font-semibold hover:bg-slate-100 transition py-1 px-2  rounded-md"
                   href="/imprint"
                 >
                   <Trans i18nKey="links.imprint" />

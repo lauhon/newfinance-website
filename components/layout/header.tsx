@@ -20,6 +20,7 @@ const Header = ({ dark = true, line = false }: props) => {
   var logo;
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
     if (document.getElementById("darkBackground") != null) {
       const handleScroll = () => {
         if (
