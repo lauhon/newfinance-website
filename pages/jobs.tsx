@@ -1,5 +1,5 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import FooterLight from "~/components/layout/footer-light";
+import Footer from "~/components/layout/footer";
 import Header from "~/components/layout/header";
 import Layout from "~/components/layout/layout";
 
@@ -20,7 +20,7 @@ const Jobs = () => {
           </h1>
         </div>
       </section>
-      <FooterLight />
+      <Footer />
     </Layout>
   );
 };

@@ -36,7 +36,7 @@ function FAQItem({ id, title, children, onClick, isExpanded, index }: Props) {
       <article
         id={`${id}-panel`}
         aria-labelledby={`${id}-header`}
-        className="text-base text-zinc-400 opacity-10 text-left leading-relaxed font-manrope font-regular w-full pr-4 transition-all px-4"
+        className=" text-sm text-[#8E8D95] opacity-10 text-left  font-manrope font-medium w-full pr-4 transition-all px-4"
         style={{
           transition: "all 0.2s ease",
           overflow: "hidden",

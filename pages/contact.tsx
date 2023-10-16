@@ -1,7 +1,7 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import * as Icon from "react-feather";
-import FooterLight from "~/components/layout/footer-light";
+import Footer from "~/components/layout/footer";
 import Header from "~/components/layout/header";
 import Layout from "~/components/layout/layout";
 
@@ -143,7 +143,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <FooterLight />
+      <Footer />
     </Layout>
   );
 };

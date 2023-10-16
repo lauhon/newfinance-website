@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import * as Icon from "react-feather";
-import FooterLight from "~/components/layout/footer-light";
+import Footer from "~/components/layout/footer";
 import Header from "~/components/layout/header";
 import Layout from "~/components/layout/layout";
 import { default as bgCard } from "~/public/images/bg-card.png";
@@ -145,7 +145,7 @@ const Pricing = () => {
           </Link>
         </div>
       </section>
-      <FooterLight />
+      <Footer />
     </Layout>
   );
 };
