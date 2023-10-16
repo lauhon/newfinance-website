@@ -77,12 +77,12 @@ const Privacy = () => {
       <Header line={true} />
       <section className="flex px-4 md:px-14 lg:px-28 xl:px-44 pt-16 flex-col">
         <div className="mt-28">
-          <span className="font-inter text-xs text-[#4e4e50]">
+          <span className="font-manrope text-xs text-[#4e4e50] font-semibold">
             UPDATED JUL 23, 2023
           </span>
           <h1
             id="first-section"
-            className="text-[2.2rem] sm:text-[3rem] font-manrope font-regular leading-tight mt-2"
+            className="text-[2.2rem] sm:text-[3rem] font-manrope font-semibold leading-tight mt-2"
           >
             Privacy Policy
           </h1>
@@ -196,7 +196,7 @@ const Privacy = () => {
             >
               <h4
                 id="intro"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mb-8"
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mb-8"
               >
                 1. Einleitung und Überblick
               </h4>
@@ -212,7 +212,7 @@ const Privacy = () => {
                 geschlechtsneutral zu verstehen.
               </p>
 
-              <h5 className="font-manrope font-bold text-sm leading-6 lg:w-5/6 mt-12 mb-4">
+              <h5 className="font-manrope font-semibold text-sm leading-6 lg:w-5/6 mt-12 mb-4">
                 1.1 - Kurz gesagt
               </h5>
               <p className="font-inter text-regular text-sm leading-6 lg:w-5/6 text-[#4e4e50]">
@@ -241,7 +241,7 @@ const Privacy = () => {
               </p>
               <h4
                 id="field"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mt-12 mb-8"
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8"
               >
                 3. Anwendungsbereich
               </h4>
@@ -267,7 +267,7 @@ const Privacy = () => {
               </p>
               <h4
                 id="legal"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mt-12 mb-8"
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8"
               >
                 4. Rechtsgrundlagen
               </h4>
@@ -338,7 +338,7 @@ const Privacy = () => {
               </p>
               <h4
                 id="contact"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mt-12 mb-8 "
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8 "
               >
                 5. Kontaktdaten
               </h4>
@@ -356,7 +356,7 @@ const Privacy = () => {
               </p>
               <h4
                 id="storage"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mt-12 mb-8"
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8"
               >
                 6. Speicherdauer
               </h4>
@@ -377,7 +377,7 @@ const Privacy = () => {
               </p>
               <h4
                 id="dsgvo"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mt-12 mb-8"
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8"
               >
                 7. Datenschutzgrundverordnung
               </h4>
@@ -455,7 +455,7 @@ const Privacy = () => {
               </p>
               <h4
                 id="webhosting"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mt-12 mb-8"
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8"
               >
                 8. Webhosting
               </h4>
@@ -573,7 +573,7 @@ const Privacy = () => {
               </p>
               <h4
                 id="email"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mt-12 mb-8"
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8"
               >
                 9. E-Mail Marketing
               </h4>
@@ -724,7 +724,7 @@ const Privacy = () => {
               </p>
               <h4
                 id="cloud"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mt-12 mb-8"
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8"
               >
                 10. Cloud Dienste
               </h4>
@@ -852,7 +852,7 @@ const Privacy = () => {
               </p>
               <h4
                 id="terms"
-                className="text-[1.4rem] sm:text-[2rem] font-manrope font-regular leading-tight mt-12 mb-8"
+                className="text-[1.4rem] sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8"
               >
                 11. Begriffserklärung
               </h4>
