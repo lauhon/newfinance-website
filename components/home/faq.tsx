@@ -144,7 +144,7 @@ const FAQ = () => {
         <div className="lg:w-2/3">{list}</div>
         <div className="ml-[-1rem] flex align-text-bottom">
           <Link
-            href=""
+            href="faq"
             className="flex align-text-bottom text-lg text-black font-manrope font-semibold hover:bg-slate-50 transition-all px-4 py-3 rounded-sm mt-8"
           >
             Support

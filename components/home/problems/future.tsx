@@ -83,7 +83,11 @@ const Future = () => {
             </div>
           </div>
           <div className="flex mt-20 justify-center">
-            <ButtonArrow text="Protect your wealth now" color="#A33051" />
+            <ButtonArrow
+              text="Protect your wealth now"
+              color="#A33051"
+              href="login"
+            />
           </div>
           <div className="flex flex-col items-center justify-center mt-3 text-[0.65rem] text-white font-manrope font-semibold tracking-tight">
             <div>
