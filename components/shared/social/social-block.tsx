@@ -7,7 +7,7 @@ const SocialBlock = ({}: SocialBlockProps) => {
   const { t } = useTranslation("common");
 
   const openTwitter = () => {
-    window.open("https://www.twitter.com", "_blank");
+    window.open("https://twitter.com/GetNewFinance", "_blank");
   };
   const openInstagram = () => {
     window.open("https://www.instagram.com", "_blank");
