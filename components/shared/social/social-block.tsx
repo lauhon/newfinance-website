@@ -12,8 +12,8 @@ const SocialBlock = ({}: SocialBlockProps) => {
   const openInstagram = () => {
     window.open("https://www.instagram.com", "_blank");
   };
-  const openLinkedin = () => {
-    window.open("https://www.linkedin.com", "_blank");
+  const openMedium = () => {
+    window.open("https://newfinance.medium.com/", "_blank");
   };
 
   return (
@@ -25,8 +25,13 @@ const SocialBlock = ({}: SocialBlockProps) => {
         <div className="px-2 md:px-0 md:pl-8 ">
           <ButtonIcon iconName="Instagram" onClick={openInstagram} />
         </div>
-        <div className="px-2 md:px-0 md:pl-8  ">
-          <ButtonIcon iconName="Linkedin" onClick={openLinkedin} />
+        <div className="px-2 md:px-0 md:pl-8 mt-[-0.125rem] ">
+          <button
+            onClick={openMedium}
+            className="font-regular rounded-full transition-all text-gray-400 "
+          >
+            M
+          </button>
         </div>
       </div>
     </div>

@@ -137,7 +137,7 @@ const Pricing = () => {
           </div>
 
           <Link
-            href="https://barackobama.medium.com/"
+            href="https://newfinance.medium.com/"
             target="_blank"
             className="flex flex-row-reverse sm:flex-row items-center py-1.5 px-4 rounded-full font-manrope font-medium text-base mb-3 border-1 border-[#D5DAE4] hover:border-[#a5a7b3] transition-all duration-500 mt-16"
           >

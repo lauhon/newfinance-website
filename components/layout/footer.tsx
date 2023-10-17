@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="flex">
               <Link
                 className="flex items-center text-xs text-[#8E8D95] font-manrope font-semibold hover:bg-slate-100 transition py-1 px-2 ml-[-0.5rem] rounded-md"
-                href="https://barackobama.medium.com/"
+                href="https://newfinance.medium.com/"
                 target="_blank"
               >
                 Blog

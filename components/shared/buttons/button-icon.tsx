@@ -1,4 +1,4 @@
-import * as Icon from "react-feather";
+import * as Icon from "lucide-react";
 
 export type IconName = keyof typeof Icon;
 
@@ -9,7 +9,7 @@ interface ButtonProps {
 }
 
 const ButtonIcon = ({ iconName, lg, onClick }: ButtonProps) => {
-  const IconTag = Icon[iconName];
+  const IconTag = Icon[iconName as keyof typeof Icon.icons];
   return (
     <button
       onClick={onClick}

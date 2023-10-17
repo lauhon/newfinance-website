@@ -20,7 +20,7 @@ const Splash = () => {
     >
       <div className="flex flex-col items-center mt-14 md:mt-24">
         <Link
-          href="https://barackobama.medium.com/"
+          href="https://newfinance.medium.com/"
           target="_blank"
           className="flex py-1.5 px-3 rounded-full font-manrope text-xs mb-3 border-1 border-[#D5DAE4] hover:border-[#a5a7b3] transition-all duration-500"
         >
