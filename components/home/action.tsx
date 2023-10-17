@@ -23,7 +23,7 @@ const Action = () => {
       <h1 className="text-white z-10 font-semibold font-manrope text-[2rem] sm:text-[2.6rem] md:text-[3.2rem] lg:text-[4rem] leading-tight text-center">
         Lets make your money
         <br />
-        independant and free
+        independent and free
       </h1>
       <div className="flex z-10  justify-center mt-6">
         <ButtonSecondary text="Move to better money" />

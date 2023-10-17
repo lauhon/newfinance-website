@@ -119,6 +119,8 @@ const Footer = () => {
           </div>
           <SocialBlock />
         </div>
+
+        {/* NewFinance GmbH does not exist (yet), might seem phishy for people who check this? */}
         <p className="text-black text-xs font-manrope font-medium w-full text-center sm:text-left sm:w-2/3 mt-6">
           <Trans i18nKey="footer.notice" />
         </p>
