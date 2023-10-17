@@ -1,38 +1,47 @@
 import { ReactNode } from "react";
-import ArrowDown from "~/icons/arrow-down.svg";
+import * as Icon from "react-feather";
 
-type Props = { id: string; title: string; children: ReactNode; onClick: Function; isExpanded: boolean; index: number };
+type Props = {
+  id: string;
+  title: string;
+  children: ReactNode;
+  onClick: Function;
+  isExpanded: boolean;
+  index: number;
+};
 
 function FAQItem({ id, title, children, onClick, isExpanded, index }: Props) {
   return (
-    <li className="border-b-2 mt-4 border-black">
-      <h3 className="mb-4 flex">
+    <li className="group ml-[-1rem] mt-1">
+      <h3 className="flex">
         <button
-          className="text-left flex-1 flex items-center text-lg"
+          className="text-left flex-1 flex items-center justify-between text-lg text-black font-manrope font-semibold group-hover:bg-slate-50 transition-all px-4 py-3 rounded-sm"
           id={`${id}-header`}
           onClick={() => onClick(isExpanded ? -1 : index)}
           aria-controls={`${id}-panel`}
           aria-expanded={isExpanded}
         >
           {title}
-          <ArrowDown
-            style={{ transition: "transform 0.5s", transform: `rotate(${isExpanded ? "180deg" : 0})` }}
-            aria-hidden
-            className="ml-auto mr-3"
-            height="12"
-            title="hi"
+          <Icon.Plus
+            size="24"
+            className="text-black"
+            style={{
+              transition: "transform 0.15s",
+              transform: `rotate(${isExpanded ? "90deg" : 0})`,
+            }}
           />
         </button>
       </h3>
+
       <article
         id={`${id}-panel`}
         aria-labelledby={`${id}-header`}
-        className="text-sm"
+        className=" text-sm text-[#4E4E50] leading-6 opacity-10 text-left  font-manrope font-medium w-full pr-4 transition-all px-4"
         style={{
-          transition: "max-height 0.5s linear, opacity 0.7s linear",
-          visibility: isExpanded ? "visible" : "hidden",
-          maxHeight: isExpanded ? "100px" : 0,
-          opacity: isExpanded ? "1" : 0,
+          transition: "all 0.2s ease",
+          overflow: "hidden",
+          opacity: isExpanded ? 1 : 0,
+          maxHeight: isExpanded ? 1000 : 0,
         }}
         aria-hidden={!isExpanded}
       >

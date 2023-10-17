@@ -1,98 +1,60 @@
-import Image from "next/image";
-import ArrowLink from "~/icons/arrow-link.svg";
-import background from "~/public/images/home/background.jpg";
-import iPhone from "~/public/images/home/iPhone.png";
-import WaitlistForm from "../shared/waitlist-form";
+import { Trans, useTranslation } from "next-i18next";
+import Link from "next/link";
+import * as Icon from "react-feather";
+import bg from "../../public/images/home/BackgroundSplash.png";
+import ButtonArrow from "../shared/buttons/button-arrow";
 
 const Splash = () => {
+  const { t } = useTranslation("common");
+
   return (
-    <section className="relative h-full bg-black text-white">
-      <div className="absolute inset-0 overflow-hidden h-screen w-full">
-        <Image src={background} alt="" className="w-full h-full" />
-        <div className="w-full bg-black h-64 -mt-32 blur-3xl"></div>
-      </div>
-      <div className="relative h-full flex flex-col items-center pt-52 flex-1 justify-start space-y-16 pb-32">
-        <h2 className="text-center mx-2.5 text-8xl">
-          {/* <Trans i18nKey="splash.headline">
-            WIE EINE <span className="text-pink-400 font-thin font-serif">bank</span>
-            <br></br>
-            ABER BESSER IN
-            <br></br>
-            <span className="text-primary font-thin font-serif">jedem</span> ASPEKT
-          </Trans> */}
-        </h2>
-        <div>
-          <WaitlistForm />
+    <section
+      className="flex px-5 md:px-14 lg:px-28 pt-24 flex-col"
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundPositionY: "top",
+      }}
+    >
+      <div className="flex flex-col items-center mt-14 md:mt-24">
+        <Link
+          href="https://barackobama.medium.com/"
+          target="_blank"
+          className="flex py-1.5 px-3 rounded-full font-manrope text-xs mb-3 border-1 border-[#D5DAE4] hover:border-[#a5a7b3] transition-all duration-500"
+        >
+          <span>Why Non-Custodian matters</span>
+          <div className="mx-2 border-l-1 my-0.5 border-[#D5DAE4]"></div>
+          <div className="flex items-center">
+            <span className="text-[#772AE8]">Check Out</span>
+            <Icon.ArrowRight size={14} className="text-[#772AE8] ml-0.5" />
+          </div>
+        </Link>
+
+        <h1 className="w-full text-[2.2rem] md:text-[3.2rem] text-center font-manrope font-semibold tracking-tight leading-tight">
+          <Trans i18nKey="splash.headline" />
+        </h1>
+
+        <p className="text-base font-manrope font-medium text-[#8E8D95] text-center mt-3 tracking-tighty">
+          <Trans i18nKey="splash.tagline" />
+        </p>
+
+        <div className="mt-6">
+          <ButtonArrow href="login" text={t("splash.startButton")} />
         </div>
-        <div className="mx-16">
-          <Image src={iPhone} alt="iPhone 13 with Screenshot of the Superlight App" />
+        <div className="flex flex-col items-center justify-center mt-3 text-secondary text-[0.65rem] text-[#8E8D95] font-manrope font-semibold tracking-tight">
+          <div className="opacity-80 line-through">
+            <Trans i18nKey="splash.rarificationTeaser" />
+          </div>
+          <div>
+            <Trans i18nKey="splash.rarification" />
+          </div>
         </div>
       </div>
-      <div className="wrapper text-black bg-primary flex">
-        <a className="py-2 text-lg marquee flex" href="https://zmartup.com" target="_blank" rel="noreferrer">
-          <span className="sr-only">Go to crowd Investing Page in new Tab</span>
-          <p aria-hidden="true">
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            FINANZIERUNGSRUNDE IST AKTIV
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            SICHERE DIR DEINEN ANTEIL
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            INVESTIERE JETZT
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            FINANZIERUNGSRUNDE IST AKTIV
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            SICHERE DIR DEINEN ANTEIL
-          </p>
-          <p aria-hidden="true">
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            FINANZIERUNGSRUNDE IST AKTIV
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            SICHERE DIR DEINEN ANTEIL
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            INVESTIERE JETZT
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            FINANZIERUNGSRUNDE IST AKTIV
-            <ArrowLink aria-hidden className="mx-6 h-6" />
-            SICHERE DIR DEINEN ANTEIL
-          </p>
-        </a>
+      <div className=" mt-12 text-center md:text-right text-[0.65rem] text-[#8E8D95] font-manrope font-semibold tracking-tight">
+        <Trans i18nKey="splash.alphaNotifier" />
       </div>
-      <style jsx>
-        {`
-          @media (prefers-reduced-motion) {
-            .marquee {
-              animation: none;
-            }
-          }
-
-          .wrapper {
-            max-width: 100%;
-            overflow: hidden;
-          }
-
-          .marquee {
-            white-space: nowrap;
-            animation: marquee 10s linear infinite;
-            display: flex;
-            flex-direction: row;
-          }
-
-          .marquee p {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-          }
-
-          @keyframes marquee {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-        `}
-      </style>
     </section>
   );
 };

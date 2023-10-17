@@ -1,11 +1,199 @@
 {
+  "header": {
+    "startButton": "Register"
+  },
+  "social": {
+    "followUs": "Follow us"
+  },
+  "links": {
+    "jobs": "Careers",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "tou": "Terms of Use",
+    "imprint": "Imprint",
+    "faqs": "FAQs",
+    "about": "About",
+    "changelog": "Changelog",
+    "pricing": "Pricing"
+  },
+  "splash": {
+    "headline": "Invest and secure your future<br/>with Bitcoin.",
+    "tagline": "The current state of the economy makes it necessary.<br/>Why not gain wealth when everybody else does it?",
+    "startButton": "Secure your spot today",
+    "rarificationTeaser": "Regularly 4.99€/month",
+    "rarification": "Free for life if register before December",
+    "alphaNotifier": "* All  banking-like features for your Bitcoin are added incrementely<br />and are not fully available in alpha version."
+  },
+  "video": {
+    "tryButton": "Try out today",
+    "text": "Save smarter, Send faster, Protect better.<br />And additionally, you save on unnecessary banking fees."
+  },
+  "inflation": {
+    "headline_1": "Why Bitcoin?",
+    "headline_2": "Because the inflation eats up your savings - everyday.",
+    "headline_text": "You must have noticed how the purchase of bread, milk, and eggs pushes up the bill at the cash register.<br/>In comparison: If you bought bitcoin five years ago, saving 50 $ every week has turned $13,050 into $27,563.",
+    "subheadline": "You are losing cash<br/>with money in your bank",
+    "text": "Endless money printing has taken away a lot of money from you. This has also led to the economy crumbling.<br/><br/>With NewFinance and Bitcoin you get:",
+    "notifier": "Graphic for demonstration purposes only.",
+    "benefit1_1": "Inflation-free new money ",
+    "benefit1_2": "as it is limited to 21M coins",
+    "benefit2_1": "Independant and free money",
+    "benefit2_2": " for harder and volatile times",
+    "benefit3_1": "Money that is accessible worldwide",
+    "benefit3_2": " and can’t be blocked"
+  },
+  "future": {
+    "headline_1": "Invest and secure your future with Bitcoin.",
+    "headline_2": "The current state of the economy makes it necessary.",
+    "headline_text": "The project for NewFinance was initially created to built an absolut secure place for our money, protect it in<br/>volatile times and make it accessible no matter what. Now we want you to have that opportunity.",
+    "subheadline": "It’s easier than you think",
+    "text": "From doctors, over students, to high school teachers — everyone<br/>can invest, grow and protect their wealth.",
+    "benefit1": "Bitcoin as Store-of-value",
+    "benefit2": "Bank like usability",
+    "benefit3": "Worldwide",
+    "benefit4": "Bitcoin to Euro instantly",
+    "buttonInfo": "Take the first step in under 2 minutes"
+  },
+  "features": {
+    "headline_1": "The power of bitcoin +",
+    "headline_2": "the integration of banks.",
+    "headline_text": "Sometimes it’s hard to use Bitcoin as independant money, when you get your paycheck per SEPA transfer and not bitcoin.<br/>That’s why we integrate banking features for bitcoin. So it’s easier for you."
+  },
+  "qualities": {
+    "headline_1": "Let's get rid of rich folks",
+    "headline_2": "sitting on the pile of money",
+    "first": "Unstable banking systems put everyone's money at risk — from individuals to businesses — but we're all dependent on it.",
+    "second": "With our private bitcoin account, you disconnect yourself from banks and keep only their benefits.",
+    "third": "That way, only you manage your money on your own terms, and stay ahead of the game.",
+    "buttonInfo": "Completely free"
+  },
+  "qualitiesEasy": {
+    "headline": "Own Bitcoin in<br/>under 5 minutes",
+    "text": "Buy, sell and send bitcoin nearly instantly.<br/>Up to 250 € without registration.",
+    "benefit1": "Beginning with 1 €",
+    "benefit2": "Card or bank transfer",
+    "benefit3": "Low fees",
+    "benefit4": "Non-custodian"
+  },
+  "qualitiesTransfer": {
+    "headline": "Worldwide transfers<br/>with no extra fees",
+    "text": "Send money to your loved ones abroad or<br/>use your money internationally.",
+    "benefit1": "No extra fees",
+    "benefit2": "IBAN compatible",
+    "benefit3": "Bitcoin/Lightning",
+    "benefit4": "24/7 available"
+  },
+  "qualitiesPockets": {
+    "headline": "Easy money overview<br/>with unlimited pockets",
+    "text": "With traditional banks, you have to pay extra for sub-accounts. We save you money an give them for free.",
+    "benefit1": "Bitcoin pockets",
+    "benefit2": "Money pockets",
+    "benefit3": "Savings control",
+    "benefit4": "Anonym"
+  },
+  "safety": {
+    "headline_1": "Move your money to safety.",
+    "headline_2": "Make it accessible everytime and everywhere.",
+    "headline_text": "“Not your keys, not your coins” has resulted in over $100 billion lost or stolen since the early 2010s. NewFinance prevents this by using the leading security technology - called MPC.",
+    "subheadline": "We’ve invested heavily<br/>in high-end encryption",
+    "text": "You get the safest security technology. Until now,<br/>this was only used by institutions to secure billions of dollars.",
+    "benefit1_1": "Secured by MPC technology, ",
+    "benefit1_2": "a technology never been hacked",
+    "benefit2_1": "Recovery protection ",
+    "benefit2_2": "to never loose the access to your money",
+    "benefit3_1": "No seed phrase vulnerability, ",
+    "benefit3_2": "by creating two secret shares"
+  },
+  "technology": {
+    "headline_1": "You can rely on future-proof technology.",
+    "headline_2": "It saves you time and money.",
+    "lightning": "Lightning network",
+    "subheadline_1": "Save up to 100 € booking fees<br/>your bank normally charges",
+    "subtext_1": "Compared to other networks - by using lightning - you safe up to 99% payment fees.",
+    "subheadline_2": "Do not speculate<br/>but invest wisely",
+    "subtext_2": "With bitcoin, you invest in the largest and oldest cryptocurrency, used by millions as a store of value."
+  },
+  "roadmap": {
+    "headline_1": "Building a better future",
+    "headline_2": "step by step"
+  },
+  "faq": {
+    "headline": "Frequently Asked Questions",
+    "subheadline_1": "General",
+    "subheadline_2": "Moving to NewFinance",
+    "subheadline_3": "Safety",
+    "subheadline_4": "Questions for enthusiasts",
+    "button_more": "More"
+  },
+  "cta": {
+    "headline": "Secure your future with<br/>Bitcoin + everything<br/>your bank can do",
+    "headline_2": "with a wallet made to.",
+    "headline_1_xs": "Join the new European way to better money — ",
+    "headline_2_xs": "with a wallet made to."
+  },
+  "about": {
+    "headline_addition": "Our vision",
+    "headline": "Simplify the way we use modern money.",
+    "headline_text_1": "Money used to be independant and simple. You got cash in your pocket, you paid with it. Simple. But apps for the digital equivalent of cash - Bitcoin - are complex and confusing.",
+    "headline_text_2": "Frustrated with complicated apps to protect our money in volatile times, we created NewFinance to build an simple but absolut secure place for our money.",
+    "headline_text_3": "Three years researching and testing for the most secure and easy way brought us to this - NewFinance.",
+    "citation": "“We were shocked. After building and testing NewFinance, we found out that it's not only save, but also saves a lot of fees in contrast to traditional finance.”",
+    "citation_subline": "Laurenz, Founder NewFinance",
+    "subheadline": "Why NewFinance matters",
+    "subheadline_text": "Maximize your budget by using a technology that is independant and thus only costs a fraction of traditional finance.",
+    "fact_1": "crypto owners worldwide",
+    "fact_2": "market share of bitcoin",
+    "fact_3": "total bitcoin market cap"
+  },
+  "contact": {
+    "headline": "How can we help you?",
+    "headline_addition": "Contact",
+    "subheadline_founders": "Chat with founders",
+    "text_founders": "Let's talk directly with the founders and ask them questions.",
+    "subheadline_help": "Help & Support",
+    "text_help": "Ask product questions, report problems, or leave feedback.",
+    "button_chat": "Chat on WhatsApp",
+    "button_help": "Contact support",
+    "heading_github": "Github",
+    "heading_x": "Join the community",
+    "heading_medium": "Blog on Medium",
+    "text_github": "We are building community based and full Open-Source.",
+    "text_x": "Stay up to date with our newest features.",
+    "text_medium": "Check our insights on finance and better money.",
+    "link_github": "See on Github",
+    "link_x": "Follow on X",
+    "link_medium": "Read on Medium"
+  },
+  "pricing": {
+    "headline": "Pricing",
+    "headline_plan_1": "Early Access plan",
+    "lifetime": "for lifetime",
+    "text": "Your strong plan, with all beta features included.",
+    "button_text": "Get started today",
+    "features": "Features",
+    "feature_1": "Full access to your bank-like bitcoin account",
+    "feature_2": "100% MPC security protection",
+    "feature_3": "Unstoppable worldwide transfers",
+    "feature_4": "Priority support",
+    "soon": "Soon",
+    "soon_feature_1": "Lightning network access",
+    "soon_feature_2": "Money pockets - $ or €",
+    "extra_1_1": "Iban and bank interoperability. ",
+    "extra_1_2": "Live with the ending of beta phase.",
+    "extra_2_1": "Sending worldwide. ",
+    "extra_2_2": "Nearly instant and with no extra fees.",
+    "extra_3_1": "Trully your money. ",
+    "extra_3_2": "That can't be controlled or be blocked by others.",
+    "mica": "All this - 100% compliant with the new MiCa regulation"
+  },
   "waitlist": {
     "button": "Join the waitlist",
     "already-exists-error": "You already joined the Waitlist!",
     "success": "Congrats! You are on the waitlist."
   },
-  "splash": {
-    "headline": "LIKE A <1>bank</1><2></2>BUT BETTER IN<3></3><4>every</4> ASPECT"
-  },
-  "other": "Oops, something happened unexpectedly!"
+  "other": "Oops, something happened unexpectedly!",
+  "example": {
+    "useTranslation": "This is the useTranslation hook",
+    "transTag": "This is a translation tag"
+  }
 }

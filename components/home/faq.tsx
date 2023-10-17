@@ -1,62 +1,124 @@
-import {useState} from 'react';
-import FAQItem from '../shared/faq/faq-item';
+import { ChevronRight } from "lucide-react";
+import { Trans, useTranslation } from "next-i18next";
+import Link from "next/link";
+import { useState } from "react";
+import FAQItem from "../shared/faq/faq-item";
 
 const faqItems = [
   {
-    id: 'wie-anlegen',
-    title: 'Wie kann ich ein neues Wallet anlegen',
-    children: <p>Wallet downloaden starten blabla</p>,
+    id: "products",
+    title: "Wann Lightning?",
+    icon: "Zap",
+    text: "Nach dem Start unserer Private-Beta wird es unser Hauptziel sein, dir vollen Lightning-Zugang zu bieten. (Für alle, die nicht wissen, was Lightning ist: Du brauchst nicht wissen was das ist, um NewFinance zu nutzen).",
+    linkText: "",
+    link: "",
+    isExpanded: false,
+  },
+];
+
+const faqItemsDE = [
+  {
+    id: "products",
+    title: "Welche Produkte bietet ihr an?",
+    icon: "Zap",
+    text: "Mit NewFinance kannst du in Bitcoin investieren und deine finanzielle Zukunft absichern. Die derzeitige Wirtschaftslage macht das leider notwendig. Bitcoin wird von Millionen von Menschen als Wertanlage verwendet. Mit NewFinance sollst du Bitcoin genauso einfach verwenden können, wie du Geld jetzt verwendest. Jedoch ohne einer zentralen Bank.",
+    linkText: "",
+    link: "",
     isExpanded: false,
   },
   {
-    id: 'wo-zahlen',
-    title: 'Wo kann ich mit Superlight bezahlen?',
-    children: <p>überall blablabla</p>,
+    id: "who",
+    title: "Wer kann NewFinance verwenden?",
+    icon: "Zap",
+    text: "Jeder. Das ist die Vision von NewFinance und Bitcoin. Niemand wird ausgeschlossen und jeder hat die gleichen Vorraussetzungen.",
+    linkText: "",
+    link: "",
     isExpanded: false,
   },
   {
-    id: 'wieso-billig',
-    title: 'Wieso sind die Gebühren niedriger als bei anderen Wallets?',
-    children: <p>Tech stuff super toll</p>,
+    id: "bank",
+    title: "Seid ihr eine Bank?",
+    icon: "Zap",
+    text: "Nein. Wir möchten nur alle nützlichen Funktionen einer Bank anbieten, aber nicht wie eine Bank sein.",
+    linkText: "",
+    link: "",
     isExpanded: false,
   },
   {
-    id: 'seid-bank',
-    title: 'Seid ihr eine Bank?',
+    id: "safety",
+    title: "Wie ist mein Geld gesichert?",
+    icon: "Zap",
+    text: "Dein Geld ist sicher verwahrt auf der Bitcoin Blockchain. Den Zugang dazu besitzt ausschließlich du lokal verschlüsselt auf deinem Smartphone. Unsere MPC Verschlüsselungstechnologie schützt dabei deinen Zugang. Bei Verlust deines Smartphones ist dein Zugang durch ein Backup abgesichert.",
+    linkText: "",
+    link: "",
     isExpanded: false,
-    children: <p>na sicha ned. Lorem ipsum dolores abridge</p>,
   },
   {
-    id: 'kann-iban-senden',
-    title: 'Kann ich eine Kryptowährung auch an eine Iban senden?',
-    children: <p>na kloa blabla</p>,
+    id: "pricing",
+    title: "Was kostet mich NewFinance?",
+    icon: "Zap",
+    text: "Für dich ist NewFinance während der Beta absolut kostenlos. Nach Ablauf der Beta bleibt NewFinance für alle Beta Nutzer weiter kostenlos. Es fallen lediglich die Blockchain Gebühren von Bitcoin an, welche nicht an NewFinance gehen. Diese Gebühren möchten wir jedoch mit Einführung des Lightning Netzwerks abschaffen.",
+    linkText: "",
+    link: "",
     isExpanded: false,
   },
 ];
 
 const FAQ = () => {
-  const [items, setItems] = useState(faqItems);
+  const { i18n } = useTranslation("home");
+
+  const [items, setItems] = useState(
+    i18n.language == "en" ? faqItems : faqItemsDE
+  );
   const [anyOpen, setAnyOpen] = useState(false);
 
   const clicked = (clickedIndex: number) => {
-    setItems(faqItems.map((item, index) => ({...item, isExpanded: index === clickedIndex})));
+    setItems(
+      items.map((item, index) => ({
+        ...item,
+        isExpanded: index === clickedIndex,
+      }))
+    );
     setAnyOpen(clickedIndex !== -1);
   };
 
   const list = (
     <ul>
-      {items.map(({children, title, id, isExpanded}, index) => (
-        <FAQItem key={id + index} title={title} isExpanded={isExpanded} onClick={clicked} index={index} id={id}>
-          {children}
+      {items.map(({ text, title, id, isExpanded }, index) => (
+        <FAQItem
+          key={id + index}
+          title={title}
+          isExpanded={isExpanded}
+          onClick={clicked}
+          index={index}
+          id={id}
+        >
+          {text}
         </FAQItem>
       ))}
     </ul>
   );
 
   return (
-    <section className=" px-2 md:px-44">
-      <h2 className=" text-3xl mb-12">Frequently asked Questions</h2>
-      {list}
+    <section className="flex justify-center content-center transition-all items-center px-6 md:px-14 lg:px-28 pb-32 pt-32">
+      <div className="flex w-[1000px] max-w-full flex-col">
+        <div className="text-left w-[1000px] max-w-full mb-12">
+          <h2 className="text-[2rem] sm:text-[2.4rem] font-manrope font-semibold leading-tight mt-2">
+            <Trans i18nKey="faq.headline" />
+          </h2>
+        </div>
+        <div className="lg:w-2/3">{list}</div>
+        <div className="ml-[-1rem] flex align-text-bottom">
+          <Link
+            href="faq"
+            className="flex align-text-bottom text-lg text-black font-manrope font-semibold hover:bg-slate-50 transition-all px-4 py-3 rounded-sm mt-8"
+          >
+            <Trans i18nKey="faq.button_more" />
+
+            <ChevronRight size="20" className="text-black mt-1" />
+          </Link>
+        </div>
+      </div>
     </section>
   );
 };

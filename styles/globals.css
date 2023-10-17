@@ -1,20 +1,43 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/*@font-face {
+  font-family: "Manrope";
+  src: url("../public/fonts/Manrope-VariableFont_wght.ttf");
+}*/
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../public/fonts/Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "ibm";
+  src: url("../public/fonts/IBMPlexSerif-SemiBold.ttf");
+}
+
 
 
 :root{
-  --color-primary: #83DEA8;
-  --color-secondary: theme("colors.indigo.500");
-  --color-text: theme("colors.gray.900");
-  --color-text-offset: theme("colors.gray.600");
-  --color-text-contrast: theme("colors.gray.50");
+  --color-primary: #90F7F0;
 
-  --color-background: theme("colors.gray.900");
-  --color-background-offset: theme("colors.gray.100");
-  --color-border: theme("colors.gray.900" / 10%);
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #A3A3A3;
 
-  --color-background-footer:#000;
+  --color-text-p: #334155;
 
+  --color-background: #FFFFFF;
+
+  --color-black: #000000;
+  --color-button-text-primary: #ffffff;
+
+  --color-border: #000000;
 }

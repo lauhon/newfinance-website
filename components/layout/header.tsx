@@ -1,32 +1,85 @@
-import LogoSolo from "~/icons/logo-solo.svg";
-import LogoMark from "~/icons/logomark.svg";
-import LanguageSwitch from "../shared/language/language-switchers";
-import WaitlistButton from "../shared/waitlist-button";
-const Header = () => {
+import { useTranslation } from "next-i18next";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import ButtonArrow from "../shared/buttons/button-arrow";
+
+interface props {
+  dark?: boolean;
+  line?: boolean;
+}
+
+const Header = ({ dark = true, line = false }: props) => {
+  const { t } = useTranslation("common");
+
+  const [isDark, setDark] = useState(dark);
+  const [showLine, setShowLine] = useState(line);
+
+  const logo_dark = require("~/icons/LogoNewFinance.png");
+  const logo_white = require("~/icons/LogoNewFinanceWhite.png");
+  var logo;
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (document.getElementById("darkBackground") != null) {
+      const handleScroll = () => {
+        if (
+          document.getElementById("darkBackground")?.style.backgroundColor !==
+          "rgb(255, 255, 255)"
+        ) {
+          setDark(false);
+        } else {
+          setDark(true);
+        }
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  });
+
   return (
     <>
       <header
         id="page-header"
-        className="z-20 fixed top-0 flex items-center justify-center sm:justify-between bg-transparent sm:h-20 h-14 w-full px-16 py-4 border-b-white text-white border-b border-transparent"
+        className="z-20 h-[74px] backdrop-blur fixed w-full bg-transparent px-4 md:px-14 lg:px-28 "
       >
-        {/* <!-- TODO: Replace below div once links are clear. also burger menu has to be implemented then
-     <div className="flex-row font-thin space-x-16 text-lg hidden sm:flex">
-    <a href="#">Personal</a>
-    <a href="#">Business</a>
-  </div> --> */}
+        <div
+          className="flex h-[74px] items-center justify-between border-b-1"
+          style={{
+            borderColor: isDark ? "#e5e7ebBB" : "#2C303ABB",
+            borderBottomWidth: showLine ? "1px" : "0px",
+          }}
+        >
+          <div className="flex items-center">
+            <Link
+              className="justify-start hover:opacity-80 transition-all"
+              href="/"
+            >
+              {isDark ? (
+                <Image
+                  className="h-[32px] w-auto"
+                  alt="NewFinance Logo"
+                  src={logo_dark}
+                />
+              ) : (
+                <Image
+                  className="h-[32px] w-auto"
+                  alt="NewFinance Logo"
+                  src={logo_white}
+                />
+              )}
+            </Link>
+          </div>
 
-        <LanguageSwitch />
-        {/* <!-- <div className="w-44 hidden sm:block"></div> --> */}
-        <a className="flex h-14 items-center" href="#">
-          <h1 className="sr-only">Superlight</h1>
-          <LogoMark className="h-10 sm:hidden lg:block block sm:h-12" />
-          <LogoSolo className="h-10 hidden sm:block lg:hidden sm:h-12" />
-        </a>
-        <div className="hidden md:block">
-          <WaitlistButton />
+          <ButtonArrow
+            href="login"
+            text={t("header.startButton")}
+            inverted={isDark ? false : true}
+          />
         </div>
       </header>
-      <div className="z-10 backdrop-blur-lg fixed sm:h-20 h-14 top-0 w-full"></div>
     </>
   );
 };
