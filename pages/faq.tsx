@@ -190,6 +190,42 @@ const faqItemsEnthusiastsDE = [
 
 const faqItemsGeneral = [
   {
+    id: "products",
+    title: "What products do you offer?",
+    icon: "Kanban",
+    text: "With NewFinance you can invest in Bitcoin and secure your financial future. Unfortunately, the current economic situation makes this necessary. Bitcoin is used by millions of people as an investment. With NewFinance you should be able to use Bitcoin just as easily as you use money now. But without a central bank.",
+    linkText: "",
+    link: "",
+    isExpanded: false,
+  },
+  {
+    id: "who",
+    title: "Who can use NewFinance?",
+    icon: "User",
+    text: "Everyone. This is the vision of NewFinance and Bitcoin. No one is excluded and everyone has the same prerequisites.",
+    linkText: "",
+    link: "",
+    isExpanded: false,
+  },
+  {
+    id: "bank",
+    title: "Are you a bank?",
+    icon: "Landmark",
+    text: "No. We just want to offer all the useful features of a bank, but not be like a bank.",
+    linkText: "",
+    link: "",
+    isExpanded: false,
+  },
+  {
+    id: "pricing",
+    title: "What does NewFinance cost me?",
+    icon: "Coins",
+    text: "NewFinance is absolutely free for you during the beta. After the end of the beta, NewFinance remains free for all beta users. Only the blockchain fees of Bitcoin will be charged, which will not go to NewFinance. However, we would like to abolish these fees with the introduction of the Lightning network.",
+    linkText: "",
+    link: "",
+    isExpanded: false,
+  },
+  {
     id: "general",
     title: "Is there a free trial available?",
     icon: "Check",
@@ -260,6 +296,15 @@ const faqItemsMoving = [
 ];
 
 const faqItemsSafety = [
+  {
+    id: "safety",
+    title: "How is my money secured?",
+    icon: "ShieldCheck",
+    text: "Your money is safely stored on the Bitcoin blockchain. Only you have access to it locally encrypted on your smartphone. Our MPC encryption technology protects your access. If you lose your smartphone, your access is protected by a backup.",
+    linkText: "",
+    link: "",
+    isExpanded: false,
+  },
   {
     id: "general",
     title: "Who have access to my money?",
