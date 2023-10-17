@@ -1,9 +1,10 @@
 import { ChevronRight } from "lucide-react";
 import { Trans, useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import ButtonStandard from "~/components/shared/buttons/button-standard";
 import FAQItem from "~/components/shared/faq/faq-item";
 import StandardInput from "~/components/shared/inputs/standard-input";
@@ -59,6 +60,8 @@ const Login = () => {
   const { i18n } = useTranslation("home");
   const { t } = useTranslation("common");
 
+  const [input, setInput] = useState("");
+
   const [items, setItems] = useState(
     i18n.language == "en" ? faqItems : faqItemsDE
   );
@@ -92,8 +95,23 @@ const Login = () => {
     </ul>
   );
 
+  const addContactMailjet = () => {
+    /*console.log(input);
+    addContact(input);*/
+  };
+
   return (
     <section className="flex flex-col md:flex-row space-x-32 overflow-y-scroll">
+      <Head>
+        <meta
+          property="og:title"
+          content={
+            i18n.language == "en"
+              ? "Registration - NewFinance"
+              : "Registrierung - NewFinance"
+          }
+        />
+      </Head>
       <div className="items-center flex-col py-6 pb-24 px-16 w-3/6">
         <Link
           className="fixed justify-start hover:opacity-80 transition-all"
@@ -110,9 +128,18 @@ const Login = () => {
           <h1 className=" text-2xl text-black font-manrope font-semibold mb-4">
             <Trans i18nKey="login.headline" />
           </h1>
-          <StandardInput placeholder={t("login.input_email")} />
+          <StandardInput
+            value={input}
+            onInput={(e: { target: { value: SetStateAction<string> } }) =>
+              setInput(e.target.value)
+            }
+            placeholder={t("login.input_email")}
+          />
           <div className="pt-3.5" />
-          <ButtonStandard text={t("login.button_email")} />
+          <ButtonStandard
+            text={t("login.button_email")}
+            onClick={addContactMailjet}
+          />
           <p className="font-manrope font-medium text-[#979AA1] text-xs w-96 text-start mt-4 leading-relaxed ">
             <Trans i18nKey="login.notice" />
           </p>

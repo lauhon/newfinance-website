@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import Head from "next/head";
 import { ReactNode } from "react";
 
@@ -12,7 +13,7 @@ const Layout = ({ children }: Props) => {
     /* <html lang={i18next.language} class="h-full motion-safe:scroll-smooth"> */
   }
   // <body class="h-full overflow-x-hidden text-base bg-default text-default selection:bg-secondary selection:text-white">
-
+  const { i18n } = useTranslation("home");
   return (
     <>
       <Head>
@@ -24,7 +25,14 @@ const Layout = ({ children }: Props) => {
         <title>NewFinance©</title>
         <meta name="description" content={description} />
 
-        <meta property="og:title" content="NewFinance©" />
+        <meta
+          property="og:title"
+          content={
+            i18n.language == "en"
+              ? "NewFinance - Invest in bitcoin"
+              : "NewFinance - Investiere in Bitcoin"
+          }
+        />
         <meta property="og:type" content="website" />
         <meta property="og:description" content={description} />
         <meta name="twitter:card" content="summary_large_image" />
