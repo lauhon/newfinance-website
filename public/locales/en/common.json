@@ -195,6 +195,12 @@
     "extra_3_2": "That can't be controlled or be blocked by others.",
     "mica": "All this - 100% compliant with the new MiCa regulation"
   },
+  "login": {
+    "notice": "By signing up, you agree to the Terms of Service<br />and Data Processing Agreement.",
+    "headline": "Create your free account",
+    "input_email": "Enter your email address...",
+    "button_email": "Continue with email"
+  },
   "waitlist": {
     "button": "Join the waitlist",
     "already-exists-error": "You already joined the Waitlist!",

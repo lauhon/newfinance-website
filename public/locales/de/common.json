@@ -190,6 +190,12 @@
     "extra_3_2": "Das nicht von anderen kontrolliert oder blockiert werden kann.",
     "mica": "All das - zu 100 % konform mit der neuen MiCa-Verordnung"
   },
+  "login": {
+    "notice": "Mit der Anmeldung erklärst du dich mit den Nutzungsbedingungen und der Datenschutzverordnung einverstanden.",
+    "headline": "Erstelle deinen<br/>kostenlosen Account",
+    "input_email": "Gib deine E-Mail ein...",
+    "button_email": "Weiter mit Email"
+  },
   "waitlist": {
     "button": "Join the waitlist",
     "already-exists-error": "You already joined the Waitlist!",
