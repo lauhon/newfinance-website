@@ -16,8 +16,15 @@
     "changelog": "Changelog",
     "pricing": "Pricing"
   },
+  "footer": {
+    "notice": "The value of investments can rise or fall, which is why investments in bitcoin always carry a risk. Investors should therefore make their own decisions or seek independent advice. Trademarks are the property of their respective owners. Unless otherwise, noted, use of third party logos does not imply endorsement of, sponsorship of, or affiliation with NewFinance.",
+    "company": "COMPANY",
+    "resources": "RESOURCES"
+  },
   "splash": {
     "headline": "Invest and secure your future<br/>with Bitcoin.",
+    "non-custodian": "Why non-custodian matters",
+    "check-out": "Check out",
     "tagline": "The current state of the economy makes it necessary.<br/>Why not gain wealth when everybody else does it?",
     "startButton": "Secure your spot today",
     "rarificationTeaser": "Regularly 4.99€/month",
@@ -52,7 +59,8 @@
     "benefit2": "Bank like usability",
     "benefit3": "Worldwide",
     "benefit4": "Bitcoin to Euro instantly",
-    "buttonInfo": "Take the first step in under 2 minutes"
+    "buttonInfo": "Take the first step in under 2 minutes",
+    "button": "Protect your wealth now"
   },
   "features": {
     "headline_1": "The power of bitcoin +",
@@ -65,7 +73,8 @@
     "first": "Unstable banking systems put everyone's money at risk — from individuals to businesses — but we're all dependent on it.",
     "second": "With our private bitcoin account, you disconnect yourself from banks and keep only their benefits.",
     "third": "That way, only you manage your money on your own terms, and stay ahead of the game.",
-    "buttonInfo": "Completely free"
+    "buttonInfo": "Completely free",
+    "button": "Check out how simple it is"
   },
   "qualitiesEasy": {
     "headline": "Own Bitcoin in<br/>under 5 minutes",

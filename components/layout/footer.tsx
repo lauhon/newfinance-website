@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-row space-x-20 mt-8 md:mt-2">
           <div className="flex flex-col space-y-1">
             <h3 className="text-xs text-black py-1 font-semibold font-manrope">
-              COMPANY
+              <Trans i18nKey="footer.company" />
             </h3>
             <div>
               <Link
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col space-y-1">
             <h3 className="text-xs text-black py-1 font-semibold font-manrope">
-              RESOURCES
+              <Trans i18nKey="footer.resources" />
             </h3>
             <div>
               <Link
@@ -120,10 +120,7 @@ const Footer = () => {
           <SocialBlock />
         </div>
         <p className="text-black text-xs font-manrope font-medium w-full text-center sm:text-left sm:w-2/3 mt-6">
-          NewFinance is a trademark or registered trademark of NewFinance GmbH.
-          Any other trademarks are the property of their respective owners.
-          Unless otherwise, noted, use of third party logos does not imply
-          endorsement of, sponsorship of, or affiliation with NewFinance.
+          <Trans i18nKey="footer.notice" />
         </p>
       </div>
     </footer>

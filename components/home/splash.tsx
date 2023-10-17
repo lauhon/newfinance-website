@@ -24,10 +24,12 @@ const Splash = () => {
           target="_blank"
           className="flex py-1.5 px-3 rounded-full font-manrope text-xs mb-3 border-1 border-[#D5DAE4] hover:border-[#a5a7b3] transition-all duration-500"
         >
-          <span>Why Non-Custodian matters</span>
+          <Trans i18nKey="splash.non-custodian" />
           <div className="mx-2 border-l-1 my-0.5 border-[#D5DAE4]"></div>
           <div className="flex items-center">
-            <span className="text-[#772AE8]">Check Out</span>
+            <span className="text-[#772AE8]">
+              <Trans i18nKey="splash.check-out" />
+            </span>
             <Icon.ArrowRight size={14} className="text-[#772AE8] ml-0.5" />
           </div>
         </Link>
