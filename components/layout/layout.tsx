@@ -1,9 +1,9 @@
 import { useTranslation } from "next-i18next";
 import Head from "next/head";
 import { ReactNode } from "react";
+import ButtonArrow from "../shared/buttons/button-arrow";
 
-const description =
-  "Superlight. Send, recieve and pay with Cryptocurrency. Without transaction costs.";
+const description = "NewFinance. Invest and secure your future with Bitcoin.";
 
 type Props = {
   children: ReactNode;
@@ -47,6 +47,27 @@ const Layout = ({ children }: Props) => {
         <link rel="alternate" href="http://example.com" hrefLang="en" />
         <link rel="alternate" href="http://example.com/de" hrefLang="de" />
       </Head>
+      <div className="fixed flex space-x-8 align-middle flex-row left-1/2 -translate-x-1/2 z-50 bg-white px-6 py-4 rounded-3xl bottom-8 shadow-2xl">
+        <div className="font-manrope text-sm font-semibold">
+          Dürfen wir Cookies verwenden?
+          <br />
+          Erfahre hier mehr
+        </div>
+        <div>
+          <ButtonArrow
+            color="#EEF1F5"
+            text={i18n.language == "en" ? "Decline" : "Ablehnen"}
+            inverted={true}
+            icon="X"
+          />
+        </div>
+        <div>
+          <ButtonArrow
+            text={i18n.language == "en" ? "Accept" : "Akzeptieren"}
+            icon="Check"
+          />
+        </div>
+      </div>
       {children}
     </>
   );

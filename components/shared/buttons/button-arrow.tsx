@@ -1,5 +1,5 @@
+import * as Icon from "lucide-react";
 import Link from "next/link";
-import { ArrowRight } from "react-feather";
 
 interface ButtonProps {
   text?: any;
@@ -7,6 +7,7 @@ interface ButtonProps {
   href?: any;
   color?: any;
   inverted?: any;
+  icon?: any;
 }
 
 const ButtonArrow = ({
@@ -15,7 +16,10 @@ const ButtonArrow = ({
   href,
   color,
   inverted = false,
+  icon = "ArrowRight",
 }: ButtonProps) => {
+  const IconTag = Icon[icon as keyof typeof Icon.icons];
+
   return (
     <Link
       href={`/${href}`}
@@ -31,7 +35,7 @@ const ButtonArrow = ({
         {text}
       </span>
       <div className="flex items-center justify-center">
-        <ArrowRight
+        <IconTag
           size={20}
           className=" text-white"
           style={{ color: inverted ? "black" : "white" }}
