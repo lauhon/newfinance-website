@@ -23,7 +23,7 @@
   },
   "splash": {
     "headline": "Invest and secure your future<br/>with Bitcoin.",
-    "non-custodian": "Why non-custodian matters",
+    "non-custodian": "Why non-custodial matters",
     "check-out": "Check out",
     "tagline": "The current state of the economy makes it necessary.<br/>Why not gain wealth when everybody else does it?",
     "startButton": "Secure your spot today",
@@ -82,7 +82,7 @@
     "benefit1": "Beginning with 1 €",
     "benefit2": "Card or bank transfer",
     "benefit3": "Low fees",
-    "benefit4": "Non-custodian"
+    "benefit4": "Non-custodial"
   },
   "qualitiesTransfer": {
     "headline": "Worldwide transfers<br/>with no extra fees",
