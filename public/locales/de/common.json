@@ -5,6 +5,11 @@
     "banner2": "High-End-Verschlüsselung",
     "banner3": "Keine zusätzlichen Gebühren"
   },
+  "download": {
+    "headline": "Lade die App herunter",
+    "notAvailable": "Die App ist zurzeit noch nicht verfügbar.",
+    "notice": "Wenn du registriert bist, bekommst du eine Benachrichtigung sobald die App zum download bereit steht."
+  },
   "social": {
     "followUs": "Folge uns"
   },

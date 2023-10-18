@@ -5,6 +5,11 @@
     "banner2": "High-end encryption",
     "banner3": "No extra fees"
   },
+  "download": {
+    "headline": "Download the app",
+    "notAvailable": "The app is not yet available.",
+    "notice": "If you are registered, you will receive a notification as soon as the app is ready for download."
+  },
   "social": {
     "followUs": "Follow us"
   },
