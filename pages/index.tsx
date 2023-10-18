@@ -19,12 +19,9 @@ import ButtonArrow from "~/components/shared/buttons/button-arrow";
 const Home = () => {
   const { t } = useTranslation("common");
 
-  const { i18n } = useTranslation("home");
-  const [showBannerAlpha, setShowBannerAlpha] = useState(true);
-
   return (
     <Layout>
-      <Header />
+      <Header banner={true} />
       <Splash />
       <VideoArea />
       <div id="darkBackground" className="bg-white">
@@ -42,6 +39,17 @@ const Home = () => {
           <Footer />
         </div>
       </div>
+      <Banner />
+    </Layout>
+  );
+};
+
+const Banner = () => {
+  const { i18n } = useTranslation("home");
+  const [showBannerAlpha, setShowBannerAlpha] = useState(true);
+
+  return (
+    <>
       {showBannerAlpha && (
         <div className="fixed flex space-y-4 lg:space-y-0 lg:space-x-8 align-middle flex-col lg:flex-row lg:left-1/2 lg:-translate-x-1/2 z-50 bg-white mx-8 lg:mx-0 px-6 py-8 lg:py-4 rounded-3xl bottom-8 shadow-2xl">
           <div className="flex lg:w-[400px] font-manrope text-sm font-semibold">
@@ -69,7 +77,7 @@ const Home = () => {
           </div>
         </div>
       )}
-    </Layout>
+    </>
   );
 };
 

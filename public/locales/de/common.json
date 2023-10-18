@@ -1,6 +1,9 @@
 {
   "header": {
-    "startButton": "Registrieren"
+    "startButton": "Registrieren",
+    "banner1": "Kaufe Bitcoin in unter 5 Minuten",
+    "banner2": "High-End-Verschlüsselung",
+    "banner3": "Keine zusätzlichen Gebühren"
   },
   "social": {
     "followUs": "Folge uns"

@@ -1,6 +1,9 @@
 {
   "header": {
-    "startButton": "Register"
+    "startButton": "Register",
+    "banner1": "Buy bitcoin in under 5 minutes",
+    "banner2": "High-end encryption",
+    "banner3": "No extra fees"
   },
   "social": {
     "followUs": "Follow us"
