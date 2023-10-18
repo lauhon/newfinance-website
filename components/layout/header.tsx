@@ -33,6 +33,9 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
     if (typeof window === "undefined") return;
     if (document.getElementById("darkBackground") != null) {
       const handleScroll = () => {
+        console.log(
+          document.getElementById("darkBackground")?.style.backgroundColor
+        );
         if (
           document.getElementById("darkBackground")?.style.backgroundColor !==
           "rgb(255, 255, 255)"
@@ -56,7 +59,7 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
           <div
             className="flex space-x-6 justify-between align-middle z-50  border-b-1 transition-all px-4 md:px-14 lg:px-28 py-3 top-[-50px]"
             style={{
-              borderColor: isDark ? "#e5e7ebBB" : "#2C303ABB",
+              borderColor: isDark ? "#0000001A" : "#FFFFFF33",
               color: isDark ? "black" : "white",
               animation: "banner 1s ease",
             }}
