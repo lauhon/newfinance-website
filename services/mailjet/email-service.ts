@@ -2,7 +2,9 @@ import { createAuthBasic } from "~/lib/api/auth";
 import { AddContactResponse } from "~/lib/api/types/mailjet/contact";
 import { MailjetError } from "./mailjet";
 
-export const addContact = async (email: string, name: string): Promise<AddContactResponse> => {
+export const addContact = async (
+  email: string
+): Promise<AddContactResponse> => {
   const response = await fetch(mailApi + contactEndpoint, {
     method: "POST",
     headers: {
@@ -10,7 +12,6 @@ export const addContact = async (email: string, name: string): Promise<AddContac
       Authorization: `${createAuthBasic()}`,
     },
     body: JSON.stringify({
-      name,
       email,
     }),
   });

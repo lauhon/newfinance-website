@@ -95,9 +95,17 @@ const Login = () => {
     </ul>
   );
 
-  const addContactMailjet = () => {
-    /*console.log(input);
-    addContact(input);*/
+  const addContactMailjet = async () => {
+    console.log(input);
+    const response = await fetch("/api/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: input,
+      }),
+    });
   };
 
   return (
