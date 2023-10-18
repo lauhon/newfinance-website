@@ -119,10 +119,12 @@ const Footer = () => {
           </div>
           <SocialBlock />
         </div>
+
+        {/* NewFinance GmbH does not exist (yet), might seem phishy for people who check this? */}
         <p className="text-black text-xs font-manrope font-medium w-full text-center sm:text-left sm:w-2/3 mt-6">
           NewFinance is a trademark or registered trademark of NewFinance GmbH.
           Any other trademarks are the property of their respective owners.
-          Unless otherwise, noted, use of third party logos does not imply
+          Unless otherwise noted, use of third party logos does not imply
           endorsement of, sponsorship of, or affiliation with NewFinance.
         </p>
       </div>

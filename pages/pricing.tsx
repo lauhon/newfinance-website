@@ -167,9 +167,11 @@ export default Pricing;
 
 const Cardy = () => {
   let bounds;
-  const inputRef = useRef();
-  const glowRef = useRef();
+  const inputRef = useRef<HTMLAnchorElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
   const rotateToMouse = (e: any) => {
+    if (!inputRef.current || !glowRef.current) return;
+
     bounds = inputRef.current.getBoundingClientRect();
     const mouseX = e.clientX;
     const mouseY = e.clientY;
@@ -200,7 +202,9 @@ const Cardy = () => {
       )
     `;
   };
-  const removeListener = (e) => {
+  const removeListener = () => {
+    if (!inputRef.current) return;
+
     inputRef.current.style.transform = "";
     //inputRef.current.style.background = "";
   };

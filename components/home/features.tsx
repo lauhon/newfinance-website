@@ -46,6 +46,7 @@ const Features = () => {
         </p>
       </div>
       <div className="flex items-start left-0 mb-0 flex-row space-x-24 w-[1800px] overflow-hidden">
+        {/* TODO: on smaller screens this just gets cut, meaning that the user cant see all points */}
         {data.map((item, i) => (
           <div key={i}>
             <h4 className=" text-lg font-manrope font-semibold text-black">

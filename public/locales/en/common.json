@@ -22,7 +22,7 @@
     "startButton": "Secure your spot today",
     "rarificationTeaser": "Regularly 4.99€/month",
     "rarification": "Free for life if register before December",
-    "alphaNotifier": "* All  banking-like features for your Bitcoin are added incrementely<br />and are not fully available in alpha version."
+    "alphaNotifier": "* All  banking-like features for your Bitcoin are added incrementally<br />and are not fully available in the alpha version."
   },
   "video": {
     "tryButton": "Try out today",
@@ -30,14 +30,14 @@
   },
   "inflation": {
     "headline_1": "Why Bitcoin?",
-    "headline_2": "Because the inflation eats up your savings - everyday.",
+    "headline_2": "Because inflation eats up your savings - everyday.",
     "headline_text": "You must have noticed how the purchase of bread, milk, and eggs pushes up the bill at the cash register.<br/>In comparison: If you bought bitcoin five years ago, saving 50 $ every week has turned $13,050 into $27,563.",
     "subheadline": "You are losing cash<br/>with money in your bank",
     "text": "Endless money printing has taken away a lot of money from you. This has also led to the economy crumbling.<br/><br/>With NewFinance and Bitcoin you get:",
     "notifier": "Graphic for demonstration purposes only.",
     "benefit1_1": "Inflation-free new money ",
     "benefit1_2": "as it is limited to 21M coins",
-    "benefit2_1": "Independant and free money",
+    "benefit2_1": "Independent and free money",
     "benefit2_2": " for harder and volatile times",
     "benefit3_1": "Money that is accessible worldwide",
     "benefit3_2": " and can’t be blocked"
@@ -45,7 +45,7 @@
   "future": {
     "headline_1": "Invest and secure your future with Bitcoin.",
     "headline_2": "The current state of the economy makes it necessary.",
-    "headline_text": "The project for NewFinance was initially created to built an absolut secure place for our money, protect it in<br/>volatile times and make it accessible no matter what. Now we want you to have that opportunity.",
+    "headline_text": "The project for NewFinance was initially created to built an absolute secure place for our money, protect it in<br/>volatile times and make it accessible no matter what. Now we want you to have that opportunity.",
     "subheadline": "It’s easier than you think",
     "text": "From doctors, over students, to high school teachers — everyone<br/>can invest, grow and protect their wealth.",
     "benefit1": "Bitcoin as Store-of-value",
@@ -57,7 +57,7 @@
   "features": {
     "headline_1": "The power of bitcoin +",
     "headline_2": "the integration of banks.",
-    "headline_text": "Sometimes it’s hard to use Bitcoin as independant money, when you get your paycheck per SEPA transfer and not bitcoin.<br/>That’s why we integrate banking features for bitcoin. So it’s easier for you."
+    "headline_text": "Sometimes it’s hard to use Bitcoin as independent money, when you get your paycheck per SEPA transfer and not bitcoin.<br/>That’s why we integrate banking features for bitcoin. So it’s easier for you."
   },
   "qualities": {
     "headline_1": "Let's get rid of rich folks",
@@ -85,7 +85,7 @@
   },
   "qualitiesPockets": {
     "headline": "Easy money overview<br/>with unlimited pockets",
-    "text": "With traditional banks, you have to pay extra for sub-accounts. We save you money an give them for free.",
+    "text": "With traditional banks, you have to pay extra for sub-accounts. We save you money and give them for free.",
     "benefit1": "Bitcoin pockets",
     "benefit2": "Money pockets",
     "benefit3": "Savings control",
@@ -100,7 +100,7 @@
     "benefit1_1": "Secured by MPC technology, ",
     "benefit1_2": "a technology never been hacked",
     "benefit2_1": "Recovery protection ",
-    "benefit2_2": "to never loose the access to your money",
+    "benefit2_2": "to never lose access to your money",
     "benefit3_1": "No seed phrase vulnerability, ",
     "benefit3_2": "by creating two secret shares"
   },
@@ -134,13 +134,13 @@
   "about": {
     "headline_addition": "Our vision",
     "headline": "Simplify the way we use modern money.",
-    "headline_text_1": "Money used to be independant and simple. You got cash in your pocket, you paid with it. Simple. But apps for the digital equivalent of cash - Bitcoin - are complex and confusing.",
-    "headline_text_2": "Frustrated with complicated apps to protect our money in volatile times, we created NewFinance to build an simple but absolut secure place for our money.",
+    "headline_text_1": "Money used to be independent and simple. You got cash in your pocket, you paid with it. Simple. But apps for the digital equivalent of cash - Bitcoin - are complex and confusing.",
+    "headline_text_2": "Frustrated with complicated apps to protect our money in volatile times, we created NewFinance to build an simple but absolute secure place for our money.",
     "headline_text_3": "Three years researching and testing for the most secure and easy way brought us to this - NewFinance.",
     "citation": "“We were shocked. After building and testing NewFinance, we found out that it's not only save, but also saves a lot of fees in contrast to traditional finance.”",
     "citation_subline": "Laurenz, Founder NewFinance",
     "subheadline": "Why NewFinance matters",
-    "subheadline_text": "Maximize your budget by using a technology that is independant and thus only costs a fraction of traditional finance.",
+    "subheadline_text": "Maximize your budget by using a technology that is independent and thus only costs a fraction of traditional finance.",
     "fact_1": "crypto owners worldwide",
     "fact_2": "market share of bitcoin",
     "fact_3": "total bitcoin market cap"
