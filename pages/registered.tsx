@@ -1,13 +1,12 @@
-import { ChevronRight, Copy } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { Trans, useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { SetStateAction, useState } from "react";
-import ButtonStandard from "~/components/shared/buttons/button-standard";
+import { redirect } from "next/navigation";
+import { useState } from "react";
 import FAQItem from "~/components/shared/faq/faq-item";
-import StandardInput from "~/components/shared/inputs/standard-input";
 import bg from "~/public/images/LoginBackground.png";
 const logo_dark = require("~/icons/LogoNewFinance.png");
 const phoneLogin = require("~/public/images/PhonesLogin.png");
@@ -59,8 +58,6 @@ const Login = () => {
   const { t } = useTranslation("common");
 
   const [input, setInput] = useState("");
-
-  const [success, setSuccess] = useState(false);
 
   const [errorOther, setErrorOther] = useState(false);
   const [errorMail, setErrorMail] = useState(false);
@@ -115,10 +112,6 @@ const Login = () => {
     addContactMailjet();
   };
 
-  const copyInvitationLink = () => {
-    navigator.clipboard.writeText("getnewfinance.com/login/?invite=30238482");
-  };
-
   const addContactMailjet = async () => {
     console.log(input);
     const response = await fetch("/api/email", {
@@ -138,7 +131,7 @@ const Login = () => {
       setErrorMail(true);
     }
     if (response.status == 200) {
-      setSuccess(true);
+      redirect("/registered");
     }
   };
 
@@ -149,12 +142,22 @@ const Login = () => {
           property="og:title"
           content={
             i18n.language == "en"
-              ? "Registration - NewFinance"
-              : "Registrierung - NewFinance"
+              ? "Successful Registration - NewFinance"
+              : "Erfolgreiche Registrierung - NewFinance"
           }
         />
       </Head>
-      <div className="items-center flex-col py-6 pb-24 px-16 w-3/6">
+      <div
+        className="lg:fixed flex items-center justify-center flex-col align-middle left-0 w-3/6 bg-[#000000] h-full  px-8 md:px-0 border-l-1"
+        style={{
+          backgroundImage: `url(${bg.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundPositionY: "bottom",
+        }}
+      ></div>
+      <div className="items-center flex-col -left-2/4 py-6 pb-24 px-16 w-3/6">
         <Link
           className="fixed justify-start hover:opacity-80 transition-all"
           href="/"
@@ -166,66 +169,6 @@ const Login = () => {
             src={logo_dark}
           />
         </Link>
-        {!success && (
-          <div className="mt-52">
-            <h1 className=" text-2xl text-black font-manrope font-semibold mb-4">
-              <Trans i18nKey="login.headline" />
-            </h1>
-
-            <form onSubmit={handleSubmit}>
-              <StandardInput
-                value={input}
-                onInput={(e: { target: { value: SetStateAction<string> } }) =>
-                  handleInput(e.target.value)
-                }
-                placeholder={t("login.input_email")}
-              />
-              <div className="pt-3.5" />
-              <ButtonStandard text={t("login.button_email")} type="submit" />
-            </form>
-            {errorOther && (
-              <p className="font-manrope text-xs font-semibold mt-3.5 text-red-500">
-                <Trans i18nKey="login.errorOther" />
-              </p>
-            )}
-            {errorMail && (
-              <p className="font-manrope text-xs font-semibold mt-3.5 text-red-500">
-                <Trans i18nKey="login.errorMail" />
-              </p>
-            )}
-            {alreadyRegistered && (
-              <p className="font-manrope text-xs font-semibold mt-3.5 text-green-500">
-                <Trans i18nKey="login.alreadyRegistered" />
-              </p>
-            )}
-            <p className="font-manrope font-medium text-[#979AA1] text-xs w-96 text-start mt-4 leading-relaxed ">
-              <Trans i18nKey="login.notice" />
-            </p>
-          </div>
-        )}
-        {success && (
-          <div className="mt-52">
-            <h1 className=" text-2xl text-black font-manrope font-semibold mb-4">
-              <Trans i18nKey="login.success" />
-            </h1>
-            <p className="text-sm font-manrope font-medium">
-              <Trans i18nKey="login.successText" />
-            </p>
-            <button
-              onClick={copyInvitationLink}
-              className="flex justify-between align-middle w-96 h-12 bg-[#F6F6F6] border-1 border-[#E8E8E8] rounded py-3 px-3 font-manrope font-semibold text-sm mt-4"
-            >
-              <span>getnewfinance.com/login/?invite=30238482</span>
-              <Copy size={20} className=" text-black" />
-            </button>
-            <p className="font-manrope font-medium text-blue-500 text-xs w-96 text-start mt-4 leading-relaxed ">
-              <Trans i18nKey="login.successNotice" />
-            </p>
-            <p className="font-manrope font-medium text-[#979AA1] text-xs w-96 text-start mt-4 leading-relaxed ">
-              <Trans i18nKey="login.successConditions" />
-            </p>
-          </div>
-        )}
         <div className="mt-32 border-t-1 border-[#EDEEF0] pt-6">
           {list}
           <div className="ml-[-1rem] flex align-text-bottom">
@@ -240,16 +183,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <div
-        className="lg:fixed flex items-center justify-center flex-col align-middle right-0 w-3/6 bg-[#000000] h-full  px-8 md:px-0 border-l-1"
-        style={{
-          backgroundImage: `url(${bg.src})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundPositionY: "bottom",
-        }}
-      ></div>
     </section>
   );
 };
