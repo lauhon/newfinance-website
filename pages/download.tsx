@@ -51,7 +51,7 @@ const faqItemsDE = [
     text: "Du musst nichts darüber wissen. Lade die App herunter und schon bist du bereit loszulegen.",
     linkText: "",
     link: "",
-    sExpanded: false,
+    isExpanded: false,
   },
 ];
 
