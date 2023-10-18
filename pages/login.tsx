@@ -143,7 +143,7 @@ const Login = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row space-x-32 overflow-y-scroll">
+    <section className="flex flex-col md:flex-row lg:space-x-32 overflow-y-scroll">
       <Head>
         <meta
           property="og:title"
@@ -154,7 +154,7 @@ const Login = () => {
           }
         />
       </Head>
-      <div className="items-center flex-col py-6 pb-24 px-16 w-3/6">
+      <div className="items-center flex-col py-6 pb-24 px-4 lg:px-16 w-100 lg:w-3/6">
         <Link
           className="fixed justify-start hover:opacity-80 transition-all"
           href="/"
@@ -167,8 +167,8 @@ const Login = () => {
           />
         </Link>
         {!success && (
-          <div className="mt-52">
-            <h1 className=" text-2xl text-black font-manrope font-semibold mb-4">
+          <div className="flex flex-col items-center md:items-start mt-52">
+            <h1 className=" text-2xl text-black font-manrope font-semibold mb-4 text-center md:text-start">
               <Trans i18nKey="login.headline" />
             </h1>
 
@@ -184,31 +184,31 @@ const Login = () => {
               <ButtonStandard text={t("login.button_email")} type="submit" />
             </form>
             {errorOther && (
-              <p className="font-manrope text-xs font-semibold mt-3.5 text-red-500">
+              <p className="font-manrope text-xs font-semibold mt-3.5 text-red-500 text-center md:text-start">
                 <Trans i18nKey="login.errorOther" />
               </p>
             )}
             {errorMail && (
-              <p className="font-manrope text-xs font-semibold mt-3.5 text-red-500">
+              <p className="font-manrope text-xs font-semibold mt-3.5 text-red-500 text-center md:text-start">
                 <Trans i18nKey="login.errorMail" />
               </p>
             )}
             {alreadyRegistered && (
-              <p className="font-manrope text-xs font-semibold mt-3.5 text-green-500">
+              <p className="font-manrope text-xs font-semibold mt-3.5 text-green-500 text-center md:text-start">
                 <Trans i18nKey="login.alreadyRegistered" />
               </p>
             )}
-            <p className="font-manrope font-medium text-[#979AA1] text-xs w-96 text-start mt-4 leading-relaxed ">
+            <p className="font-manrope font-medium text-[#979AA1] text-xs w-full md:w-96  mt-4 leading-relaxed  text-center md:text-start">
               <Trans i18nKey="login.notice" />
             </p>
           </div>
         )}
         {success && (
-          <div className="mt-52">
-            <h1 className=" text-2xl text-black font-manrope font-semibold mb-4">
+          <div className="flex flex-col items-center md:items-start mt-52">
+            <h1 className=" text-2xl text-black font-manrope font-semibold mb-4 text-center md:text-start">
               <Trans i18nKey="login.success" />
             </h1>
-            <p className="text-sm font-manrope font-medium">
+            <p className="text-sm font-manrope font-medium text-center md:text-start">
               <Trans i18nKey="login.successText" />
             </p>
             <button
@@ -218,10 +218,10 @@ const Login = () => {
               <span>getnewfinance.com/login/?invite=30238482</span>
               <Copy size={20} className=" text-black" />
             </button>
-            <p className="font-manrope font-medium text-blue-500 text-xs w-96 text-start mt-4 leading-relaxed ">
+            <p className="font-manrope font-medium text-blue-500 text-xs w-96 mt-4 leading-relaxed  text-center md:text-start">
               <Trans i18nKey="login.successNotice" />
             </p>
-            <p className="font-manrope font-medium text-[#979AA1] text-xs w-96 text-start mt-4 leading-relaxed ">
+            <p className="font-manrope font-medium text-[#979AA1] text-xs w-96 mt-4 leading-relaxed  text-center md:text-start">
               <Trans i18nKey="login.successConditions" />
             </p>
           </div>
