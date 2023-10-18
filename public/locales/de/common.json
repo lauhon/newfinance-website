@@ -196,6 +196,9 @@
     "input_email": "Gib deine E-Mail ein...",
     "button_email": "Weiter mit Email"
   },
+  "layout": {
+    "banner": "Wir befinden uns in der Alpha-Version und die angegebenen Features sind noch nicht vollständig verfügbar."
+  },
   "waitlist": {
     "button": "Join the waitlist",
     "already-exists-error": "You already joined the Waitlist!",
