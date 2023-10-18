@@ -20,6 +20,13 @@ const ButtonArrow = ({
 }: ButtonProps) => {
   const IconTag = Icon[icon as keyof typeof Icon.icons];
 
+  const handleLinkClick = (e: any) => {
+    if (onClick) {
+      e.preventDefault(); // Prevent the default behavior of the link
+      onClick();
+    }
+  };
+
   return (
     <Link
       href={`/${href}`}
@@ -27,9 +34,10 @@ const ButtonArrow = ({
       style={{
         backgroundColor: color ? color : inverted ? "white" : "#060606",
       }}
+      onClick={(e) => handleLinkClick(e)}
     >
       <span
-        className="md:min-w-[100px] font-manrope font-semibold text-white text-base"
+        className="min-w-[100px] font-manrope font-semibold text-white text-base whitespace-nowrap"
         style={{ color: inverted ? "black" : "white" }}
       >
         {text}
