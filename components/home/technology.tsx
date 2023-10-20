@@ -110,7 +110,7 @@ const TechnologyArea = () => {
               <Trans i18nKey="technology.subheadline_1" />
             </h2>
             <p className="font-manrope font-medium text-[#7D7E81] text-base mt-1">
-              <Trans i18nKey="technology.subtext_2" />
+              <Trans i18nKey="technology.subtext_1" />
             </p>
           </div>
         </div>

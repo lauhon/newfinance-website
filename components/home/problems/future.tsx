@@ -84,7 +84,7 @@ const Future = () => {
           </div>
           <div className="flex mt-20 justify-center">
             <ButtonArrow
-              text="Protect your wealth now"
+              text={t("future.button")}
               color="#A33051"
               href="login"
             />

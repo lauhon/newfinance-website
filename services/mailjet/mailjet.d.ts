@@ -4,6 +4,20 @@ export interface MailjetContactResponse {
   Total: number;
 }
 
+export interface MailjetContact {
+  ID: number;
+  IsExcludedFromCampaigns: boolean;
+  Name: string;
+  CreatedAt: string;
+  DeliveredCount: number;
+  Email: string;
+  ExclusionFromCampaignsUpdatedAt: string;
+  IsOptInPending: boolean;
+  IsSpamComplaining: boolean;
+  LastActivityAt: string;
+  LastUpdateAt: string;
+}
+
 export interface Datum {
   IsExcludedFromCampaigns: boolean;
   Name: string;

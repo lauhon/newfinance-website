@@ -1,6 +1,14 @@
 {
   "header": {
-    "startButton": "Registrieren"
+    "startButton": "Registrieren",
+    "banner1": "Kaufe Bitcoin in unter 5 Minuten",
+    "banner2": "High-End-Verschlüsselung",
+    "banner3": "Keine zusätzlichen Gebühren"
+  },
+  "download": {
+    "headline": "Lade die App herunter",
+    "notAvailable": "Die App ist zurzeit noch nicht verfügbar.",
+    "notice": "Wenn du registriert bist, bekommst du eine Benachrichtigung sobald die App zum download bereit steht."
   },
   "social": {
     "followUs": "Folge uns"
@@ -16,8 +24,15 @@
     "changelog": "Changelog",
     "pricing": "Preise"
   },
+  "footer": {
+    "notice": "Der Wert von Anlagen kann steigen oder fallen, weshalb Investitionen in Bitcoin stets ein Risiko bergen. Anleger sollten deshalb eigenständige Entscheidungen treffen bzw. sich unabhängig beraten lassen. Warenzeichen sind Eigentum der jeweiligen Inhaber. Sofern nicht anders angegeben, bedeutet die Verwendung von Logos Dritter nicht, dass NewFinance diese unterstützt, fördert oder mit ihnen verbunden ist.",
+    "company": "UNTERNEHMEN",
+    "resources": "RESSOURCEN"
+  },
   "splash": {
     "headline": "Investiere und sichere deine Zukunft<br/>mit Bitcoin",
+    "non-custodian": "Warum Non-Custodial wichtig ist",
+    "check-out": "Jetzt lesen",
     "tagline": "Die derzeitige Wirtschaftslage macht es notwendig.<br/>Warum nicht profitieren, wenn es alle anderen auch tun?",
     "startButton": "Sichere noch heute deinen Platz",
     "rarificationTeaser": "Regulär 4.99€/Monat",
@@ -43,7 +58,7 @@
     "benefit3_2": " und nicht blockiert werden kann."
   },
   "future": {
-    "headline_1": "Investiere und sichere deine Zukunft mit Bitcoin",
+    "headline_1": "Investiere und sichere deine Zukunft mit Bitcoin.",
     "headline_2": "Die derzeitige Wirtschaftslage macht es notwendig.",
     "headline_text": "Das Projekt NewFinance wurde ursprünglich kreiert, um einen absolut sicheren Ort für unser Geld zu schaffen, es in unbeständigen Zeiten zu schützen und es in jeder Situation zugänglich zu machen. Jetzt wollen wir, dass auch du diese Möglichkeit hast.",
     "subheadline": "Es ist einfacher als du denkst",
@@ -52,15 +67,17 @@
     "benefit2": "Bank ähnliche Benutzerfreundlichkeit",
     "benefit3": "Weltweit",
     "benefit4": "Sofort Bitcoin zu Euro",
-    "buttonInfo": "Mach den ersten Schritt in unter 2 Minuten"
+    "buttonInfo": "Mach den ersten Schritt in unter 2 Minuten",
+    "button": "Schützt jetzt dein Vermögen"
   },
   "features": {
     "headline_1": "Die Power von Bitcoin +",
-    "headline_2": "die integration von Banken.",
-    "headline_text": "Manchmal ist es schwierig, Bitcoin als unabhängiges Geld zu verwenden, wenn du deinen Gehaltsscheck per SEPA-Überweisung und nicht in Bitcoin erhältst.<br/>Deshalb integrieren wir Banking-Funktionen für Bitcoin. So ist es einfacher für dich."
+    "headline_2": "die Funktionen von Banken.",
+    "headline_text": "Manchmal ist es schwierig, Bitcoin als unabhängiges Geld zu verwenden, wenn du deinen Gehaltsscheck per SEPA-Überweisung und nicht in Bitcoin erhältst. Deshalb integrieren wir Banking-Funktionen für Bitcoin. So ist es einfacher für dich."
   },
   "qualities": {
-    "buttonInfo": "Completely free"
+    "buttonInfo": "Completely free",
+    "button": "Entdecke jetzt wie einfach es ist"
   },
   "qualitiesEasy": {
     "headline": "Besitze Bitcoin in<br/>unter 5 Minuten",
@@ -68,11 +85,11 @@
     "benefit1": "Beginne mit nur 1€",
     "benefit2": "Kreditkarte oder Banküberweisung",
     "benefit3": "Niedrige Gebühren",
-    "benefit4": "Non-Custodian"
+    "benefit4": "Non-Custodial"
   },
   "qualitiesTransfer": {
     "headline": "Weltweite Überweisungen<br/>ohne extra Gebühren",
-    "text": "Sende Geld an Ihre Lieben im Ausland oder<br/> verwende dein Geld international.",
+    "text": "Sende Geld an deine Liebsten im Ausland oder<br/> verwende dein Geld international.",
     "benefit1": "Keine zusätzlichen Gebühren",
     "benefit2": "IBAN kompatibel",
     "benefit3": "Bitcoin/Lightning",
@@ -83,15 +100,15 @@
     "text": "Bei herkömmlichen Banken musst du für Unterkonten extra bezahlen. Wir sparen dir Geld und bieten Pockets kostenlos an.",
     "benefit1": "Bitcoin Pockets",
     "benefit2": "Money Pockets",
-    "benefit3": "Sparkontrolle",
+    "benefit3": "Einfaches Sparen",
     "benefit4": "Anonym"
   },
   "safety": {
-    "headline_1": "Bringe dein Geld in Sicherheit",
+    "headline_1": "Bringe dein Geld in Sicherheit.",
     "headline_2": "Mache dein Geld jederzeit und überall zugänglich.",
     "headline_text": "“Not your keys, not your coins” hat dazu geführt, dass seit Anfang der 2010er Jahre über 100 Milliarden Dollar verloren gingen oder gestohlen wurden. NewFinance verhindert das durch den Einsatz der führenden Sicherheitstechnologie - genannt MPC.",
-    "subheadline": "Wir haben massiv in<br/>High-End Verschlüsselung investiert.",
-    "text": "Du bekommst die beste Sicherheitstechnologie. Bis jetzt,<br/>wurde sie nur von Institutionen genutzt, um Milliarden von Dollar zu sichern.",
+    "subheadline": "Wir haben massiv in High-End<br/>Verschlüsselung investiert.",
+    "text": "Du bekommst die beste Sicherheitstechnologie. Bis jetzt wurde<br/>sie nur von Institutionen genutzt, um Milliarden von Dollar zu sichern.",
     "benefit1_1": "Gesichert durch MPC, ",
     "benefit1_2": "eine Technologie, die noch nie gehackt wurde.",
     "benefit2_1": "Schutz vor Verlust ",
@@ -100,8 +117,8 @@
     "benefit3_2": "durch die Verschlüsselung von zwei Keys."
   },
   "technology": {
-    "headline_1": "Du kannst dich auf eine zukunftssichere Technologie verlassen.",
-    "headline_2": "Es spart dir Zeit und Geld.",
+    "headline_1": "Eine zukunftssichere Technologie die.",
+    "headline_2": "dir Zeit und Geld einspart.",
     "lightning": "Lightning Netzwerk",
     "subheadline_1": "Spare bis zu 100€ Buchungsgebühren<br/>die deine Bank normal berechnet.",
     "subtext_1": "Im Vergleich zu anderen Netzwerken sparst du bei der Nutzung von Lightning bis zu 99% an Zahlungsgebühren.",
@@ -180,6 +197,22 @@
     "extra_3_1": "Wirklich dein Geld. ",
     "extra_3_2": "Das nicht von anderen kontrolliert oder blockiert werden kann.",
     "mica": "All das - zu 100 % konform mit der neuen MiCa-Verordnung"
+  },
+  "login": {
+    "notice": "Mit der Anmeldung erklärst du dich mit den Nutzungsbedingungen und der Datenschutzverordnung einverstanden.",
+    "headline": "Erstelle deinen<br/>kostenlosen Account",
+    "input_email": "Gib deine E-Mail ein...",
+    "button_email": "Weiter mit Email",
+    "errorOther": "Oops, etwas hat nicht funktioniert. Probier es nochmal.",
+    "errorMail": "Gib eine gültige E-Mail Adresse ein.",
+    "alreadyRegistered": "Du bist bereits registriert.",
+    "success": "Willkommen<br/>Wir haben dir eine E-Mail gesendet.",
+    "successText": "Lade jetzt Freunde mit deinem Einladungslink ein und gewinne bis zu 100€ in Bitcoin.",
+    "successNotice": "Dieser Link ist nur jetzt verfügbar, und verschwindet wenn du die Seite verlässt! Also lade sie gleich ein!",
+    "successConditions": "Das Bitcoin Gewinnspiel wird mit Launch der Main-Version abgehalten. Dieses Datum steht noch nicht fest. Teilnahmebedingungen: Early Access Nutzer, min. 1 Freund registriert."
+  },
+  "layout": {
+    "banner": "Wir befinden uns in der Alpha-Version und die angegebenen Features sind noch nicht vollständig verfügbar."
   },
   "waitlist": {
     "button": "Join the waitlist",

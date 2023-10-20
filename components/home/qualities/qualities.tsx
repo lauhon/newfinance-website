@@ -13,7 +13,7 @@ const Qualities = () => {
       <QualitiesTransfer />
       <QualitiesPockets />
       <div>
-        <ButtonArrow text="Check out how simple it is" href="login" />
+        <ButtonArrow text={t("qualities.button")} href="login" />
         <div className="flex flex-col items-center justify-center mt-3 text-[0.65rem] text-[#8E8D95] font-manrope font-semibold tracking-tight">
           <div>
             <Trans i18nKey="qualities.buttonInfo" />

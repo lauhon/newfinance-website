@@ -6,8 +6,8 @@ const postEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     return res.status(400);
   }
 
-  const { email, name } = req.body;
-  const response = await addContact(email, name);
+  const { email } = req.body;
+  const response = await addContact(email);
 
   return res.status(response.status).json(response);
 };
