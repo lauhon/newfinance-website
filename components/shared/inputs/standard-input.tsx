@@ -2,12 +2,27 @@ interface InputProps {
   placeholder: string;
   value: any;
   onInput: any;
+  name?: string;
+  type?: string;
+  id?: string;
+  autocomplete?: string;
 }
 
-const StandardInput = ({ placeholder, value, onInput }: InputProps) => {
+const StandardInput = ({
+  type = "email",
+  id = "email",
+  name = "email",
+  autocomplete = "email",
+  placeholder,
+  value,
+  onInput,
+}: InputProps) => {
   return (
     <input
-      type="email"
+      name={name}
+      autoComplete={autocomplete}
+      id={id}
+      type={type}
       value={value}
       onInput={onInput}
       placeholder={placeholder}

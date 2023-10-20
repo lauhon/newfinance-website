@@ -172,7 +172,7 @@ const Login = () => {
               <Trans i18nKey="login.headline" />
             </h1>
 
-            <form onSubmit={handleSubmit}>
+            <form method="POST" onSubmit={handleSubmit}>
               <StandardInput
                 value={input}
                 onInput={(e: { target: { value: SetStateAction<string> } }) =>
