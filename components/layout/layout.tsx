@@ -8,11 +8,9 @@ type Props = {
   children: ReactNode;
 };
 const Layout = ({ children }: Props) => {
-  {
-    /* <html lang={i18next.language} class="h-full motion-safe:scroll-smooth"> */
-  }
-  // <body class="h-full overflow-x-hidden text-base bg-default text-default selection:bg-secondary selection:text-white">
   const { i18n } = useTranslation("home");
+
+  const url = process.env.NEXT_PUBLIC_URL;
 
   return (
     <>
@@ -36,16 +34,14 @@ const Layout = ({ children }: Props) => {
         <meta property="og:type" content="website" />
         <meta property="og:description" content={description} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content={`${url}/images/og-image.png`} />
 
-        <meta
-          property="og:image"
-          content="https://example.com/images/social.png"
-        />
-        <meta property="og:url" content="https://example.com" />
+        <meta property="og:image" content={`${url}/images/og-image.png`} />
+        <meta property="og:url" content={url} />
 
-        <link rel="alternate" href="http://example.com" hrefLang="x-default" />
-        <link rel="alternate" href="http://example.com" hrefLang="en" />
-        <link rel="alternate" href="http://example.com/de" hrefLang="de" />
+        <link rel="alternate" href={url} hrefLang="x-default" />
+        <link rel="alternate" href={url} hrefLang="en" />
+        <link rel="alternate" href={url + "/de"} hrefLang="de" />
       </Head>
 
       {children}
