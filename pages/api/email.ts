@@ -6,8 +6,9 @@ const postEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     return res.status(400);
   }
 
+  const language = req.query.lang || "en";
   const { email } = req.body;
-  const response = await addContact(email);
+  const response = await addContact(email, language as "en" | "de");
 
   return res.status(response.status).json(response);
 };
