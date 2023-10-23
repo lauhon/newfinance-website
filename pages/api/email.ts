@@ -1,7 +1,10 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { addContact } from "~/services/mailjet/email-service";
 
-const postEmail = async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method !== "POST") {
     return res.status(400);
   }
@@ -11,7 +14,7 @@ const postEmail = async (req: NextApiRequest, res: NextApiResponse) => {
   const response = await addContact(email, language as "en" | "de");
 
   return res.status(response.status).json(response);
-};
+}
 
 const cleanLanguage = (language?: string | string[]) => {
   if (typeof language !== "string") {
@@ -24,5 +27,3 @@ const cleanLanguage = (language?: string | string[]) => {
 
   return language;
 };
-
-export default postEmail;
