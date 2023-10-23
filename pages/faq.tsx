@@ -103,7 +103,7 @@ const faqItemsMovingDE = [
     icon: "CornerUpRight",
     text: "Das ist unser Ziel, den vollen Umfang der Funktionen einer Bank zu haben, ohne dass du Geld bei einer Bank haben musst. Dies ist in der Beta-Version noch nicht verfügbar.",
     linkText: "Probiere gleich die App, um einer der ersten zu sein.",
-    link: "/login",
+    link: "/register",
   },
   {
     id: "general",
@@ -283,7 +283,7 @@ const faqItemsMoving = [
     icon: "CornerUpRight",
     text: "This is our final goal, having the full capacity of a bank, without giving away your money to the bank. This is not available in the Beta-Version.",
     linkText: "Give us a try anyway, so that we can get this far together.",
-    link: "/login",
+    link: "/register",
   },
   {
     id: "general",

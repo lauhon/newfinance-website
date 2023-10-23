@@ -94,17 +94,13 @@ const Download = () => {
     </ul>
   );
 
+  const title = t("download.title");
+
   return (
     <section className="flex flex-col md:flex-row lg:space-x-32 overflow-y-scroll">
       <Head>
-        <meta
-          property="og:title"
-          content={
-            i18n.language == "en"
-              ? "Download - NewFinance"
-              : "Herunterladen - NewFinance"
-          }
-        />
+        <title>{title}</title>
+        <meta property="og:title" content={title} />
       </Head>
       <div className="items-center flex-col py-6 pb-24 px-4 lg:px-16 w-100 lg:w-3/6">
         <Link

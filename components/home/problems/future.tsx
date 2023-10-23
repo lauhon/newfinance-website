@@ -86,7 +86,7 @@ const Future = () => {
             <ButtonArrow
               text={t("future.button")}
               color="#A33051"
-              href="login"
+              href="register"
             />
           </div>
           <div className="flex flex-col items-center justify-center mt-3 text-[0.65rem] text-white font-manrope font-semibold tracking-tight">
