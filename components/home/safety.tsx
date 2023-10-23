@@ -13,69 +13,65 @@ const Safety = () => {
   useEffect(() => {
     if (typeof window === "undefined") return;
     const darkBackground = document.getElementById("darkBackground");
-    if (darkBackground === null) {
-    } else {
-      const handleIntersect = (entries: any[]) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const handleScroll = () => {
-              const scrollPosition = window.scrollY;
-              const threshold = entry.target.offsetTop - 500; // Schwellenwert basierend auf der Position des div-Elements
-              const maxScroll = 100; // Bereich, über den der Farbwechsel stattfindet
 
-              if (scrollPosition > threshold) {
-                const scrollDiff = scrollPosition - threshold;
-                const opacity = Math.min(scrollDiff / maxScroll, 1); // Interpolieren zwischen 0 und 1
-
-                const startColor = [255, 255, 255]; // Startfarbe in RGB-Werten (hier: #FFFFFF)
-                const endColor = [12, 13, 17]; // Endfarbe in RGB-Werten (hier: #0C0D11)
-
-                const interpolatedColor = startColor.map(
-                  (startValue, index) => {
-                    const endValue = endColor[index];
-                    const interpolatedValue = Math.round(
-                      startValue - (startValue - endValue) * opacity
-                    );
-                    return interpolatedValue;
-                  }
-                );
-
-                const newColor = `rgb(${interpolatedColor[0]}, ${interpolatedColor[1]}, ${interpolatedColor[2]})`;
-                darkBackground.style.backgroundColor = newColor;
-                //document.body.style.backgroundColor = newColor;
-                //setBackgroundColor(newColor);
-              } else {
-                darkBackground.style.backgroundColor = "#FFFFFF";
-                //document.body.style.backgroundColor = "#FAFAFA";
-              }
-            };
-
-            window.addEventListener("scroll", handleScroll);
-
-            return () => {
-              window.removeEventListener("scroll", handleScroll);
-            };
-          }
-        });
-      };
-
-      const observer = new IntersectionObserver(handleIntersect, {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0,
-      });
-
-      if (colorRef.current) {
-        observer.observe(colorRef.current);
-      }
-
-      return () => {
-        if (colorRef.current) {
-          observer.unobserve(colorRef.current);
-        }
-        darkBackground.style.backgroundColor = "#FFFFFF";
-      };
+    if (darkBackground === null || !colorRef.current) {
+      return;
     }
+
+    const handleIntersect = (entries: any[]) => {
+      console.log(entries);
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            const threshold = entry.target.offsetTop - 500; // Schwellenwert basierend auf der Position des div-Elements
+            const maxScroll = 100; // Bereich, über den der Farbwechsel stattfindet
+
+            if (scrollPosition > threshold) {
+              const scrollDiff = scrollPosition - threshold;
+              const opacity = Math.min(scrollDiff / maxScroll, 1); // Interpolieren zwischen 0 und 1
+
+              const startColor = [255, 255, 255]; // Startfarbe in RGB-Werten (hier: #FFFFFF)
+              const endColor = [12, 13, 17]; // Endfarbe in RGB-Werten (hier: #0C0D11)
+
+              const interpolatedColor = startColor.map((startValue, index) => {
+                const endValue = endColor[index];
+                const interpolatedValue = Math.round(
+                  startValue - (startValue - endValue) * opacity
+                );
+                return interpolatedValue;
+              });
+
+              const newColor = `rgb(${interpolatedColor[0]}, ${interpolatedColor[1]}, ${interpolatedColor[2]})`;
+              darkBackground.style.backgroundColor = newColor;
+            } else {
+              darkBackground.style.backgroundColor = "#FFFFFF";
+            }
+          };
+
+          window.addEventListener("scroll", handleScroll);
+
+          return () => {
+            window.removeEventListener("scroll", handleScroll);
+          };
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0,
+    });
+
+    observer.observe(colorRef.current);
+
+    return () => {
+      if (colorRef.current) {
+        observer.unobserve(colorRef.current);
+      }
+      darkBackground.style.backgroundColor = "#FFFFFF";
+    };
   }, []);
 
   return (

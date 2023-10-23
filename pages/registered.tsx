@@ -113,7 +113,6 @@ const Login = () => {
   };
 
   const addContactMailjet = async () => {
-    console.log(input);
     const response = await fetch("/api/email", {
       method: "POST",
       headers: {

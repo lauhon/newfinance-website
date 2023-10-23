@@ -30,26 +30,22 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
   }, []);
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    if (document.getElementById("darkBackground") != null) {
-      const handleScroll = () => {
-        console.log(
-          document.getElementById("darkBackground")?.style.backgroundColor
-        );
-        if (
-          document.getElementById("darkBackground")?.style.backgroundColor !==
-          "rgb(255, 255, 255)"
-        ) {
-          setDark(false);
-        } else {
-          setDark(true);
-        }
-      };
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
+    const dBg = document.getElementById("darkBackground");
+    if (typeof window === "undefined" || !dBg) return;
+
+    const handleScroll = () => {
+      if (dBg.style.backgroundColor !== "rgb(255, 255, 255)") {
+        setDark(false);
+      } else {
+        setDark(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   });
 
   const BannerTop = () => {
