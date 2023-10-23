@@ -2,7 +2,8 @@ import config from "~/lib/api/config";
 import { MailjetContact, MailjetError } from "./mailjet";
 
 export const addContact = async (
-  email: string
+  email: string,
+  language: "en" | "de"
 ): Promise<AddContactResponse> => {
   const response = await fetchFromMailjet(contactEndpoint, {
     email,
@@ -19,7 +20,7 @@ export const addContact = async (
 
   console.debug({ newContact }, "Successfully created Mailject contact");
 
-  const listResponse = await addUserToList(newContact);
+  const listResponse = await addUserToList(newContact, language);
 
   if (!listResponse.ok) {
     console.log("error2");
@@ -37,17 +38,21 @@ export const addContact = async (
   };
 };
 
-const addUserToList = async (contact: MailjetContact) => {
+const addUserToList = async (
+  contact: MailjetContact,
+  language: "en" | "de"
+) => {
   const response = await fetchFromMailjet(contactListEndpoint, {
     ContactID: contact.ID,
     ContactAlt: contact.Email,
-    ListID: config.mailJetContactList,
+    ListID: getContactListId(language),
   });
 
   return response;
 };
 
 const evaluateMailjetError = (error: MailjetError): AddContactResponse => {
+  console.error({ error }, "Mailjet Error occured");
   if (error.ErrorMessage.includes("MJ18 A Contact resource with value ")) {
     return {
       status: 409,
@@ -68,6 +73,14 @@ const createAuthBasic = () => {
       "base64"
     )
   );
+};
+
+const getContactListId = (language: "en" | "de") => {
+  if (language === "de") {
+    return config.mailJetContactListDE;
+  }
+
+  return config.mailJetContactListEN;
 };
 
 const mailApi = "https://api.mailjet.com/v3/REST";
