@@ -23,7 +23,7 @@ const VideoArea = () => {
             <Image src={Demo5} alt="App Demo Screen" className="" />
           </div>
           <div className="md:group-hover:scale-105 transition duration-300 absolute mb-14">
-            <ButtonArrow href="login" text={t("video.tryButton")} />
+            <ButtonArrow href="register" text={t("video.tryButton")} />
           </div>
           <div className="font-manrope font-semibold text-center mt-4">
             <Trans i18nKey="video.text" />

@@ -54,7 +54,7 @@ const faqItemsDE = [
   },
 ];
 
-const Login = () => {
+const Register = () => {
   const { i18n } = useTranslation("home");
   const { t } = useTranslation("common");
 
@@ -142,17 +142,13 @@ const Login = () => {
     }
   };
 
+  const title = t("login.title");
+
   return (
     <section className="flex flex-col md:flex-row lg:space-x-32 overflow-y-scroll">
       <Head>
-        <meta
-          property="og:title"
-          content={
-            i18n.language == "en"
-              ? "Registration - NewFinance"
-              : "Registrierung - NewFinance"
-          }
-        />
+        <title>{title}</title>
+        <meta property="og:title" content={title} />
       </Head>
       <div className="items-center flex-col py-6 pb-24 px-4 lg:px-16 w-100 lg:w-3/6">
         <Link
@@ -262,4 +258,4 @@ export async function getStaticProps({ locale }: { locale: string }) {
   };
 }
 
-export default Login;
+export default Register;

@@ -135,17 +135,13 @@ const Login = () => {
     }
   };
 
+  const title = t("registered.title");
+
   return (
     <section className="flex flex-col md:flex-row space-x-32 overflow-y-scroll">
       <Head>
-        <meta
-          property="og:title"
-          content={
-            i18n.language == "en"
-              ? "Successful Registration - NewFinance"
-              : "Erfolgreiche Registrierung - NewFinance"
-          }
-        />
+        <title>{title}</title>
+        <meta property="og:title" content={title} />
       </Head>
       <div
         className="lg:fixed flex items-center justify-center flex-col align-middle left-0 w-3/6 bg-[#000000] h-full  px-8 md:px-0 border-l-1"

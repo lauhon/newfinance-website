@@ -175,7 +175,7 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
           </div>
 
           <ButtonArrow
-            href="login"
+            href="register"
             text={t("header.startButton")}
             inverted={isDark ? false : true}
           />

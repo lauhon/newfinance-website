@@ -71,7 +71,7 @@ const Banner = () => {
                   i18n.language == "en" ? "Notify me" : "Benachrichtige mich"
                 }
                 icon="ArrowRight"
-                href="login"
+                href="register"
               />
             </div>
           </div>

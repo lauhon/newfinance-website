@@ -11,7 +11,7 @@ const CallToActionArea = () => {
           <Trans i18nKey="cta.headline" />
         </h1>
         <div className="mt-6">
-          <ButtonArrow href="login" text={t("splash.startButton")} />
+          <ButtonArrow href="register" text={t("splash.startButton")} />
         </div>
         <div className="flex flex-col items-center justify-center mt-3 text-secondary text-[0.65rem] text-[#8E8D95] font-manrope font-semibold tracking-tight">
           <div className="opacity-80 line-through">
