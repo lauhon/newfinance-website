@@ -37,7 +37,7 @@ const Contact = () => {
                 </p>
                 <div>
                   <Link
-                    href={`/login`}
+                    href="register"
                     className="flex p-3 text-center bg-[#25D366] hover:opacity-80 font-manrope font-medium rounded justify-center transition-all duration-200 text-white text-sm tracking-tight mt-7"
                   >
                     <Trans i18nKey="contact.button_chat" />
@@ -60,7 +60,7 @@ const Contact = () => {
                 </p>
                 <div>
                   <Link
-                    href={`/login`}
+                    href="register"
                     className="flex p-3 text-center bg-[#111726] hover:opacity-80 font-manrope font-semibold rounded justify-center transition-all duration-200 text-white text-sm tracking-tight mt-7"
                   >
                     <Trans i18nKey="contact.button_help" />

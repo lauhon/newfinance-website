@@ -41,7 +41,7 @@ const Pricing = () => {
                 <Trans i18nKey="pricing.text" />
               </p>
               <Link
-                href={`/login`}
+                href="register"
                 className="flex p-3 text-center bg-[#111726] hover:opacity-80 font-manrope font-semibold rounded justify-center transition-all duration-200 cursor-default text-white text-sm tracking-tight mt-7"
               >
                 <Trans i18nKey="pricing.button_text" />
@@ -211,7 +211,7 @@ const Cardy = () => {
   useEffect(() => {});
   return (
     <Link
-      href="/login"
+      href="register"
       className=" card bg-[#6528F7] rounded-xl flex-1 py-12 px-8"
       ref={inputRef}
       onMouseLeave={removeListener}
