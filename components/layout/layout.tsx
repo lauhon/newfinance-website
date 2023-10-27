@@ -31,12 +31,20 @@ const Layout = ({ children }: Props) => {
               : "NewFinance - Investiere in Bitcoin"
           }
         />
+        <meta property="site_name" content="NewFinance Homepage" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content={description} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:image" content={`${url}/images/og-image.png`} />
+        <meta
+          property="twitter:image"
+          content={`${url}/images/og-image.jpeg`}
+        />
 
-        <meta property="og:image" content={`${url}/images/og-image.png`} />
+        <meta property="og:image" content={`${url}/images/og-image.jpeg`} />
+        <meta property="og:image:type" content="image/jpeg" />
+
+        <meta property="og:image:alt" content="NewFinance Homepage" />
+
         <meta property="og:url" content={url} />
 
         <link rel="alternate" href={url} hrefLang="x-default" />
