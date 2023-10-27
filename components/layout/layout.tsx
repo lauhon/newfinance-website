@@ -2,13 +2,13 @@ import { useTranslation } from "next-i18next";
 import Head from "next/head";
 import { ReactNode } from "react";
 
-const description = "NewFinance. Invest and secure your future with Bitcoin.";
-
 type Props = {
   children: ReactNode;
 };
 const Layout = ({ children }: Props) => {
-  const { i18n } = useTranslation("home");
+  const { i18n, t } = useTranslation("common");
+
+  const description = t("social.og-description");
 
   const url = process.env.NEXT_PUBLIC_URL;
 

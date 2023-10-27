@@ -116,7 +116,9 @@ const Register = () => {
   };
 
   const copyInvitationLink = () => {
-    navigator.clipboard.writeText("getnewfinance.com/login/?invite=30238482");
+    navigator.clipboard.writeText(
+      "getnewfinance.com/register/?invite=30238482"
+    );
   };
 
   const addContactMailjet = async () => {
@@ -210,7 +212,7 @@ const Register = () => {
               onClick={copyInvitationLink}
               className="flex justify-between align-middle w-96 h-12 bg-[#F6F6F6] border-1 border-[#E8E8E8] rounded py-3 px-3 font-manrope font-semibold text-sm mt-4"
             >
-              <span>getnewfinance.com/login/?invite=30238482</span>
+              <span>getnewfinance.com/register/?invite=30238482</span>
               <Copy size={20} className=" text-black" />
             </button>
             <p className="font-manrope font-medium text-blue-500 text-xs w-96 mt-4 leading-relaxed  text-center md:text-start">
