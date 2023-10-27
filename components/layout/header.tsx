@@ -15,12 +15,10 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
   const { t } = useTranslation("common");
 
   const [isDark, setDark] = useState(dark);
-  const [showLine, setShowLine] = useState(line);
   const [showBanner, setShowBanner] = useState(false);
 
   const logo_dark = require("~/icons/LogoNewFinance.png");
   const logo_white = require("~/icons/LogoNewFinanceWhite.png");
-  var logo;
 
   useEffect(() => {
     let timer1 = setTimeout(() => setShowBanner(true), 5 * 1000);
@@ -34,7 +32,8 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
     if (typeof window === "undefined" || !dBg) return;
 
     const handleScroll = () => {
-      if (dBg.style.backgroundColor !== "rgb(255, 255, 255)") {
+      const col = dBg.style.backgroundColor;
+      if (col !== "rgb(255, 255, 255)" && col !== "") {
         setDark(false);
       } else {
         setDark(true);
@@ -146,7 +145,7 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
           className="flex items-center justify-between border-b-1  px-4 md:px-14 lg:px-28 py-3"
           style={{
             borderColor: isDark ? "#e5e7ebBB" : "#2C303ABB",
-            borderBottomWidth: showLine ? "1px" : "0px",
+            borderBottomWidth: line ? "1px" : "0px",
           }}
         >
           <div className="flex items-center">
