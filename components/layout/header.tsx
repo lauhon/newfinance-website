@@ -45,7 +45,7 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  });
+  }, []);
 
   const BannerTop = () => {
     return (
