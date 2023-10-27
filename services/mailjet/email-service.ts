@@ -10,7 +10,6 @@ export const addContact = async (
   });
 
   if (!response.ok) {
-    console.log("error1");
     return evaluateMailjetError((await response.json()) as MailjetError);
   }
 
@@ -23,7 +22,6 @@ export const addContact = async (
   const listResponse = await addUserToList(newContact, language);
 
   if (!listResponse.ok) {
-    console.log("error2");
     return evaluateMailjetError((await listResponse.json()) as MailjetError);
   }
 

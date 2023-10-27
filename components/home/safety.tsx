@@ -1,88 +1,13 @@
 import { Check } from "lucide-react";
-import { Trans, useTranslation } from "next-i18next";
+import { Trans } from "next-i18next";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
 import bg from "~/public/images/BackgroundSafety.png";
 
 const Safety = () => {
-  const { t } = useTranslation("common");
   const safetyGraph = require("~/public/images/safetyGraph.png");
 
-  const colorRef = useRef(null);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const darkBackground = document.getElementById("darkBackground");
-    if (darkBackground === null) {
-    } else {
-      const handleIntersect = (entries: any[]) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const handleScroll = () => {
-              const scrollPosition = window.scrollY;
-              const threshold = entry.target.offsetTop - 500; // Schwellenwert basierend auf der Position des div-Elements
-              const maxScroll = 100; // Bereich, über den der Farbwechsel stattfindet
-
-              if (scrollPosition > threshold) {
-                const scrollDiff = scrollPosition - threshold;
-                const opacity = Math.min(scrollDiff / maxScroll, 1); // Interpolieren zwischen 0 und 1
-
-                const startColor = [255, 255, 255]; // Startfarbe in RGB-Werten (hier: #FFFFFF)
-                const endColor = [12, 13, 17]; // Endfarbe in RGB-Werten (hier: #0C0D11)
-
-                const interpolatedColor = startColor.map(
-                  (startValue, index) => {
-                    const endValue = endColor[index];
-                    const interpolatedValue = Math.round(
-                      startValue - (startValue - endValue) * opacity
-                    );
-                    return interpolatedValue;
-                  }
-                );
-
-                const newColor = `rgb(${interpolatedColor[0]}, ${interpolatedColor[1]}, ${interpolatedColor[2]})`;
-                darkBackground.style.backgroundColor = newColor;
-                //document.body.style.backgroundColor = newColor;
-                //setBackgroundColor(newColor);
-              } else {
-                darkBackground.style.backgroundColor = "#FFFFFF";
-                //document.body.style.backgroundColor = "#FAFAFA";
-              }
-            };
-
-            window.addEventListener("scroll", handleScroll);
-
-            return () => {
-              window.removeEventListener("scroll", handleScroll);
-            };
-          }
-        });
-      };
-
-      const observer = new IntersectionObserver(handleIntersect, {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0,
-      });
-
-      if (colorRef.current) {
-        observer.observe(colorRef.current);
-      }
-
-      return () => {
-        if (colorRef.current) {
-          observer.unobserve(colorRef.current);
-        }
-        darkBackground.style.backgroundColor = "#FFFFFF";
-      };
-    }
-  }, []);
-
   return (
-    <section
-      ref={colorRef}
-      className="flex flex-col items-center px-4 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 space-y-8 md:space-y-16"
-    >
+    <section className="flex flex-col items-center px-4 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 space-y-8 md:space-y-16">
       <div className="text-left  w-[1000px] max-w-full">
         <h2 className="text-[2rem] sm:text-[2.4rem] font-ibm font-semibold leading-tight mt-2 text-white">
           <Trans i18nKey="safety.headline_1" />

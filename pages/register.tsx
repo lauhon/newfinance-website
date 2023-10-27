@@ -120,7 +120,6 @@ const Register = () => {
   };
 
   const addContactMailjet = async () => {
-    console.log(input);
     const response = await fetch(`/api/email?lang=${i18n.language}`, {
       method: "POST",
       headers: {
