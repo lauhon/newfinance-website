@@ -1,6 +1,6 @@
 import { Trans, useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import CallToActionArea from "~/components/home/cta";
 import FAQ from "~/components/home/faq";
 import Features from "~/components/home/features";
@@ -15,23 +15,38 @@ import Footer from "~/components/layout/footer";
 import Header from "~/components/layout/header";
 import Layout from "~/components/layout/layout";
 import ButtonArrow from "~/components/shared/buttons/button-arrow";
+import { useInvertationScroll } from "~/lib/ui/hooks/useInvertationScroll";
+import useOnScreen from "~/lib/ui/hooks/useOnScreen";
 
 const Home = () => {
-  const { t } = useTranslation("common");
+  const invertedAreaRef = useRef(null);
+  const parentContainerRef = useRef(null);
+  const { isOnScreen, entry } = useOnScreen(invertedAreaRef);
+  const handleScroll = useInvertationScroll(entry, parentContainerRef.current);
+
+  useEffect(() => {
+    if (isOnScreen) {
+      window.addEventListener("scroll", handleScroll, true);
+    }
+
+    return () => window.removeEventListener("scroll", handleScroll, true);
+  }, [isOnScreen, handleScroll]);
 
   return (
     <Layout>
       <Header banner={true} />
       <Splash />
       <VideoArea />
-      <div id="darkBackground" className="bg-white">
+      <div ref={parentContainerRef} id="darkBackground" className="bg-white">
         <Inflation />
         <Future />
         <Features />
 
         <Qualities />
-        <Safety />
-        <TechnologyArea />
+        <div ref={invertedAreaRef}>
+          <Safety />
+          <TechnologyArea />
+        </div>
 
         <div className="bg-white">
           <FAQ />
