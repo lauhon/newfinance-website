@@ -17,8 +17,8 @@ const Layout = ({ children }: Props) => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        {/* <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
         <title>NewFinance©</title>
         <meta name="description" content={description} />
