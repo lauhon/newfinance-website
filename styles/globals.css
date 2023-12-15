@@ -16,6 +16,22 @@
 
 @font-face {
   font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/fonts/Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: semibold;
+  font-weight: 600;
+  src: url("../public/fonts/Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: bold;
+  font-weight: 700;
   src: url("../public/fonts/Manrope-VariableFont_wght.ttf");
 }
 
