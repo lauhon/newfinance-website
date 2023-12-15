@@ -32,11 +32,12 @@
     "resources": "RESOURCES"
   },
   "splash": {
-    "headline": "Invest and secure your future<br/>with Bitcoin.",
+    "headline": "Protect every<br/>Bitcoin you have",
     "non-custodian": "Why non-custodial matters",
     "check-out": "Check out",
-    "tagline": "The current state of the economy makes it necessary.<br/>Why not gain wealth when everybody else does it?",
-    "startButton": "Secure your spot today",
+    "tagline": "Gain wealth the secure way. More than 100 million dollar have been lost or stolen through insecure technology.",
+    "tagline-long": "Gain wealth the secure way. More than 100 million dollar have been lost or stolen through insecure technology.<br/>NewFinance build on institution like technology that has never been hacked.",
+    "startButton": "Get Bitcoin",
     "rarificationTeaser": "Regularly 4.99€/month",
     "rarification": "Free for life if register before December",
     "alphaNotifier": "* All  banking-like features for your Bitcoin are added incrementally<br />and are not fully available in the alpha version."

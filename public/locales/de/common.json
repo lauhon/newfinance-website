@@ -32,11 +32,12 @@
     "resources": "RESSOURCEN"
   },
   "splash": {
-    "headline": "Investiere und sichere deine Zukunft<br/>mit Bitcoin",
+    "headline": "Schütze jeden<br/>deiner Bitcoins",
     "non-custodian": "Warum Non-Custodial wichtig ist",
     "check-out": "Jetzt lesen",
-    "tagline": "Die derzeitige Wirtschaftslage macht es notwendig.<br/>Warum nicht profitieren, wenn es alle anderen auch tun?",
-    "startButton": "Sichere noch heute deinen Platz",
+    "tagline-long": "Vermehre dein Geld auf die sichere Weise. Mehr als 100 Millionen Euro wurden durch unsichere Technologie gestohlen. NewFinance verwendet eine neue, noch nie gehackte Technologie um dein Geld zu schützen.",
+    "tagline": "Vermehre dein Geld auf die sichere Weise. NewFinance verwendet eine neue, noch nie gehackte Technologie um dein Geld zu schützen.",
+    "startButton": "Bitcoin kaufen",
     "rarificationTeaser": "Regulär 4.99€/Monat",
     "rarification": "Lebenslang kostenlos, wenn du dich vor Dezember registrierst",
     "alphaNotifier": "* Alle bankähnlichen Funktionen für deine Bitcoin werden nach und nach hinzugefügt<br />und sind in der Alpha-Version noch nicht vollständig verfügbar."
