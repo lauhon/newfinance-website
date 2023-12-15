@@ -138,11 +138,11 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
     <>
       <header
         id="page-header"
-        className="z-20 backdrop-blur fixed w-full bg-transparent transition-all"
+        className="z-20 backdrop-blur-xl fixed w-full bg-[#FFFFFFF2] transition-all"
       >
         {banner && BannerTop()}
         <div
-          className="flex items-center justify-between border-b-1  px-4 md:px-14 lg:px-28 py-3"
+          className="flex items-center justify-between border-b-1  px-4 md:px-6 lg:px-12 py-6"
           style={{
             borderColor: isDark ? "#e5e7ebBB" : "#2C303ABB",
             borderBottomWidth: line ? "1px" : "0px",

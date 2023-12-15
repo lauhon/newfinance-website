@@ -37,7 +37,7 @@ const ButtonArrow = ({
       onClick={(e) => handleLinkClick(e)}
     >
       <span
-        className="min-w-[100px] font-manrope font-semibold text-white text-base whitespace-nowrap"
+        className="min-w-[40px] font-manrope font-semibold text-white text-base whitespace-nowrap"
         style={{ color: inverted ? "black" : "white" }}
       >
         {text}
