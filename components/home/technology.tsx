@@ -79,8 +79,13 @@ const TechnologyArea = () => {
   };
 
   return (
-    <section className="flex transition-all items-center px-4 md:px-8 md:pt-32 md:pb-32 pt-16 pb-16 flex-col space-y-8 md:space-y-16">
-      <div className="text-left  w-full">
+    <section className="flex transition-all items-center px-4 md:px-8 md:pb-32 pb-16 flex-col space-y-8 md:space-y-16 w-full">
+      <div className="flex border-b-1 border-[#292929] pb-24 justify-center">
+        <h3 className="flex text-2xl font-manrope font-medium text-black text-center md:w-4/6 text-white">
+          <Trans i18nKey="technology.quote" />
+        </h3>
+      </div>
+      <div className="text-left pt-16 w-full">
         <h2 className="text-[2.8rem] md:text-[3.2rem] lg:text-[3.6rem] text-center font-manrope font-semibold tracking-tight leading-none text-white">
           <Trans i18nKey="technology.headline_1" />
         </h2>
