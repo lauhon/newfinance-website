@@ -5,7 +5,7 @@ const CallToActionArea = () => {
   const { t } = useTranslation("common");
 
   return (
-    <section className="flex justify-center content-center transition-all mx-6 md:mx-14 lg:mx-28 pb-32">
+    <section className="flex justify-center content-center transition-all mx-6 pb-32">
       <div className="flex flex-col items-center pt-28 md:pt-32 w-[1000px] max-w-full  border-t-1 border-[#EDEEF0]">
         <h1 className="w-full text-[2.2rem] md:text-[3.2rem] text-center font-manrope font-semibold tracking-tight leading-tight">
           <Trans i18nKey="cta.headline" />
