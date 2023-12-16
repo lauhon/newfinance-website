@@ -80,8 +80,9 @@
     "later": "Later next year"
   },
   "qualities": {
-    "headline_1": "Let's get rid of rich folks",
+    "headline": "Own Bitcoin<br/>in under 5 minutes",
     "headline_2": "sitting on the pile of money",
+    "headline_text": "Buy, sell and send bitcoin nearly instantly. Up to 250 € without registration.",
     "first": "Unstable banking systems put everyone's money at risk — from individuals to businesses — but we're all dependent on it.",
     "second": "With our private bitcoin account, you disconnect yourself from banks and keep only their benefits.",
     "third": "That way, only you manage your money on your own terms, and stay ahead of the game.",
@@ -89,7 +90,7 @@
     "button": "Check out how simple it is"
   },
   "qualitiesEasy": {
-    "headline": "Own Bitcoin in<br/>under 5 minutes",
+    "headline": "Buy Bitcoin at<br/>the lowest costs",
     "text": "Buy, sell and send bitcoin nearly instantly.<br/>Up to 250 € without registration.",
     "benefit1": "Beginning with 1 €",
     "benefit2": "Card or bank transfer",

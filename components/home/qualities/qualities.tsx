@@ -1,5 +1,4 @@
 import { Trans, useTranslation } from "next-i18next";
-import ButtonArrow from "~/components/shared/buttons/button-arrow";
 import QualitiesEasy from "./qualities-easy";
 import QualitiesPockets from "./qualities-pockets";
 import QualitiesTransfer from "./qualities-transfer";
@@ -8,18 +7,19 @@ const Qualities = () => {
   const { t } = useTranslation("common");
 
   return (
-    <section className="flex items-center px-6 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 flex-col space-y-8 md:space-y-16">
+    <section className="flex items-center px-4 md:px-8 md:pt-32 md:pb-32  pb-16 flex-col space-y-6">
+      <div className="text-center w-full justify-center items-center md:w-2/3 pt-16">
+        <h2 className="text-[3.2rem] md:text-[4rem] lg:text-[5rem] text-default font-manrope font-semibold tracking-tight leading-none">
+          <Trans i18nKey="qualities.headline" />
+          <br />
+        </h2>
+        <p className="px-6 text-xl font-manrope font-medium text-black text-center mt-12 mb-10">
+          <Trans i18nKey="qualities.headline_text" />
+        </p>
+      </div>
       <QualitiesEasy />
       <QualitiesTransfer />
       <QualitiesPockets />
-      <div>
-        <ButtonArrow text={t("qualities.button")} href="register" />
-        <div className="flex flex-col items-center justify-center mt-3 text-[0.65rem] text-[#8E8D95] font-manrope font-semibold tracking-tight">
-          <div>
-            <Trans i18nKey="qualities.buttonInfo" />
-          </div>
-        </div>
-      </div>
     </section>
   );
 };

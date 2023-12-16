@@ -62,7 +62,7 @@ const Features = () => {
   const [items, setItems] = useState(i18n.language == "en" ? data : dataDE);
 
   return (
-    <section className="relative flex flex-col items-center px-4 md:px-14 lg:px-28 md:pt-32 md:pb-44 pt-16 pb-16 overflow-hidden">
+    <section className="relative flex flex-col items-center px-4 md:px-14 lg:px-28 md:pt-32 pt-16 pb-16 overflow-hidden">
       <div className="text-left w-[1000px] max-w-full">
         <h2 className="text-[2.8rem] md:text-[3.2rem] lg:text-[3.6rem] text-center text-default font-manrope font-semibold tracking-tight leading-none">
           <Trans i18nKey="features.headline" />
