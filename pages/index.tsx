@@ -52,7 +52,6 @@ const Home = () => {
           <Footer />
         </div>
       </div>
-      <Banner />
     </Layout>
   );
 };

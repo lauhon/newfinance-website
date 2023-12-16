@@ -143,7 +143,6 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
           backgroundColor: isDark ? "#FFFFFFF2" : "#000000F2",
         }}
       >
-        {banner && BannerTop()}
         <div
           className="flex items-center justify-between border-b-1  px-4 md:px-6 lg:px-12 py-6"
           style={{

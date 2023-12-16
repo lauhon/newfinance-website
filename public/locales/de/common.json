@@ -47,9 +47,10 @@
     "text": "Intelligenter sparen, schneller senden, besser schützen.<br />Und zusätzlich sparst du unnötige Bankgebühren."
   },
   "inflation": {
-    "headline_1": "Warum Bitcoin?",
+    "quote": "Das Projekt NewFinance wurde ursprünglich kreiert, um einen absolut sicheren Ort für unser Geld zu schaffen, es in unbeständigen Zeiten zu schützen und es in jeder Situation zugänglich zu machen. Jetzt wollen wir, dass auch du diese Möglichkeit hast.",
+    "headline_1": "Investiere und sichere<br/>deine Zukunft",
     "headline_2": "Weil die Inflation deine Ersparnisse schwinden lässt - jeden Tag.",
-    "headline_text": "Du hast sicher schon bemerkt, wie der Kauf von Brot, Milch und Eiern die Rechnung an der Kasse in die Höhe treibt.<br/>Im Vergleich dazu: Wenn du vor fünf Jahren Bitcoin gekauft hast, hast du durch das Sparen von 50 $ pro Woche 13.050 $ in 27.563 $ vermehrt.",
+    "headline_text": "Weil die Inflation deine Ersparnisse schwinden lässt - jeden Tag.",
     "subheadline": "Du verlierst Cash<br/>mit Geld auf der Bank",
     "text": "Das endlose Gelddrucken hat dir eine Menge Geld weggenommen. Das macht sich auch in der Wirtschaft bemerkbar.<br/><br/>Mit NewFinance und Bitcoin bekommst du:",
     "notifier": "Die Grafik dient nur zu Demonstrationszwecken.",
@@ -74,16 +75,21 @@
     "button": "Schützt jetzt dein Vermögen"
   },
   "features": {
-    "headline_1": "Die Power von Bitcoin +",
+    "headline": "Die Power von Bitcoin + die Funktionen von Banken.",
+    "headline_1": "",
     "headline_2": "die Funktionen von Banken.",
-    "headline_text": "Manchmal ist es schwierig, Bitcoin als unabhängiges Geld zu verwenden, wenn du deinen Gehaltsscheck per SEPA-Überweisung und nicht in Bitcoin erhältst. Deshalb integrieren wir Banking-Funktionen für Bitcoin. So ist es einfacher für dich."
+    "headline_text": "Manchmal ist es schwierig, Bitcoin als unabhängiges Geld zu verwenden, wenn du deinen Gehaltsscheck per SEPA-Überweisung und nicht in Bitcoin erhältst. Deshalb integrieren wir Banking-Funktionen für Bitcoin. So ist es einfacher für dich.",
+    "later": "Später nächstes Jahr"
   },
   "qualities": {
+    "headline": "Kaufe Bitcoin<br/>in unter 5 Minuten",
+    "headline_2": "sitting on the pile of money",
+    "headline_text": "Kaufe, verkaufe und sende Bitcoin sofort. Bis zu 250 € ohne Registrierung.",
     "buttonInfo": "Completely free",
     "button": "Entdecke jetzt wie einfach es ist"
   },
   "qualitiesEasy": {
-    "headline": "Besitze Bitcoin in<br/>unter 5 Minuten",
+    "headline": "Kaufe Bitcoin zu niedrigsten Kosten",
     "text": "Kaufe, verkaufe und sende Bitcoin sofort.<br/>Bis zu 250 € ohne Registrierung.",
     "benefit1": "Beginne mit nur 1€",
     "benefit2": "Kreditkarte oder Banküberweisung",
@@ -120,11 +126,13 @@
     "benefit3_2": "durch die Verschlüsselung von zwei Keys."
   },
   "technology": {
-    "headline_1": "Eine zukunftssichere Technologie die.",
+    "headline_1": "Sepkuliere nicht,<br/>investiere",
     "headline_2": "dir Zeit und Geld einspart.",
     "lightning": "Lightning Netzwerk",
-    "subheadline_1": "Spare bis zu 100€ Buchungsgebühren<br/>die deine Bank normal berechnet.",
-    "subtext_1": "Im Vergleich zu anderen Netzwerken sparst du bei der Nutzung von Lightning bis zu 99% an Zahlungsgebühren.",
+    "later": "Lightning ab nächstem Jahr verfügbar",
+    "quote": "Wir finden Geld ist etwas persönliches. Wir möchten dass Geld immer und überall verfügbar ist. Und das Ganz absolut sicher.",
+    "text": "Spare bis zu 100€ Buchungsgebühren<br/>die deine Bank normal berechnet. Im Vergleich zu anderen Netzwerken sparst du bei der Nutzung von Lightning bis zu 99% an Zahlungsgebühren.",
+    "subtext_1": "",
     "subheadline_2": "Spekuliere nicht.<br/>Investiere.",
     "subtext_2": "Mit Bitcoin investierst du in die größte und älteste Kryptowährung, die von Millionen als Wertanlage genutzt wird."
   },
@@ -141,7 +149,8 @@
     "button_more": "Mehr"
   },
   "cta": {
-    "headline": "Sichere deine Zukunft mit<br/>Bitcoin + allem<br/>was deine Bank kann",
+    "headline": "Schütze deine<br/>Bitcoin jetzt",
+    "headline_text": "Alles was du brauchst, um dein zukünftiges Vermögen aufzubauen.<br/>Starte in nur wenigen Minuten",
     "headline_2": "with a wallet made to.",
     "headline_1_xs": "Join the new European way to better money — ",
     "headline_2_xs": "with a wallet made to."
