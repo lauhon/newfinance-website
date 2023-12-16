@@ -62,20 +62,19 @@ const Features = () => {
   const [items, setItems] = useState(i18n.language == "en" ? data : dataDE);
 
   return (
-    <section className="relative flex flex-col items-center px-4 md:px-14 lg:px-28 md:pt-32 md:pb-44 pt-16 pb-16 space-y-8 md:space-y-8 overflow-hidden">
+    <section className="relative flex flex-col items-center px-4 md:px-14 lg:px-28 md:pt-32 md:pb-44 pt-16 pb-16 overflow-hidden">
       <div className="text-left w-[1000px] max-w-full">
-        <h2 className="text-[2rem] sm:text-[2.4rem] font-manrope font-semibold leading-tight mt-2">
-          <Trans i18nKey="features.headline_1" />
-          <br />
-          <span className="text-[#757679]">
-            <Trans i18nKey="features.headline_2" />
-          </span>
+        <h2 className="text-[2.8rem] md:text-[3.2rem] lg:text-[3.6rem] text-center text-default font-manrope font-semibold tracking-tight leading-none">
+          <Trans i18nKey="features.headline" />
         </h2>
-        <p className=" text-base font-manrope font-medium text-[#8E8D95] tracking-tighty mt-4">
+        <p className="text-xl font-manrope font-medium text-black text-center mt-12">
           <Trans i18nKey="features.headline_text" />
         </p>
+        <p className="text-xl font-manrope font-medium text-[#595959] text-center mt-12">
+          <Trans i18nKey="features.later" />
+        </p>
       </div>
-      <div className=" inline-flex min-w-max items-start left-0 mb-0 flex-row space-x-24  overflow-hidden">
+      <div className="hidden md:inline-flex min-w-max items-start left-0 mb-0 flex-row space-x-24  overflow-hidden mt-16">
         {/* TODO: on smaller screens this just gets cut, meaning that the user cant see all points */}
         {items.map((item, i) => (
           <div key={i}>

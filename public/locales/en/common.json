@@ -75,9 +75,9 @@
     "button": "Protect your wealth now"
   },
   "features": {
-    "headline_1": "The power of bitcoin +",
-    "headline_2": "the integration of banks.",
-    "headline_text": "Sometimes it’s hard to use Bitcoin as independent money, when you get your paycheck per SEPA transfer and not bitcoin.<br/>That’s why we integrate banking features for bitcoin. So it’s easier for you."
+    "headline": "Use the power of bitcoin + the integration of banks",
+    "headline_text": "Sometimes it’s hard to use Bitcoin as independent money, when you get your paycheck per SEPA transfer and not bitcoin. That’s why we integrate banking features for bitcoin. So it’s easier for you.",
+    "later": "Later next year"
   },
   "qualities": {
     "headline_1": "Let's get rid of rich folks",
