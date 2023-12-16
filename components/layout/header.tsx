@@ -54,7 +54,7 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
           <div
             className="flex space-x-6 justify-between align-middle z-50  border-b-1 transition-all px-4 md:px-14 lg:px-28 py-3 top-[-50px]"
             style={{
-              borderColor: isDark ? "#0000001A" : "#FFFFFF33",
+              borderColor: isDark ? "#0C0D11" : "#FFFFFF33",
               color: isDark ? "black" : "white",
               animation: "banner 1s ease",
             }}
@@ -138,7 +138,10 @@ const Header = ({ dark = true, line = false, banner = false }: props) => {
     <>
       <header
         id="page-header"
-        className="z-20 backdrop-blur-xl fixed w-full bg-[#FFFFFFF2] transition-all"
+        className="z-20 backdrop-blur-xl fixed w-full transition-all"
+        style={{
+          backgroundColor: isDark ? "#FFFFFFF2" : "#000000F2",
+        }}
       >
         {banner && BannerTop()}
         <div
