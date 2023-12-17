@@ -8,7 +8,7 @@ const Inflation = () => {
 
   return (
     <section className="flex flex-col items-center px-4 md:px-8  pb-16 space-y-8 md:space-y-16">
-      <div className="flex border-b-1 pb-24 justify-center">
+      <div className="flex border-b-1 pb-16 md:pb-24 justify-center">
         <h3 className="flex text-2xl font-manrope font-medium text-black text-center md:w-5/6">
           <Trans i18nKey="inflation.quote" />
         </h3>
@@ -23,7 +23,7 @@ const Inflation = () => {
         </p>
       </div>
       <div
-        className="flex flex-col space-y-12 items-center py-32 px-6 sm:px-8 md:px-16 bg-[#EDEEF0] rounded-2xl w-full min-h-[800px]"
+        className="flex flex-col space-y-12 items-center py-16 md:py-32 px-6 sm:px-8 md:px-16 bg-[#EDEEF0] rounded-2xl w-full min-h-[800px]"
         style={{
           backgroundImage: `url(${bg.src})`,
           backgroundSize: "cover",

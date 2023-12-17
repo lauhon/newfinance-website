@@ -80,7 +80,7 @@ const TechnologyArea = () => {
 
   return (
     <section className="flex transition-all items-center px-4 md:px-8 md:pb-32 pb-16 flex-col space-y-8 md:space-y-16 w-full">
-      <div className="flex border-b-1 border-[#292929] pb-24 justify-center">
+      <div className="flex border-b-1 border-[#292929] pb-16 md:pb-24 justify-center">
         <h3 className="flex text-2xl font-manrope font-medium text-black text-center md:w-4/6 text-white">
           <Trans i18nKey="technology.quote" />
         </h3>
@@ -91,7 +91,7 @@ const TechnologyArea = () => {
         </h2>
       </div>
       <div className="flex justify-center items-center flex-col md:flex-row w-full min-h-[470px] space-y-6 md:space-y-0 md:space-x-6">
-        <div className="flex flex-col items-center w-full bg-[#16181D] border-[#2C303A] border-1 rounded-2xl p-6 gap-4 py-32">
+        <div className="flex flex-col items-center w-full bg-[#16181D] border-[#2C303A] border-1 rounded-2xl p-6 gap-4 py-16 md:py-32">
           <div className="flex flex-1 flex-col min-h-[300px] w-full justify-center items-center">
             <Image src={bitcoinImage} alt="Dark Bitcoin" className="w-28" />
             <div className="flex flex-row items-center gap-1" key={key}>

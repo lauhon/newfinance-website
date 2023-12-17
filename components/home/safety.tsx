@@ -18,7 +18,7 @@ const Safety = () => {
         </p>
       </div>
       <div
-        className="flex flex-col items-center lg:space-x-8 py-16 px-6 sm:px-8 md:px-16 rounded-2xl w-full min-h-[800px]"
+        className="flex flex-col items-center lg:space-x-8 py-16 px-6 sm:px-8 md:px-16 rounded-2xl w-full min-h-[470px]"
         style={{
           backgroundImage: `url(${bg.src})`,
           backgroundSize: "cover",
@@ -27,12 +27,12 @@ const Safety = () => {
           backgroundPositionY: "bottom",
         }}
       >
-        <div className="flex-1 px-4">
+        <div className="flex-1 px-4 min-h-[300px]">
           <Image
             src={safetyGraph}
             height={200}
             alt="Graph about safety and Bitcoin"
-            className="mt-32"
+            className="mt-16"
           />
         </div>
         <div className="flex-1 md:w-1/2">
@@ -40,7 +40,7 @@ const Safety = () => {
             <Trans i18nKey="safety.text" />
           </p>
           <p className=" text-lg font-manrope font-semibold text-white text-center mt-12">
-            <Link href="https://google.com" target="_blank">
+            <Link href="https://eprint.iacr.org/2020/300" target="_blank">
               <Trans i18nKey="safety.link" />
             </Link>
           </p>

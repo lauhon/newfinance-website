@@ -13,8 +13,8 @@ const VideoArea = () => {
   return (
     <section className="flex items-center px-4 md:px-8  md:mt-32 md:mb-32 mt-16 mb-16 flex-col overflow-hidden">
       <div className="cursor-default w-full">
-        <div className="flex flex-col px-4 py-8 justify-center items-center bg-[#F6F6F6] rounded-2xl w-full group overflow-hidden">
-          <div className="flex md:space-x-8 justify-center items-center mt-32 mb-10">
+        <div className="flex flex-col px-4 py-0 justify-center items-center bg-[#F6F6F6] rounded-2xl w-full group overflow-hidden">
+          <div className="flex md:space-x-8 justify-center items-center mt-16 md:mt-32 mb-10">
             <Image
               src={Demo2}
               height={400}
@@ -34,7 +34,7 @@ const VideoArea = () => {
               className="hidden md:flex"
             />
           </div>
-          <div className="font-manrope font-medium text-center mb-32">
+          <div className="font-manrope font-medium text-center mb-16 md:mb-32">
             <Trans i18nKey="video.text" />
           </div>
         </div>
