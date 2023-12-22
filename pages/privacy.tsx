@@ -68,7 +68,7 @@ const Privacy = () => {
             Privacy Policy
           </h1>
           <div className="grid grid-cols-4 mt-28 col-auto gap-6 mb-8">
-            <div className="hidden sm:sticky top-44 self-start sm:flex flex-col gap-4 col-span-1 text-xs text-[#4e4e50]">
+            <div className="hidden sticky top-44 self-start sm:flex flex-col gap-4 col-span-1 text-xs text-[#4e4e50]">
               <Link
                 href="#intro"
                 scroll={false}
@@ -177,7 +177,7 @@ const Privacy = () => {
               className="col-span-4 sm:col-span-3 sm:ml-6 lg:ml-0"
             >
               <div id="intro"> </div>
-              <h4 className="text-[1.4rem] bg-white top-24 py-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mb-8">
+              <h4 className="text-[1.4rem] bg-white top-24 h-20 sm:h-auto sm:py-4 pt-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mb-8">
                 1. {t("entry.title")}
               </h4>
               <p className="font-inter text-regular text-sm leading-6 lg:w-5/6  text-[#4e4e50]">
@@ -191,14 +191,14 @@ const Privacy = () => {
                 {t("entry.1-1")}
               </p>
               <div id="application"></div>
-              <h4 className="text-[1.4rem] bg-white top-24 py-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
+              <h4 className="text-[1.4rem] bg-white top-24  h-20 sm:h-auto sm:py-4 pt-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
                 3. {t("application.title")}
               </h4>
               <p className="font-inter text-regular text-sm leading-6 lg:w-5/6 text-[#4e4e50]">
                 {t("application.3")}
               </p>
               <div id="legal"></div>
-              <h4 className="text-[1.4rem] bg-white top-24 py-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
+              <h4 className="text-[1.4rem] bg-white top-24  h-20 sm:h-auto sm:py-4 pt-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
                 4. {t("legalBasis.title")}
               </h4>
               <p className="font-inter text-regular text-sm leading-6 lg:w-5/6 text-[#4e4e50]">
@@ -229,7 +229,7 @@ const Privacy = () => {
                 {t("legalBasis.4-4")}
               </p>
               <div id="contact"></div>
-              <h4 className="text-[1.4rem] bg-white top-24 py-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8 ">
+              <h4 className="text-[1.4rem] bg-white top-24  h-20 sm:h-auto sm:py-4 pt-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8 ">
                 5. {t("contact.title")}
               </h4>
               <p
@@ -237,14 +237,14 @@ const Privacy = () => {
                 dangerouslySetInnerHTML={{ __html: t("contact.5") }}
               ></p>
               <div id="storage"></div>
-              <h4 className="text-[1.4rem] bg-white top-24 py-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
+              <h4 className="text-[1.4rem] bg-white top-24  h-20 sm:h-auto sm:py-4 pt-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
                 6. {t("duration.title")}
               </h4>
               <p className="font-inter text-regular text-sm leading-6 lg:w-5/6 text-[#4e4e50]">
                 {t("duration.6")}
               </p>
               <div id="dsgvo"></div>
-              <h4 className="text-[1.4rem] bg-white top-24 py-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
+              <h4 className="text-[1.4rem] bg-white top-24  h-20 sm:h-auto sm:py-4 pt-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
                 7. {t("dsgvo.title")}
               </h4>
               <p
@@ -252,7 +252,7 @@ const Privacy = () => {
                 dangerouslySetInnerHTML={{ __html: t("dsgvo.7") }}
               ></p>
               <div id="webhosting"></div>
-              <h4 className="text-[1.4rem] bg-white top-24 py-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
+              <h4 className="text-[1.4rem] bg-white top-24  h-20 sm:h-auto sm:py-4 pt-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
                 8. {t("webhosting.title")}
               </h4>
               <h5 className="font-manrope font-bold text-sm leading-6 lg:w-5/6 mt-12 mb-4">
@@ -293,7 +293,7 @@ const Privacy = () => {
                 dangerouslySetInnerHTML={{ __html: t("webhosting.8-6") }}
               ></p>
               <div id="email"></div>
-              <h4 className="text-[1.4rem] bg-white top-24 py-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
+              <h4 className="text-[1.4rem] bg-white top-24  h-20 sm:h-auto sm:py-4 pt-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
                 9. {t("emailMarketing.title")}
               </h4>
               <h5 className="font-manrope font-bold text-sm leading-6 lg:w-5/6 mt-12 mb-4">
@@ -340,7 +340,7 @@ const Privacy = () => {
                 dangerouslySetInnerHTML={{ __html: t("emailMarketing.9-7") }}
               ></p>
               <div id="cloud"></div>
-              <h4 className="text-[1.4rem] bg-white top-24 py-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
+              <h4 className="text-[1.4rem] bg-white top-24  h-20 sm:h-auto sm:py-4 pt-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
                 10. {t("cloudServices.title")}
               </h4>
               <h5 className="font-manrope font-bold text-sm leading-6 lg:w-5/6 mt-12 mb-4">
@@ -416,7 +416,7 @@ const Privacy = () => {
                 </li>
               </ul>
               <div id="terms"></div>
-              <h4 className="text-[1.4rem] bg-white top-24 py-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
+              <h4 className="text-[1.4rem] bg-white top-24  h-20 sm:h-auto sm:py-4 pt-4 sticky sm:text-[2rem] font-manrope font-medium leading-tight mt-12 mb-8">
                 11. {t("termExplain.title")}
               </h4>
               <p className="font-inter text-regular text-sm leading-6 lg:w-5/6 text-[#4e4e50]">
