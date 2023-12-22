@@ -1,6 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
 import Image from "next/image";
-import ButtonArrow from "../shared/buttons/button-arrow";
 
 const VideoArea = () => {
   const { t } = useTranslation("common");
@@ -12,20 +11,30 @@ const VideoArea = () => {
   const Demo5 = require("~/public/images/video/Demo5.png");
 
   return (
-    <section className="flex items-center px-4 md:px-14 lg:px-28 md:mt-32 md:mb-32 mt-16 mb-16 flex-col overflow-hidden">
-      <div className="cursor-default w-[1000px] max-w-full min-h-[500px]">
-        <div className="flex flex-col px-14 py-8 justify-center items-center border-[#EDEEF0] border-1 rounded-2xl w-[1000px] max-w-full min-h-[500px] group overflow-hidden">
-          <div className="flex space-x-4 justify-center items-center">
-            <Image src={Demo1} alt="App Demo Screen" className="" />
-            <Image src={Demo2} alt="App Demo Screen" className="" />
-            <Image src={Demo3} alt="App Demo Screen" className="" />
-            <Image src={Demo4} alt="App Demo Screen" className="" />
-            <Image src={Demo5} alt="App Demo Screen" className="" />
+    <section className="flex items-center px-4 md:px-8  md:mt-32 md:mb-32 mt-16 mb-16 flex-col overflow-hidden">
+      <div className="cursor-default w-full">
+        <div className="flex flex-col px-4 py-0 justify-center items-center bg-[#F6F6F6] rounded-2xl w-full group overflow-hidden">
+          <div className="flex md:space-x-8 justify-center items-center mt-16 md:mt-32 mb-10">
+            <Image
+              src={Demo2}
+              height={400}
+              alt="App Demo Screen"
+              className="hidden md:flex"
+            />
+            <Image
+              src={Demo3}
+              height={450}
+              alt="App Demo Screen"
+              className=""
+            />
+            <Image
+              src={Demo4}
+              height={400}
+              alt="App Demo Screen"
+              className="hidden md:flex"
+            />
           </div>
-          <div className="md:group-hover:scale-105 transition duration-300 absolute mb-14">
-            <ButtonArrow href="register" text={t("video.tryButton")} />
-          </div>
-          <div className="font-manrope font-semibold text-center mt-4">
+          <div className="font-manrope font-medium text-center mb-16 md:mb-32">
             <Trans i18nKey="video.text" />
           </div>
         </div>

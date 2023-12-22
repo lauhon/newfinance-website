@@ -32,23 +32,25 @@
     "resources": "RESOURCES"
   },
   "splash": {
-    "headline": "Invest and secure your future<br/>with Bitcoin.",
+    "headline": "Protect every<br/>Bitcoin you have",
     "non-custodian": "Why non-custodial matters",
     "check-out": "Check out",
-    "tagline": "The current state of the economy makes it necessary.<br/>Why not gain wealth when everybody else does it?",
-    "startButton": "Secure your spot today",
+    "tagline": "Gain wealth the secure way. More than 100 million dollar have been lost or stolen through insecure technology.",
+    "tagline-long": "Gain wealth the secure way. More than 100 million dollar have been lost or stolen through insecure technology.<br/>NewFinance uses a new, never-before-hacked technology to protect your money.",
+    "startButton": "Get Bitcoin",
     "rarificationTeaser": "Regularly 4.99€/month",
-    "rarification": "Free for life if register before December",
+    "rarification": "Free for life if register before March",
     "alphaNotifier": "* All  banking-like features for your Bitcoin are added incrementally<br />and are not fully available in the alpha version."
   },
   "video": {
     "tryButton": "Try out today",
-    "text": "Save smarter, Send faster, Protect better.<br />And additionally, you save on unnecessary banking fees."
+    "text": "Save smarter, Send faster, Protect better.<br />And additionally, save on unnecessary banking fees."
   },
   "inflation": {
-    "headline_1": "Why Bitcoin?",
+    "quote": "The project for NewFinance was initially created to built an absolute secure place for our money, protect it in volatile times and make it accessible no matter what. Now we want you to have that opportunity.",
+    "headline_1": "Invest and secure<br/>your future",
     "headline_2": "Because inflation eats up your savings - everyday.",
-    "headline_text": "You must have noticed how the purchase of bread, milk, and eggs pushes up the bill at the cash register.<br/>In comparison: If you bought bitcoin five years ago, saving 50 $ every week has turned $13,050 into $27,563.",
+    "headline_text": " Because the inflation eats up your savings - every day.",
     "subheadline": "You are losing cash<br/>with money in your bank",
     "text": "Endless money printing has taken away a lot of money from you. This has also led to the economy crumbling.<br/><br/>With NewFinance and Bitcoin you get:",
     "notifier": "Graphic for demonstration purposes only.",
@@ -73,13 +75,14 @@
     "button": "Protect your wealth now"
   },
   "features": {
-    "headline_1": "The power of bitcoin +",
-    "headline_2": "the integration of banks.",
-    "headline_text": "Sometimes it’s hard to use Bitcoin as independent money, when you get your paycheck per SEPA transfer and not bitcoin.<br/>That’s why we integrate banking features for bitcoin. So it’s easier for you."
+    "headline": "Use the power of bitcoin + the integration of banks",
+    "headline_text": "Sometimes it’s hard to use Bitcoin as independent money, when you get your paycheck per SEPA transfer and not bitcoin. That’s why we integrate banking features for bitcoin. So it’s easier for you.",
+    "later": "Later next year"
   },
   "qualities": {
-    "headline_1": "Let's get rid of rich folks",
+    "headline": "Own Bitcoin<br/>in under 5 minutes",
     "headline_2": "sitting on the pile of money",
+    "headline_text": "Buy, sell and send bitcoin nearly instantly. Up to 250 € without registration.",
     "first": "Unstable banking systems put everyone's money at risk — from individuals to businesses — but we're all dependent on it.",
     "second": "With our private bitcoin account, you disconnect yourself from banks and keep only their benefits.",
     "third": "That way, only you manage your money on your own terms, and stay ahead of the game.",
@@ -87,7 +90,7 @@
     "button": "Check out how simple it is"
   },
   "qualitiesEasy": {
-    "headline": "Own Bitcoin in<br/>under 5 minutes",
+    "headline": "Buy Bitcoin at<br/>the lowest costs",
     "text": "Buy, sell and send bitcoin nearly instantly.<br/>Up to 250 € without registration.",
     "benefit1": "Beginning with 1 €",
     "benefit2": "Card or bank transfer",
@@ -111,11 +114,12 @@
     "benefit4": "Anonym"
   },
   "safety": {
-    "headline_1": "Move your money to safety.",
+    "headline_1": "Move your money<br/>to safety.",
     "headline_2": "Make it accessible everytime and everywhere.",
-    "headline_text": "“Not your keys, not your coins” has resulted in over $100 billion lost or stolen since the early 2010s. NewFinance prevents this by using the leading security technology - called MPC.",
+    "headline_text": "“Not your keys, not your coins” - Until now, our technology was only used by institutions to secure billions of dollars.",
     "subheadline": "We’ve invested heavily<br/>in high-end encryption",
-    "text": "You get the safest security technology. Until now,<br/>this was only used by institutions to secure billions of dollars.",
+    "text": "Our technology combines recovery protection with no seed phrase vulnerabilty by creating two encrypted secret shares.",
+    "link": "Learn more about MPC security",
     "benefit1_1": "Secured by MPC technology, ",
     "benefit1_2": "a technology never been hacked",
     "benefit2_1": "Recovery protection ",
@@ -124,8 +128,11 @@
     "benefit3_2": "by creating two secret shares"
   },
   "technology": {
-    "headline_1": "You can rely on future-proof technology.",
+    "headline_1": "Do not speculate,<br/>invest wisely",
     "headline_2": "It saves you time and money.",
+    "text": "Save up to 100€ booking fees your bank normally charges. Compared to other networks - by using the lightning network - you safe up to 99% payment fees.",
+    "later": "Lightning will come later next year",
+    "quote": "We think money is something personal. We want money to be accessible everywhere and everytime. And it must be absolutely safe.",
     "lightning": "Lightning network",
     "subheadline_1": "Save up to 100 € booking fees<br/>your bank normally charges",
     "subtext_1": "Compared to other networks - by using lightning - you safe up to 99% payment fees.",
@@ -145,8 +152,8 @@
     "button_more": "More"
   },
   "cta": {
-    "headline": "Secure your future with<br/>Bitcoin + everything<br/>your bank can do",
-    "headline_2": "with a wallet made to.",
+    "headline": "Protect your<br/>Bitcoin now",
+    "headline_text": "Everything you need to build your future wealth.<br/>Get started in minutes.",
     "headline_1_xs": "Join the new European way to better money — ",
     "headline_2_xs": "with a wallet made to."
   },

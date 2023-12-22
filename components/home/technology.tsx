@@ -1,12 +1,9 @@
 import { Trans, useTranslation } from "next-i18next";
 import { useEffect, useRef, useState } from "react";
-import bgBitcoin from "../../public/images/home/bg-bitcoin.png";
-import bgLightning from "../../public/images/home/bg-lightning.png";
 
 import { fetchBitcoinData } from "~/services/market-data/bitcoin-data-service";
 
 import Image from "next/image";
-import BabyText from "../shared/text/baby-text";
 
 const TechnologyArea = () => {
   const { t } = useTranslation("common");
@@ -82,50 +79,20 @@ const TechnologyArea = () => {
   };
 
   return (
-    <section className="flex transition-all items-center px-6 md:px-14 lg:px-28 md:pt-32 md:pb-32 pt-16 pb-16 flex-col space-y-8 md:space-y-16">
-      <div className="text-left  w-[1000px] max-w-full">
-        <h2 className="text-[2rem] sm:text-[2.4rem] font-ibm font-semibold leading-tight mt-2 text-white">
+    <section className="flex transition-all items-center px-4 md:px-8 md:pb-32 pb-16 flex-col space-y-8 md:space-y-16 w-full">
+      <div className="flex border-b-1 border-[#292929] pb-16 md:pb-24 justify-center">
+        <h3 className="flex text-2xl font-manrope font-medium text-black text-center md:w-4/6 text-white">
+          <Trans i18nKey="technology.quote" />
+        </h3>
+      </div>
+      <div className="text-left pt-16 w-full">
+        <h2 className="text-[2.8rem] md:text-[3.2rem] lg:text-[3.6rem] text-center font-manrope font-semibold tracking-tight leading-none text-white">
           <Trans i18nKey="technology.headline_1" />
-          <br />
-          <span className="text-[#7D7E81]">
-            <Trans i18nKey="technology.headline_2" />
-          </span>
         </h2>
       </div>
-      <div className="flex justify-center items-center flex-col md:flex-row w-[1000px] max-w-full min-h-[470px] space-y-6 md:space-y-0 md:space-x-6">
-        <div className="flex flex-col justify-end w-full md:w-[54%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px] p-6 pb-10 gap-4">
-          <div
-            className="flex flex-col min-h-[300px] w-full"
-            style={{
-              backgroundImage: `url(${bgLightning.src})`,
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              backgroundPositionY: "center",
-            }}
-          ></div>
-          <div>
-            <BabyText text="LIGHTNING" />
-            <h2 className="font-manrope font-semibold text-white text-lg mt-1">
-              <Trans i18nKey="technology.subheadline_1" />
-            </h2>
-            <p className="font-manrope font-medium text-[#7D7E81] text-base mt-1">
-              <Trans i18nKey="technology.subtext_1" />
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-end w-full md:w-[46%] bg-[#16181D] border-[#2C303A] border-1 rounded-2xl min-h-[500px] p-6 pb-10 gap-4">
-          <div
-            className="flex flex-col min-h-[300px] w-full justify-center items-center"
-            style={{
-              backgroundImage: `url(${bgBitcoin.src})`,
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              backgroundPositionY: "bottom",
-            }}
-          >
+      <div className="flex justify-center items-center flex-col md:flex-row w-full min-h-[470px] space-y-6 md:space-y-0 md:space-x-6">
+        <div className="flex flex-col items-center w-full bg-[#16181D] border-[#2C303A] border-1 rounded-2xl p-6 gap-4 py-16 md:py-32">
+          <div className="flex flex-1 flex-col min-h-[300px] w-full justify-center items-center">
             <Image src={bitcoinImage} alt="Dark Bitcoin" className="w-28" />
             <div className="flex flex-row items-center gap-1" key={key}>
               <div
@@ -150,13 +117,12 @@ const TechnologyArea = () => {
               {change.toFixed(2)}€
             </span>
           </div>
-          <div>
-            <BabyText text="BITCOIN" color="#EC5D2A" />
-            <h2 className="font-manrope font-semibold text-white text-lg mt-1">
-              <Trans i18nKey="technology.subheadline_2" />
-            </h2>
-            <p className="font-manrope font-medium text-[#7D7E81] text-base mt-1">
-              <Trans i18nKey="technology.subtext_2" />
+          <div className="flex-1 md:w-1/2">
+            <p className=" text-lg font-manrope font-medium text-white text-center">
+              <Trans i18nKey="technology.text" />
+            </p>
+            <p className=" text-lg font-manrope font-semibold text-white text-center mt-12">
+              <Trans i18nKey="technology.later" />
             </p>
           </div>
         </div>

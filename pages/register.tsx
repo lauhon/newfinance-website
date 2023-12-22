@@ -8,7 +8,6 @@ import { SetStateAction, useState } from "react";
 import ButtonStandard from "~/components/shared/buttons/button-standard";
 import FAQItem from "~/components/shared/faq/faq-item";
 import StandardInput from "~/components/shared/inputs/standard-input";
-import bg from "~/public/images/LoginBackground.png";
 const logo_dark = require("~/icons/LogoNewFinance.png");
 const phoneLogin = require("~/public/images/PhonesLogin.png");
 
@@ -151,7 +150,7 @@ const Register = () => {
         <title>{title}</title>
         <meta property="og:title" content={title} />
       </Head>
-      <div className="items-center flex-col py-6 pb-24 px-4 lg:px-16 w-100 lg:w-3/6">
+      <div className="items-center justify-center flex-col py-6 pb-24 px-4 lg:px-16 w-100 ">
         <Link
           className="fixed justify-start hover:opacity-80 transition-all"
           href="/"
@@ -164,8 +163,8 @@ const Register = () => {
           />
         </Link>
         {!success && (
-          <div className="flex flex-col items-center md:items-start mt-52">
-            <h1 className=" text-2xl text-black font-manrope font-semibold mb-4 text-center md:text-start">
+          <div className="flex flex-col items-center text-center  mt-52">
+            <h1 className=" text-2xl text-black font-manrope font-semibold mb-4 text-center">
               <Trans i18nKey="login.headline" />
             </h1>
 
@@ -181,31 +180,31 @@ const Register = () => {
               <ButtonStandard text={t("login.button_email")} type="submit" />
             </form>
             {errorOther && (
-              <p className="font-manrope text-xs font-semibold mt-3.5 text-red-500 text-center md:text-start">
+              <p className="font-manrope text-xs font-semibold mt-3.5 text-red-500 text-center">
                 <Trans i18nKey="login.errorOther" />
               </p>
             )}
             {errorMail && (
-              <p className="font-manrope text-xs font-semibold mt-3.5 text-red-500 text-center md:text-start">
+              <p className="font-manrope text-xs font-semibold mt-3.5 text-red-500 text-center ">
                 <Trans i18nKey="login.errorMail" />
               </p>
             )}
             {alreadyRegistered && (
-              <p className="font-manrope text-xs font-semibold mt-3.5 text-green-500 text-center md:text-start">
+              <p className="font-manrope text-xs font-semibold mt-3.5 text-green-500 text-center ">
                 <Trans i18nKey="login.alreadyRegistered" />
               </p>
             )}
-            <p className="font-manrope font-medium text-[#979AA1] text-xs w-full md:w-96  mt-4 leading-relaxed  text-center md:text-start">
+            <p className="font-manrope font-medium text-[#979AA1] text-xs w-full md:w-96  mt-4 leading-relaxed  text-center ">
               <Trans i18nKey="login.notice" />
             </p>
           </div>
         )}
         {success && (
           <div className="flex flex-col items-center md:items-start mt-52">
-            <h1 className=" text-2xl text-black font-manrope font-semibold mb-4 text-center md:text-start">
+            <h1 className=" text-2xl text-black font-manrope font-semibold mb-4 text-center ">
               <Trans i18nKey="login.success" />
             </h1>
-            <p className="text-sm font-manrope font-medium text-center md:text-start">
+            <p className="text-sm font-manrope font-medium text-center ">
               <Trans i18nKey="login.successText" />
             </p>
             <button
@@ -215,15 +214,15 @@ const Register = () => {
               <span>getnewfinance.com/register/?invite=30238482</span>
               <Copy size={20} className=" text-black" />
             </button>
-            <p className="font-manrope font-medium text-blue-500 text-xs w-96 mt-4 leading-relaxed  text-center md:text-start">
+            <p className="font-manrope font-medium text-blue-500 text-xs w-96 mt-4 leading-relaxed  text-center ">
               <Trans i18nKey="login.successNotice" />
             </p>
-            <p className="font-manrope font-medium text-[#979AA1] text-xs w-96 mt-4 leading-relaxed  text-center md:text-start">
+            <p className="font-manrope font-medium text-[#979AA1] text-xs w-96 mt-4 leading-relaxed  text-center ">
               <Trans i18nKey="login.successConditions" />
             </p>
           </div>
         )}
-        <div className="mt-32 border-t-1 border-[#EDEEF0] pt-6">
+        <div className="mt-32 border-t-1 border-[#EDEEF0] pt-6 ">
           {list}
           <div className="ml-[-1rem] flex align-text-bottom">
             <Link
@@ -237,16 +236,6 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <div
-        className="lg:fixed flex items-center justify-center flex-col align-middle right-0 w-3/6 bg-[#000000] h-full  px-8 md:px-0 border-l-1"
-        style={{
-          backgroundImage: `url(${bg.src})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundPositionY: "bottom",
-        }}
-      ></div>
     </section>
   );
 };

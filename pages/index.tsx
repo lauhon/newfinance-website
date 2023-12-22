@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import CallToActionArea from "~/components/home/cta";
 import FAQ from "~/components/home/faq";
 import Features from "~/components/home/features";
-import Future from "~/components/home/problems/future";
 import Inflation from "~/components/home/problems/inflation";
 import Qualities from "~/components/home/qualities/qualities";
 import Safety from "~/components/home/safety";
@@ -39,7 +38,6 @@ const Home = () => {
       <VideoArea />
       <div ref={parentContainerRef} id="darkBackground" className="bg-white">
         <Inflation />
-        <Future />
         <Features />
 
         <Qualities />
@@ -54,7 +52,6 @@ const Home = () => {
           <Footer />
         </div>
       </div>
-      <Banner />
     </Layout>
   );
 };

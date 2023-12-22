@@ -18,7 +18,7 @@ const Pricing = () => {
         <div className="mt-16 mb-32 flex flex-col items-center overflow-hidden">
           <h1
             id="first-section"
-            className="text-[3rem] font-manrope font-semibold leading-tight mt-2"
+            className="text-[2.8rem] md:text-[3.2rem] lg:text-[3.6rem] font-manrope font-semibold leading-tight mt-12"
           >
             <Trans i18nKey="pricing.headline" />
           </h1>
